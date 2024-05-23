@@ -1,3 +1,7 @@
+* {
+    font-family: Montserrat;
+}
+
 .conteiner {
     max-width: 1440px;
     margin: 0 auto;
@@ -7,9 +11,7 @@
     position: relative;
     max-width: 100%;
     user-select: none;
-    margin: 0 100px 0 100px;
-
-    font-family: Montserrat;
+    margin: 0 100px;
 }
 
 .services-heading {
@@ -54,7 +56,7 @@
     padding: 40px 21px 10px 21px;
     border-radius: 10px;
 
-    box-shadow: 0px 2px 7.8px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0 8px  0 rgba(0, 0, 0, 0.15);
     background: rgb(255, 255, 255);
 }
 
@@ -144,24 +146,24 @@
     line-height: 24px;
 }
 
-.services-card-wrapper-title_price--old-price {
+
+
+.price-old {
     color: rgb(140, 140, 140);
     font-size: 14px;
     font-weight: 400;
-    line-height: 17px;
-
-    height: 17px;
-
-    position: relative;
+    line-height: 17px;      
+    text-decoration: line-through;
 }
 
-.services-card-wrapper-title_price--old-price div {
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background:rgb(140, 140, 140) ;
-    top: 7.5px;
+.price-new {
+    color: rgb(251, 15, 64);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
 }
+
+
 
 .services-card-wrapper-title_btn {
     width: 100%;
@@ -232,7 +234,10 @@
 
 .swiper-wrap-img {
     position: relative;
-    z-index: 11;
+    height: 200px; 
+    max-width: 242px;
+    
+    position: relative;
 }
 
 
