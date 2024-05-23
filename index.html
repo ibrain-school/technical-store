@@ -9,10 +9,32 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/technical-store/index.css">
-
+  <script src="./scripts/modal.js" defer></script>
 </head>
 
 <body>
+  <a class="authorization" onclick="modalActiv(event)" href="#">
+  </a>  
+  <div class="modal-wrap none" onclick="modalActiv(event)">
+    <div class="modal" onclick="event.stopPropagation()">
+        <div class="modal-title">
+          Вход или регистрация
+        </div>
+
+        <span class="modal-discription">
+          Введите номер телефона. Мы отправим вам код в СМС.
+        </span> 
+        <form class="modal-form"> 
+          <input class="modal-input" type="text" placeholder="Номер телефона" maxlength="18" name="input-modal"> 
+
+          <button class="modal-input-btn">регистрация</button> 
+        </form>
+        
+        <button onclick="modalActiv(event)" class="modal-cross">
+          <img src="./assets/icons/modal-cross-icon.svg" alt="">
+        </button>
+    </div>
+  </div>
 </body>
 
 </html>
