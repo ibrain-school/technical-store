@@ -8,7 +8,7 @@
 }
 
 header {
-    padding: 25px 100px 0px 100px;
+    padding: 25px 100px 0 100px;
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -33,13 +33,12 @@ header button {
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
-    letter-spacing: 0%;
     text-align: left;
 }
 
 .header_top-location img {
-    width: 12.25px;
-    height: 17.5px;
+    width: 12px;
+    height: 17px;
 }
 
 .header_top-location a {
@@ -47,7 +46,6 @@ header button {
     font-size: 14px;
     font-weight: 500;
     line-height: 17px;
-    letter-spacing: 0%;
     text-align: left;
     margin-left: 10px;
 }
@@ -63,7 +61,6 @@ header button {
     font-size: 14px;
     font-weight: 500;
     line-height: 17px;
-    letter-spacing: 0%;
     text-align: left;
     margin-left: 10px;
 }
@@ -82,7 +79,6 @@ header button {
     font-size: 15px;
     font-weight: 600;
     line-height: 18px;
-    letter-spacing: 0%;
     text-align: left;
     text-transform: uppercase;
     padding: 14px 20px;
@@ -95,11 +91,11 @@ header button {
 }
 
 
-.header_midl-inp{
+.header_midl__search-input{
     position: relative;
 }
 
-.header_midl-inp input {
+.header_midl__search-input input {
     border-radius: 5px;
     background: rgb(244, 244, 244);
     width: 642px;
@@ -109,13 +105,12 @@ header button {
     font-size: 15px;
     font-weight: 400;
     line-height: 18px;
-    letter-spacing: 0%;
     text-align: left;
     margin-right: 40px;
     border: none;
 }
 
-.header_midl-inp img {
+.header_midl__search-input img {
     position: absolute;
     right: 55px;
     top: 30%;
