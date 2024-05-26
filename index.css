@@ -107,7 +107,7 @@
 } 
 .swiper-button-prev {
     left: 0px;
-    z-index: 10 !important;
+    z-index: 10;
 }
 
 .swiper-button-next {
