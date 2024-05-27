@@ -1,55 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
-    <script src="./scripts/service-swiper.js" defer> </script>
-    <script src="./scripts/swiper-black-friday.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./index.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="./scripts/swiper-black-friday.js" defer></script>
+    <script src="./scripts/service-swiper.js" defer> </script>
+    <script defer src="./scripts.js"></script>
     <title>Бренды</title>
 </head>
-
 <body>
-    <div class="container">
-        <div class="swiper swiper-black-friday">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide swiper-slide-black-friday">
-                    <img src="./assets/img/black-friday.png" alt="Скидка черная пятница">
-                </div>
-                <div class="swiper-slide swiper-slide-black-friday">
-                    <img src="./assets/img/black-friday.png" alt="Скидка черная пятница">
-                </div>
-                <div class="swiper-slide swiper-slide-black-friday">
-                    <img src="./assets/img/black-friday.png" alt="Скидка черная пятница">
-                </div>
-                <div class="swiper-slide swiper-slide-black-friday">
-                    <img src="./assets/img/black-friday.png" alt="Скидка черная пятница">
-                </div>
-                <div class="swiper-slide swiper-slide-black-friday">
-                    <img src="./assets/img/black-friday.png" alt="Скидка черная пятница">
-                </div>
-                <div class="swiper-slide swiper-slide-black-friday">
-                    <img src="./assets/img/black-friday.png" alt="Скидка черная пятница">
-                </div>
-                <div class="swiper-slide swiper-slide-black-friday">
-                    <img src="./assets/img/black-friday.png" alt="Скидка черная пятница">
-                </div>
-                <div class="swiper-slide swiper-slide-black-friday">
-                    <img src="./assets/img/black-friday.png" alt="Скидка черная пятница">
-                </div>
+    <header>
+        <div class="header_top">
+            <nav class="header_top-nav">
+                <li>
+                    <a href="#">О нас</a>
+                </li>
+                <li>
+                    <a href="#">Магазины</a>
+                </li>
+                <li>
+                    <a href="#">Оплата и доставка</a>
+                </li>
+                <li>
+                    <a href="#">Статус заказа</a>
+                </li>
+                <li>
+                    <a href="#">Возврат</a>
+                </li>
+                <li>
+                    <a href="#">Контакты</a>
+                </li>
+            </nav>
+            <div class="header_top-location">
+                <img class="header_top-location--img" src="/assets/icons/Local.svg" alt="Moscow">
+                <a href="#">Москва</a>
+            </div>
+            <div class="header_top-tel">
+                <img  src="/assets/icons/Tel.svg" alt="Tel">
+                <a href="tel:+7 (812) 834-84-88">+7 (812) 834-84-88</a>
+            </div>
+        </div>  
+        <div class="header_midl">
+            <button class="header_midl-btn">
+              <img src="/assets/icons/burger.svg" alt="burger"> 
+              Каталог
+          </button>
+            <div class="header_midl__search-input">
+                <input  placeholder="Поиск товара" type="text">
+                <img src="/assets/icons/Search.svg" alt="Search">
+            </div>
+            <div class="header_midl-wrapper--btn">
+                <a href="#">
+                    <img src="/assets/icons/Favorites.svg" alt="Favorites">
+                    <span>Избранное</span>
+                </a>
+                <a href="#">
+                    <img src="/assets/icons/Basket.svg" alt="Basket">
+                    <span>Корзина</span>
+                </a>
+                <a href="#">
+                    <img src="/assets/icons/User.svg" alt="User">
+                    <span>Войти</span>
+                </a>
+            </div>
+        </div>
+        <div class="header_bottom">
+            <button type="button" class="header_bottom-btn">Смартфоны</button>
+            <button type="button" class="header_bottom-btn">Стиральные машины</button>
+            <button type="button" class="header_bottom-btn">Пылесосы</button>
+            <button type="button" class="header_bottom-btn">Холодильники</button>
+            <button type="button" class="header_bottom-btn">Телевизоры </button>
+            <button type="button" class="header_bottom-btn">Микроволновые печи</button>
+            <button type="button" class="header_bottom-btn">Наушники</button>
+            <button type="button" class="header_bottom-btn">Электрочайники</button>
+            <button type="button" class="header_bottom-btn">Вытяжки</button>
+        </div>
+    </header>
+    <div class="swiper swiper-black-friday">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide-black-friday">
+                <img src="./assets/img/black-friday.png" alt="Скидка черная пятница">
+            </div>
+            <div class="swiper-slide swiper-slide-black-friday">
+                <img src="./assets/img/black-friday.png" alt="Скидка черная пятница">
+            </div>
+            <div class="swiper-slide swiper-slide-black-friday">
+                <img src="./assets/img/black-friday.png" alt="Скидка черная пятница">
+            </div>
+            <div class="swiper-slide swiper-slide-black-friday">
+                <img src="./assets/img/black-friday.png" alt="Скидка черная пятница">
+            </div>
+            <div class="swiper-slide swiper-slide-black-friday">
+                <img src="./assets/img/black-friday.png" alt="Скидка черная пятница">
+            </div>
+            <div class="swiper-slide swiper-slide-black-friday">
+                <img src="./assets/img/black-friday.png" alt="Скидка черная пятница">
             </div>
             <div class="swiper-button-prev"><img src="./assets/icons/prev-swiper-services.svg" alt=""></div>
             <div class="swiper-button-next"><img src="./assets/icons/next-swiper-services.svg" alt=""></div>
             <div class="swiper-pagination-black-friday"></div>
         </div>
-
-
+        </div>
+        <div class="swiper-button-prev">
+          <img src="./assets/icons/prev-swiper-services.svg" alt="">
+      </div>
+        <div class="swiper-button-next">
+          <img src="./assets/icons/next-swiper-services.svg" alt="">
+      </div>
+        <div class="swiper-pagination-black-friday"></div>
+    </div>
+   <main>
+        <section id="popular__categories">
+            <h2 class="popular__categories-title">Популярные категории</h2>
+            <div class="popular__categories-main">
+            <div class="swiper popular__categories-wrapper">
+                <div class="swiper-wrapper popular__categories-card">
+                    <div class="swiper-slide popular__categories-card-info card-one" >
+                        <a class="popular__categories-img-link" href="#"><img class="popular__categories-image" src="./assets/img/Iphon.png" alt="Iphon"></a>
+                        <a class="popular__categories-link link1" href="#">Смартфоны</a>
+                    </div>
+                    <div class="swiper-slide popular__categories-card-info card-two">
+                        <a class="popular__categories-img-link" href="#"><img class="popular__categories-image" src="./assets/img/washing_machine.png" alt="Washing machine"></a>
+                        <a class="popular__categories-link" href="#">Стиральные <br>машины</a>
+                    </div>
+                    <div class="swiper-slide popular__categories-card-info card-three">
+                        <a class="popular__categories-img-link" href="#"><img class="popular__categories-image" src="./assets/img/vacuum_cleaner.png" alt="Vacuum cleaner"></a>
+                        <a class="popular__categories-link link3" href="#">Пылесосы</a>
+                    </div>
+                    <div class="swiper-slide popular__categories-card-info card-four">
+                        <a class="popular__categories-img-link" href="#"><img class="popular__categories-image" src="./assets/img/fridge.png" alt="Fridge"></a>
+                        <a class="popular__categories-link link4" href="#">Холодильники</a>
+                    </div>
+                    <div class="swiper-slide popular__categories-card-info card-five">
+                        <a class="popular__categories-img-link" href="#"><img class="popular__categories-image"  src="./assets/img/tv.png" alt="TV"></a>
+                        <a class="popular__categories-link link5" href="#">Телевизоры</a>
+                    </div>
+                    <div class="swiper-slide popular__categories-card-info card-six">
+                        <a class="popular__categories-img-link" href="#"><img class="popular__categories-image" src="./assets/img/microwave.png" alt="Microwave"></a>
+                        <a class="popular__categories-link" href="#">Микроволновые <br>печи</a>
+                    </div>
+                    <div class="swiper-slide popular__categories-card-info card-six">
+                        <a class="popular__categories-img-link" href="#"><img class="popular__categories-image" src="./assets/img/microwave.png" alt="Microwave"></a>
+                        <a class="popular__categories-link" href="#">Микроволновые <br>печи</a>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"><img src="./assets/icons/prev.svg" alt="Prev"></div>
+                <div class="swiper-button-next"><img src="./assets/icons/next.svg" alt="Next"></div>
+            </div>
+            </div>
+        </section> 
+     
         <!------------------------------- task-8 хиты продаж -------------------------------------------------->
+      <div class="container">
         <section id="hits-sales" class="hits-sales">
             <div class="hits-sales__nav-wrapper">
                 <div class="hits-sales__nav-title-wrapper">
@@ -956,39 +1063,40 @@
                                     </div>
                                 </div>
                                 <div class="services-card-wrapper-title">
-    
                                     <div class="services-card-wrapper__raiting">
                                         <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
                                         <span class="services-card-wrapper__raiting--span">5.0</span>
                                     </div>
-    
                                     <div class="services-card-wrapper-title_description">
                                         Настройка SMART TV
                                     </div>
-    
+                                    <div class="services-card-wrapper-title_description">
+                                        Настройка SMART TV
+                                    </div>
                                     <div class="services-card-wrapper-title_price">
                                         <span class="price-new">
                                             1300 &#x20bd;
                                         </span>
-    
-                                        <div class="price-old">
+                                      <div class="price-old">
                                             3000 ₽
                                         </div>
                                     </div>
-    
                                     <button class="services-card-wrapper-title_btn">
                                         В корзину
                                     </button>
-    
+                                    <button class="services-card-wrapper-title_btn">
+                                        В корзину
+                                    </button>
                                     <div class="services-card-wrapper-contein-btn">
                                         <button>
                                             <img src="./assets/icons/like-btn-service.svg" alt="like">
                                         </button>
-    
                                         <button>
                                             <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
                                         </button>
-    
+                                        <button>
+                                            <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
+                                        </button>
                                         <button>
                                             <img src="./assets/icons/bell-btn-service.svg" alt="bell">
                                         </button>
@@ -1013,12 +1121,10 @@
                                     </div>
                                 </div>
                                 <div class="services-card-wrapper-title">
-    
-                                    <div class="services-card-wrapper__raiting">
+                                <div class="services-card-wrapper__raiting">
                                         <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
                                         <span class="services-card-wrapper__raiting--span">5.0</span>
                                     </div>
-    
                                     <div class="services-card-wrapper-title_description">
                                         Настройка SMART TV
                                     </div>
@@ -1028,8 +1134,6 @@
                                         </span>
                                         <div class="price-old">
                                             3000 ₽
-                                            <div>
-                                            </div>
                                         </div>
                                     </div>
                                     <button class="services-card-wrapper-title_btn">
@@ -1079,8 +1183,6 @@
                                         </span>
                                         <div class="price-old">
                                             3000 ₽
-                                            <div>
-                                            </div>
                                         </div>
                                     </div>
                                     <button class="services-card-wrapper-title_btn">
@@ -1090,11 +1192,12 @@
                                         <button>
                                             <img src="./assets/icons/like-btn-service.svg" alt="like">
                                         </button>
-    
+                                          <button>
+                                            <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
+                                        </button>
                                         <button>
                                             <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
                                         </button>
-    
                                         <button>
                                             <img src="./assets/icons/bell-btn-service.svg" alt="bell">
                                         </button>
@@ -1132,8 +1235,6 @@
                                         </span>
                                         <div class="price-old">
                                             3000 ₽
-                                            <div>
-                                            </div>
                                         </div>
                                     </div>
                                     <button class="services-card-wrapper-title_btn">
@@ -1189,8 +1290,6 @@
                                         </span>
                                         <div class="price-old">
                                             3000 ₽
-                                            <div>
-                                            </div>
                                         </div>
                                     </div>
                                     <button class="services-card-wrapper-title_btn">
@@ -1240,8 +1339,6 @@
                                         </span>
                                         <div class="price-old">
                                             3000 ₽
-                                            <div>
-                                            </div>
                                         </div>
                                     </div>
                                     <button class="services-card-wrapper-title_btn">
@@ -1251,11 +1348,12 @@
                                         <button>
                                             <img src="./assets/icons/like-btn-service.svg" alt="like">
                                         </button>
-    
                                         <button>
                                             <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
                                         </button>
-    
+                                        <button>
+                                            <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
+                                        </button>
                                         <button>
                                             <img src="./assets/icons/bell-btn-service.svg" alt="bell">
                                         </button>
@@ -1264,8 +1362,10 @@
                             </div>
                             <div class="services-card">
                                 <div class="services-card-wrapper-img">
-                                    <div class="swiper-wrap-img"">
+                                    <div class="swiper-wrap-img">
                                     <div class=" swiper-wrapper">
+                                    <div class="swiper-wrap-img">
+                                <div class=" swiper-wrapper">
                                         <div class="swiper-slide">
                                             <img src="./assets/img/tavar-services.png" alt="tavar-services">
                                         </div>
@@ -1293,8 +1393,6 @@
                                     </span>
                                     <div class="price-old">
                                         3000 ₽
-                                        <div>
-                                        </div>
                                     </div>
                                 </div>
                                 <button class="services-card-wrapper-title_btn">
@@ -1331,24 +1429,22 @@
                                 </div>
                             </div>
                             <div class="services-card-wrapper-title">
-    
-                                <div class="services-card-wrapper__raiting">
+                               <div class="services-card-wrapper__raiting">
                                     <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
                                     <span class="services-card-wrapper__raiting--span">5.0</span>
                                 </div>
-    
                                 <div class="services-card-wrapper-title_description">
                                     Настройка SMART TV
                                 </div>
-    
+                                <div class="services-card-wrapper-title_description">
+                                    Настройка SMART TV
+                                </div>
                                 <div class="services-card-wrapper-title_price">
                                     <span class="price-new">
                                         1300 &#x20bd;
                                     </span>
                                     <div class="price-old">
                                         3000 ₽
-                                        <div>
-                                        </div>
                                     </div>
                                 </div>
                                 <button class="services-card-wrapper-title_btn">
@@ -1358,21 +1454,22 @@
                                     <button>
                                         <img src="./assets/icons/like-btn-service.svg" alt="like">
                                     </button>
-    
-                                    <button>
+                                  <button>
                                         <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
                                     </button>
-    
+                                  <button>
+                                        <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
+                                    </button>
                                     <button>
                                         <img src="./assets/icons/bell-btn-service.svg" alt="bell">
                                     </button>
                                 </div>
                             </div>
                         </div>
-    
+                              </div>
+                </div>
                     </div>
                 </div>
-    
                 <div class="swiper-slide swiper-slide-services">
                     <div class="wrapper-card-services">
                         <div class="services-card">
@@ -1406,15 +1503,15 @@
                                     </span>
                                     <div class="price-old">
                                         3000 ₽
-                                        <div>
-                                        </div>
                                     </div>
                                 </div>
     
                                 <button class="services-card-wrapper-title_btn">
                                     В корзину
                                 </button>
-    
+                                <button class="services-card-wrapper-title_btn">
+                                    В корзину
+                                </button>
                                 <div class="services-card-wrapper-contein-btn">
                                     <button>
                                         <img src="./assets/icons/like-btn-service.svg" alt="like">
@@ -1459,15 +1556,12 @@
                                 <div class="services-card-wrapper-title_description">
                                     Настройка SMART TV
                                 </div>
-    
                                 <div class="services-card-wrapper-title_price">
                                     <span class="price-new">
                                         1300 &#x20bd;
                                     </span>
                                     <div class="price-old">
                                         3000 ₽
-                                        <div>
-                                        </div>
                                     </div>
                                 </div>
     
@@ -1622,16 +1716,21 @@
     
             </div>
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev--services"><img src="./assets/icons/prev-swiper-services.svg" alt="button-prev">
-            </div>
-            <div class="swiper-button-next--services"><img src="./assets/icons/next-swiper-services.svg" alt="button-prev">
-            </div>
-    
+            <div class="swiper-button-prev--services">
+              <img 
+                   src="./assets/icons/prev-swiper-services.svg" 
+                   alt="button-prev"
+                   />
+              </div>
+            <div class="swiper-button-next--services">
+              <img 
+                   src="./assets/icons/next-swiper-services.svg"
+                    alt="button-prev"
+                   />
+              </div>
         </div>
     </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./scripts/swiper-hit-sales.js"></script>
+  </main>
 </body>
 </html>
-
