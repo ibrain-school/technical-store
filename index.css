@@ -1,5 +1,7 @@
 * {
     font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    list-style: none;
     font-optical-sizing: auto;
     margin: 0;
     padding: 0;
@@ -21,7 +23,7 @@ header button {
     display: flex;
 }
 
-.header_top-nav{
+.header_top-navv {
     display: flex;
     gap: 20px;
     margin-right: 74px;
@@ -69,7 +71,7 @@ header button {
     margin-top: 35px;
 }
 
-.header_midl-btn{
+.header_midl-btn {
     width: 144px;
     height: 46px;
     border-radius: 5px;
@@ -117,7 +119,7 @@ header button {
     width: auto;
 }
 
-.header_midl-wrapper--btn{
+.header_midl-wrapper--btn {
     display: flex;
     column-gap: 25px;
     padding-top: 3px;
@@ -182,6 +184,113 @@ header button {
 .swiper-pagination-bullet-active-pagination-black-friday {
     background-color: rgb(251, 15, 64);
 }
+
+#popular__categories {
+    padding: 60px 100px;
+}
+
+.popular__categories-title {
+    color: rgb(42, 31, 32);
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+
+.popular__categories-main {
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.popular__categories-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px;
+    position: relative;
+    min-width: 0;
+    overflow: hidden;
+}
+ 
+
+.popular__categories-card {
+    transition: all 2s ease-in-out 0s;
+    display: flex;
+    padding-left: 11px;
+    gap: 20px;
+    max-width: 100%;
+}
+
+.popular__categories-card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 0;
+    max-width: 185px;
+    box-sizing: border-box;
+    border: 1px solid rgb(188, 188, 188);
+    border-radius: 10px;
+}
+
+.card-one {
+    padding: 22px 36px 28px 35px;
+}
+
+.card-two {
+    padding: 4px 36px 11px 35px;
+}
+
+.card-three {
+    padding: 26px 42px 27px 41px;
+}
+
+.card-four {
+    padding: 26px 42px 27px 41px;
+}
+
+.card-five {
+    padding: 15px 0 27px 0;
+}
+
+.card-six {
+    padding: 2px 0 11px 0;
+}
+
+.popular__categories-image {
+    max-width: 100%;
+}
+
+.popular__categories-link {
+    color: rgb(42, 31, 32);
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.popular__categories-link:hover {
+    color: red;
+}
+
+.link1, .link3, .link4 {
+    padding-top: 15px;
+}
+
+.link5 {
+    padding-top: 5px;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    position: absolute;
+    top: 50%;
+} 
+.swiper-button-prev {
+    left: 0px;
+    z-index: 10;
+}
+
+.swiper-button-next {
+    right: 10px;
+} 
 
 .conteiner {
     max-width: 1440px;
@@ -284,6 +393,10 @@ header button {
     display: none;
 }
 
+.swiper-button-next::after {
+    display: none;
+}
+
 .wrapper-card-services {
     width: 1225px;
     display: flex;
@@ -327,8 +440,6 @@ header button {
     line-height: 24px;
 }
 
-
-
 .price-old {
     color: rgb(140, 140, 140);
     font-size: 14px;
@@ -343,8 +454,6 @@ header button {
     font-weight: 600;
     line-height: 24px;
 }
-
-
 
 .services-card-wrapper-title_btn {
     width: 100%;
