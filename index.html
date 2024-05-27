@@ -1,19 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
     <script src="./scripts/service-swiper.js" defer> </script>
+    <script src="./scripts/swiper-black-friday.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./index.css">
     <title>Бренды</title>
 </head>
+
 <body>
     <div class="container">
-        <!-- task-8 -->
+        <div class="swiper swiper-black-friday">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide-black-friday">
+                    <img src="./assets/img/black-friday.png" alt="Скидка черная пятница">
+                </div>
+                <div class="swiper-slide swiper-slide-black-friday">
+                    <img src="./assets/img/black-friday.png" alt="Скидка черная пятница">
+                </div>
+                <div class="swiper-slide swiper-slide-black-friday">
+                    <img src="./assets/img/black-friday.png" alt="Скидка черная пятница">
+                </div>
+                <div class="swiper-slide swiper-slide-black-friday">
+                    <img src="./assets/img/black-friday.png" alt="Скидка черная пятница">
+                </div>
+                <div class="swiper-slide swiper-slide-black-friday">
+                    <img src="./assets/img/black-friday.png" alt="Скидка черная пятница">
+                </div>
+                <div class="swiper-slide swiper-slide-black-friday">
+                    <img src="./assets/img/black-friday.png" alt="Скидка черная пятница">
+                </div>
+                <div class="swiper-slide swiper-slide-black-friday">
+                    <img src="./assets/img/black-friday.png" alt="Скидка черная пятница">
+                </div>
+                <div class="swiper-slide swiper-slide-black-friday">
+                    <img src="./assets/img/black-friday.png" alt="Скидка черная пятница">
+                </div>
+            </div>
+            <div class="swiper-button-prev"><img src="./assets/icons/prev-swiper-services.svg" alt=""></div>
+            <div class="swiper-button-next"><img src="./assets/icons/next-swiper-services.svg" alt=""></div>
+            <div class="swiper-pagination-black-friday"></div>
+        </div>
+
+
+        <!------------------------------- task-8 хиты продаж -------------------------------------------------->
         <section id="hits-sales" class="hits-sales">
             <div class="hits-sales__nav-wrapper">
                 <div class="hits-sales__nav-title-wrapper">
@@ -281,7 +317,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="swiper-pagination"></div>
+                                        <div class="swiper-pagination hits-swiper-pagination"></div>
                                     </div>
                                 </div>
                                 <div class="product-card__bottom">
@@ -354,7 +390,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="swiper-pagination"></div>
+                                        <div class="swiper-pagination hits-swiper-pagination"></div>
                                     </div>
                                 </div>
                                 <div class="product-card__bottom">
@@ -492,7 +528,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="swiper-pagination"></div>
+                                        <div class="swiper-pagination hits-swiper-pagination"></div>
                                     </div>
                                 </div>
                                 <div class="product-card__bottom">
@@ -561,7 +597,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="swiper-pagination"></div>
+                                        <div class="swiper-pagination hits-swiper-pagination"></div>
                                     </div>
                                 </div>
                                 <div class="product-card__bottom">
@@ -634,7 +670,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="swiper-pagination"></div>
+                                        <div class="swiper-pagination hits-swiper-pagination"></div>
                                     </div>
                                 </div>
                                 <div class="product-card__bottom">
@@ -772,7 +808,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="swiper-pagination"></div>
+                                        <div class="swiper-pagination hits-swiper-pagination"></div>
                                     </div>
                                 </div>
                                 <div class="product-card__bottom">
@@ -841,7 +877,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="swiper-pagination"></div>
+                                        <div class="swiper-pagination hits-swiper-pagination"></div>
                                     </div>
                                 </div>
                                 <div class="product-card__bottom">
@@ -876,13 +912,13 @@
                     </div>
                 </div>
                 <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev--hits"><img src=".//assets/icons/стрелка влево.svg" alt="button pref">
+                <div class="swiper-button-prev hits-swiper__button-prev"><img src=".//assets/icons/стрелка влево.svg" alt="button pref">
                 </div>
-                <div class="swiper-button-next--hits"><img src=".//assets/icons/стрелка вправо.svg" alt="button next">
+                <div class="swiper-button-next hits-swiper__button-next"><img src=".//assets/icons/стрелка вправо.svg" alt="button next">
                 </div>
             </div>
         </section>
-        <!-- конец моей секции-->
+        <!------------------------------------- end task8 хиты продаж------------------------------------------------->
         <div class="services">
             <div class="services-wrapper-header">
                 <h2 class="services-heading">
@@ -1597,3 +1633,5 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./scripts/swiper-hit-sales.js"></script>
 </body>
+</html>
+

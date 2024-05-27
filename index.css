@@ -9,7 +9,33 @@
   max-width: 1440px;
   margin: 0 auto;
 }
-/************** task-8 *****************/
+.swiper-black-friday {
+  min-width: 0;
+  max-width: 1258px;
+}
+
+.swiper-slide-black-friday {
+  text-align: center;
+}
+
+.swiper-pagination-black-friday {
+  text-align: center;
+}
+
+.swiper-pagination-black-friday span {
+  width: 30px;
+  height: 3px;
+  border-radius: 0px;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: auto;
+}
+
+.swiper-pagination-bullet-active-pagination-black-friday {
+  background-color: rgb(251, 15, 64);
+}
+/****************************** task-8 ***************************************/
 .hits-sales {
   background: rgb(255, 255, 255);
   margin: 60px 100px 0 100px;
@@ -67,23 +93,23 @@
   width: 100%;
   overflow: hidden;
 }
-.swiper-button-next--hits {
-  position: absolute;
-  right: -5px;
-  top: calc(50% - 15px);
-  z-index: 10;
-  cursor: pointer;
-}
-.swiper-button-prev--hits {
+.hits-swiper__button-prev {
   position: absolute;
   left: -5px;
-  top: calc(50% - 15px);
+  top: calc(50%);
   z-index: 10;
   cursor: pointer;
 }
-.swiper-pagination {
+.hits-swiper__button-next {
   position: absolute;
-  bottom: -1px;
+  right: -5px;
+  top: calc(50%);
+  z-index: 10;
+  cursor: pointer;
+}
+.hits-swiper-pagination {
+  position: absolute;
+  bottom: -15px;
   left: 0;
   width: 100%;
   text-align: left;
@@ -106,7 +132,7 @@
 }
 .product-card__top {
   overflow: hidden;
-  flex: 0 0 215px;
+  flex: 0 0 245px;
 }
 .product-card {
   width: 287px;
@@ -147,8 +173,9 @@
 }
 .product-rating__wrapper {
   display: flex;
-  margin-top: 50px;
+  margin-top: 13px;
   align-items: center;
+  margin-bottom: 10px;
 }
 .rating__icon-wrapper {
   width: 15px;
@@ -160,7 +187,6 @@
   font-weight: 600;
   line-height: 17px;
   margin-left: 2px;
-  margin-bottom: 10px;
 }
 .product__title {
   color: rgb(42, 31, 32);
@@ -213,7 +239,7 @@ background:rgb(210, 3, 44); ;
   cursor: pointer;
   background-color: transparent;
 }
-/*************** task8-end *****************/
+/**************************** task8-end ***********************************/
 .services {
     position: relative;
     max-width: 100%;

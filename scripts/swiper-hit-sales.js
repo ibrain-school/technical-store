@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
 const swiperCard = new Swiper('.swiper-card', {
    
     navigation: {
-      nextEl: '.swiper-button-next--hits',
-      prevEl: '.swiper-button-prev--hits',
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
       clickable: false,
     },
     speed: 700,
