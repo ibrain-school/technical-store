@@ -5,11 +5,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
 .swiper-black-friday {
     min-width: 0;
     max-width: 1258px;
+    margin-top: 62px;
 }
 
 .swiper-slide-black-friday {
