@@ -8,7 +8,6 @@
         clickable: true,
       },
       speed:1500,
-      effect:'fade',
   
       // Navigation arrows
       navigation: {
