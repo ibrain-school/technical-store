@@ -1,0 +1,19 @@
+.yandex_map {
+    display: flex;
+    justify-content: center;
+}
+
+#map {
+    width: 100%;
+    max-width: 1250px; 
+    height: 555px;
+}
+
+.ymaps-2-1-79-logo {
+    display: none !important;
+}
+
+/* Скрытие ссылки "Создать свою карту" */
+.ymaps-2-1-79-copyrights-pane {
+    display: none !important;
+}
