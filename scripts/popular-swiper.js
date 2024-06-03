@@ -1,5 +1,5 @@
 document.addEventListener ('DOMContentLoaded', function(){
-    const swiper = new Swiper('.swiper', {
+    const swiper = new Swiper('.popular__categories-wrapper', {
         loop: true,
         slidesPerView: 6,
         initialSlide: 1, 
