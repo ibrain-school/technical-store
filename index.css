@@ -1077,3 +1077,108 @@ background:rgb(210, 3, 44); ;
     max-width: 242px;
     position: relative;
 }
+
+#block {
+  max-width: 1240px;
+  padding: 7px 10px 15px 10px;
+  margin: 65px 85px 0 100px;
+}
+
+.block__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.block__header-title {
+  color: rgb(42, 31, 32);
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.block__btn {
+  box-sizing: border-box;
+  border: 1px solid rgb(188, 188, 188);
+  border-radius: 3px;
+  padding: 7px 22px;
+}
+
+.block__btn:hover {
+  background-color: white;
+}
+
+.block__main {
+  max-width: 100%;
+}
+
+.block__swiper {
+  position: relative;
+  min-width: 0;
+}
+
+.block__wrapper {
+  transition: all 2s ease-in-out 0s;
+  display: flex;
+  padding-right: 9px;
+  gap: 5px;
+}
+
+.block__slider-card {
+  border-radius: 10px;   
+  box-shadow: 0px 2px 7.8px 0px rgba(0, 0, 0, 0.15);
+  background: rgb(255, 255, 255);
+  margin-bottom: 10px;
+}
+
+.block__card-img {
+  border-radius: 10px 10px 0 0;
+  padding-left: 10px;
+}
+
+.block__card-info {
+  padding: 0 0 15px 15px;
+}
+
+.block__card-date {
+  color: rgb(89, 89, 89);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  margin-bottom: 5px;
+}
+
+.block__card-desc {
+  color: rgb(42, 31, 32);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 21px;
+  margin-bottom: 10px;
+}
+
+.block__card-text {
+  color: rgb(42, 31, 32);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  position: absolute;
+  top: 50%;
+}
+
+.swiper-button-prev {
+  left: -2px;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-next {
+  right: -9px;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
