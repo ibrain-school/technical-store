@@ -32,15 +32,26 @@ document.querySelector('#btn-1').style.maxHeight = document.querySelector('#btn-
 
 // показать все
 const subMenuBtn = document.querySelector('.sub-list-btn');
-const subListItem = document.querySelectorAll('.sub-list-item');
+const subListItem = document.querySelectorAll('.sub-list-item-hide');
+const hideMenuBtn = document.querySelector('.sub-list-btn-hide')
 subMenuBtn.addEventListener('click', function () {
     for (item of subListItem) {
         item.style.display = 'block'
     }
     subMenuBtn.style.display = 'none';
 })
+// скрыть
+hideMenuBtn.addEventListener('click', function () {
+    for (item of subListItem) {
+        item.style.display = 'none'
+    }
+    subMenuBtn.style.display = 'block';
+})
+
+
 const subMenuBtn1 = document.querySelector('.sub-list-btn1');
-const subListItem1 = document.querySelectorAll('.sub-list-item1');
+const subListItem1 = document.querySelectorAll('.sub-list-item1-hide');
+const hideMenuBtn1 = document.querySelector('.sub-list-btn1-hide')
 subMenuBtn1.addEventListener('click', function () {
     for (item of subListItem1) {
         item.style.display = 'block'
@@ -48,3 +59,9 @@ subMenuBtn1.addEventListener('click', function () {
     subMenuBtn1.style.display = 'none';
 })
 
+hideMenuBtn1.addEventListener('click', function () {
+    for (item of subListItem1) {
+        item.style.display = 'none'
+    }
+    subMenuBtn1.style.display = 'block';
+})

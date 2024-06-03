@@ -269,11 +269,12 @@ header button {
   color: rgb(42, 31, 32);
 }
 
-.sub-list-item:not(:nth-child(-n + 11)) {
+
+.sub-list-item-hide {
   display: none;
 }
 
-.sub-list-item1:not(:nth-child(-n + 11)) {
+.sub-list-item1-hide {
   display: none;
 }
 
