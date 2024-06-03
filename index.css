@@ -193,8 +193,8 @@ header button {
 }
 
 .accordion__menu-item:after {
-  position: absolute;
   content: "";
+  position: absolute;
   display: block;
   border: solid black;
   border-width: 0 3px 3px 0;
