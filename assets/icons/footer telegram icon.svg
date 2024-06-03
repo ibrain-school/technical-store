@@ -1,0 +1,25 @@
+<svg width="37.000000" height="37.000000" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip223_3843">
+			<rect id="Telegram_2019_Logo 1" width="23.000000" height="23.000000" transform="translate(7.000000 7.000000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<clipPath id="clip223_3842">
+			<rect id="Frame 1912" rx="10.000000" width="37.000000" height="37.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<linearGradient x1="18.495209" y1="7.000000" x2="18.495209" y2="29.827570" id="paint_linear_223_3844_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#2AABEE"/>
+			<stop offset="1.000000" stop-color="#229ED9"/>
+		</linearGradient>
+	</defs>
+	<rect id="Frame 1912" rx="10.000000" width="37.000000" height="37.000000" fill="#FFFFFF" fill-opacity="1.000000"/>
+	<g clip-path="url(#clip223_3842)">
+		<rect id="Telegram_2019_Logo 1" width="23.000000" height="23.000000" transform="translate(7.000000 7.000000)" fill="#FFFFFF" fill-opacity="0"/>
+		<g clip-path="url(#clip223_3843)">
+			<path id="Vector" d="M30 18.5C30 24.85 24.85 30 18.5 30C12.15 30 7 24.85 7 18.5C7 12.15 12.15 7 18.5 7C24.85 7 30 12.15 30 18.5Z" fill="url(#paint_linear_223_3844_0)" fill-opacity="1.000000" fill-rule="evenodd"/>
+			<path id="Vector" d="M12.2 18.38C15.55 16.92 17.78 15.95 18.9 15.48C22.09 14.15 22.76 13.92 23.19 13.91C23.29 13.91 23.5 13.93 23.64 14.05C23.76 14.14 23.79 14.27 23.81 14.36C23.83 14.46 23.84 14.66 23.83 14.81C23.65 16.63 22.91 21.05 22.52 23.08C22.36 23.94 22.04 24.23 21.74 24.26C21.07 24.31 20.56 23.82 19.92 23.39C18.9 22.73 18.34 22.32 17.35 21.67C16.21 20.92 16.95 20.51 17.6 19.84C17.77 19.67 20.71 16.99 20.77 16.75C20.78 16.72 20.78 16.6 20.71 16.55C20.65 16.49 20.55 16.51 20.47 16.53C20.37 16.55 18.76 17.62 15.63 19.74C15.17 20.05 14.75 20.2 14.38 20.2C13.97 20.19 13.18 19.97 12.59 19.77C11.87 19.54 11.3 19.42 11.34 19.02C11.37 18.81 11.66 18.6 12.2 18.38Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+		</g>
+	</g>
+</svg>

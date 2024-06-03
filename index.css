@@ -897,3 +897,126 @@ background:rgb(210, 3, 44); ;
     max-width: 242px;
     position: relative;
 }
+
+#footer-tecnical-store {
+  background-color: rgb(232, 232, 232);
+  padding: 40px 0 40px 0;
+  margin-top: 100px;
+}
+
+.footer_top {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-company {
+  margin-right: 74px;
+}
+
+.about-buyers {
+  margin-right: 55px;
+}
+
+.client-connection {
+  margin-right: 93px;
+}
+
+.inform-company-list {
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+  margin-bottom: 81px;
+}
+
+.inform-company-list a {
+  color: rgb(42, 31, 32);
+  font-size: 15px;
+}
+
+.inform-company-list img {
+  margin-right: 12px;
+
+}
+
+.title-inform-company {
+  font-size: 15px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.subscribe {
+  width: 393px;
+}
+
+.subscribe__title {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.subscribe__input {
+  padding: 10px 0px 10px 15px;
+  border-radius: 10px 0px 0px 10px;
+  border: none;
+  outline: none;
+  width: 256px;
+  margin-bottom: 15px;
+}
+
+.subscribe__btn {
+ margin-left: -4px;
+ padding: 10px 23px;
+ border: none;
+ background: rgb(251, 15, 64);
+ color: rgb(255, 255, 255);
+ border-radius: 0px 10px 10px 0px;
+}
+
+.subscribe__agreement {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.subscribe__list {
+  margin-top: 30px;
+}
+
+.subscribe__agreement a {
+  color: rgb(251, 15, 64);
+}
+
+.subscribe__list h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.subscribe__list ul {
+  display: flex;
+  gap:15px
+}
+
+.payment {
+  margin-top: 30px;
+}
+
+.payment__title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.payment__list {
+  margin-top: 15px;
+}
+
+.c {
+  color: rgb(100, 100, 100);
+  font-size: 15px;
+  font-weight: 400;
+}
