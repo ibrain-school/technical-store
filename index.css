@@ -537,256 +537,180 @@ background:rgb(210, 3, 44); ;
 /* start 9 task */
 .container-season__product {
   padding: 60px 110px 0px 90px;
-  
 }
-
 .season-product__head {
   display: grid;
   grid-template-columns: 239px 1fr;
   column-gap: 85px;
-
 }
-
 .season-product__head-title {
   color: rgb(42, 31, 32);
-font-family: Montserrat;
-font-size: 25px;
-font-weight: 600;
-line-height: 30px;
-letter-spacing: 0%;
-text-align: left;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
 }
-
 .season-product__head-button {
   color: rgb(42, 31, 32);
-font-family: Montserrat;
-font-size: 14px;
-font-weight: 500;
-line-height: 17px;
-letter-spacing: 0%;
-text-align: left;
-padding: 7px 12px ;
-border: none;
-border-radius: 3px ;
-background-color: (244, 244, 244)
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding: 7px 12px ;
+  border: none;
+  border-radius: 3px ;
+  background-color: (244, 244, 244)
 }
-
 .season-product__head-button:focus {
   box-sizing: border-box;
-border: 1px solid rgb(188, 188, 188);
-border-radius: 3px;
-background-color: white;
-
+  border: 1px solid rgb(188, 188, 188);
+  border-radius: 3px;
+  background-color: white;
 }
-
-
-
 /* КАРТОЧКИ */
-
-
-
-.season-card{
+.season-card {
   padding-top: 25px ;
   padding-left: 10px;
   padding-bottom: 0px ;
- 
   display: flex;
   justify-content: space-between;
-  
-  /* grid-template-columns: repeat(4, 1fr);
-  column-gap: 24px; */
-
-  
 }
-
 .season-card__block {
   border: 2px;
   border-radius: 10px;
 /* display: inline-block; */
   box-shadow: 0px 2px 7.8px 0px rgba(0, 0, 0, 0.15);
   background: rgb(255, 255, 255);
-max-width: 287px;
-padding: 12px 15px 21px 15px;}
-
-
+  max-width: 287px;
+  padding: 12px 15px 21px 15px;}
 .season-card__badge {
   color: rgb(255, 255, 255);
-font-family: Montserrat;
-font-size: 13px;
-font-weight: 500;
-line-height: 16px;
-letter-spacing: 0%;
-text-align: left;
-border: 3px ;
-width: 115px;
-
-padding: 3px 5px;
-border-radius: 3px ;
-
-background: rgb(251, 15, 64);
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: left;
+  border: 3px ;
+  width: 115px;
+  padding: 3px 5px;
+  border-radius: 3px ;
+  background: rgb(251, 15, 64);
 }
-
 .season-card__img {
   margin-top: 15px;
-
 }
-
 .season-card__img-mouse {
   margin-left: 39px ;
 }
-
 .season-card__img-group {
   margin-top: 15px;
   margin-left: 10px;
 }
-
-
-
-
-
-
-
-
 .season-card__inform {
   margin-top: 30px;
-  
 }
-
 .season-card__inform-number {
-color: rgb(255, 176, 0);
-font-family: Montserrat;
-font-size: 14px;
-font-weight: 600;
-line-height: 17px;
-letter-spacing: 0%;
-text-align: left;
+  color: rgb(255, 176, 0);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: left;
 }
-
-
 .season-card__inform-text {
   color: rgb(42, 31, 32);
-font-family: Montserrat;
-font-size: 17px;
-font-weight: 600;
-line-height: 21px;
-letter-spacing: 0%;
-text-align: left;
-width: 257px;
+  font-family: Montserrat;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 257px;
 }
-
-
-
-
-
 .season-card__price {
   margin-top: 16px;
 }
-
 .season-card__price-new {
   color: rgb(251, 15, 64);
-font-family: Montserrat;
-font-size: 20px;
-font-weight: 600;
-line-height: 24px;
-letter-spacing: 0%;
-text-align: left;
-
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
 }
-
 .season-card__price-old {
-
   color: rgb(140, 140, 140);
-font-family: Montserrat;
-font-size: 14px;
-font-weight: 400;
-line-height: 17px;
-letter-spacing: 0%;
-text-align: left;
-margin-left: 5px;
-text-decoration: line-through;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-left: 5px;
+  text-decoration: line-through;
 }
-
 .season-card__price-img {
   position: absolute;
- 
-width: 53px;
-height: 1px;
-left: 201px;
-top: 487px;
-
+  width: 53px;
+  height: 1px;
+  left: 201px;
+  top: 487px;
 }
-
-
-
 .season-card__basket {
   margin-top: 12px;
-  /* display: flex; */
 }
-
 .season-card__basket-button {
-  padding: 10px 0px;
-  border-radius: 10px;
-
-box-shadow: 0px 6px 14.4px 0px rgba(220, 9, 46, 0.15);
-background: rgb(251, 15, 64);
-border: none;
-color: rgb(255, 255, 255);
-font-family: Montserrat;
-font-size: 14px;
-font-weight: 500;
-line-height: 17px;
-width: 100%;
-cursor: pointer;
+  padding:10px;
+  border-radius:10px;
+  box-shadow:0px 6px 14.4px 0px rgba(220, 9, 46, 0.15);
+  background: rgb(251, 15, 64);
+  border:none;
+  color: rgb(255, 255, 255);
+  font-family:Montserrat;
+  font-size:14px;
+  font-weight:500;
+  line-height:17px;
+  width:100%;
+  cursor:pointer;
 }
-
 .season-card__notification {
-  margin-top: 20px;
-  margin-left: 17px ;
-  display: flex;
-  column-gap: 81px;
+  margin-top:20px;
+  margin-left:17px ;
+  display:flex;
+  column-gap:81px;
 }
-
-
 /* SWIPE */
-
 .swiper-wrapper {
-  width: 100%;
-  height: 100%;
+  width:100%;
+  height:100%;
 }
 .swiper-slide {
-  width: 100%;
-  height: 100%;
+  width:100%;
+  height:100%;
 }
-
 .swiper-button-next::after,
 .swiper-button-prev::after {
-display: none;
-
-
+  display:none;
 }
-
-
 .swiper-button__img-prev {
-  position: absolute;
-    top: 50%;
-    z-index: 10;
-
-
-  cursor: pointer;
+  position:absolute;
+  top:50%;
+  z-index:10;
+  cursor:pointer;
 }
-
 .swiper-button__img-next {
-  position: absolute;
-  top: 50%;
-  z-index: 10;
-
-  cursor: pointer;
-
+  position:absolute;
+  top:50%;
+  z-index:10;
+  cursor:pointer;
 }
-
-
-
-
 /* task 9 end */
 .services {
     position: relative;
