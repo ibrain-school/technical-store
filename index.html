@@ -12,6 +12,10 @@
     <script defer src="./scripts/season-product-swiper.js"></script>
     <!-- <script defer src="./scripts.js"></script> -->
     <link rel="stylesheet" href="./index.css">
+    <script defer src="./scripts/popular-swiper.js"></script>
+    <script src="./scripts/modal.js" defer></script>
+    <script src="./scripts/swiper-hit-sales.js" defer></script>
+
     <title>Бренды</title>
 </head>
 <body>
@@ -65,10 +69,10 @@
                         <img src="/assets/icons/Basket.svg" alt="Basket">
                         <span>Корзина</span>
                     </a>
-                    <a href="#">
+                    <button onclick="modalActiv(event)">
                         <img src="/assets/icons/User.svg" alt="User">
                         <span>Войти</span>
-                    </a>
+                    </button>
                 </div>
             </div>
             <div class="header_bottom">
@@ -81,7 +85,27 @@
                 <button type="button" class="header_bottom-btn">Наушники</button>
                 <button type="button" class="header_bottom-btn">Электрочайники</button>
                 <button type="button" class="header_bottom-btn">Вытяжки</button>
-            </div>
+            </div> 
+            <div class="modal-wrap none" onclick="modalActiv(event)">
+                <div class="modal-header" onclick="event.stopPropagation()">
+                    <div class="modal-title">
+                      Вход или регистрация
+                    </div>
+            
+                    <span class="modal-discription">
+                      Введите номер телефона. Мы отправим вам код в СМС.
+                    </span> 
+                    <form class="modal-form"> 
+                      <input class="modal-input" type="text" placeholder="Номер телефона" maxlength="18" name="input-modal"> 
+            
+                      <button class="modal-input-btn">регистрация</button> 
+                    </form>
+                    
+                    <button onclick="modalActiv(event)" class="modal-cross">
+                      <img src="./assets/icons/modal-cross-icon.svg" alt="">
+                    </button>
+                </div>
+              </div>
         </header>
         <div class="swiper swiper-black-friday">
             <div class="swiper-wrapper">
@@ -103,18 +127,11 @@
                 <div class="swiper-slide swiper-slide-black-friday">
                     <img src="./assets/img/black-friday.png" alt="Скидка черная пятница">
                 </div>
-                <div class="swiper-button-prev"><img src="./assets/icons/prev-swiper-services.svg" alt=""></div>
-                <div class="swiper-button-next"><img src="./assets/icons/next-swiper-services.svg" alt=""></div>
-                <div class="swiper-pagination-black-friday"></div>
             </div>
-            </div>
-            <div class="swiper-button-prev">
-              <img src="./assets/icons/prev-swiper-services.svg" alt="">
-          </div>
-            <div class="swiper-button-next">
-              <img src="./assets/icons/next-swiper-services.svg" alt="">
-          </div>
+            <div class="swiper-button-prev"><img src="./assets/icons/prev-swiper-services.svg" alt=""></div>
+            <div class="swiper-button-next"><img src="./assets/icons/next-swiper-services.svg" alt=""></div>
             <div class="swiper-pagination-black-friday"></div>
+        </div>
        <main>
             <section id="popular__categories">
                 <h2 class="popular__categories-title">Популярные категории</h2>
@@ -1626,441 +1643,226 @@
                 <div class="services-wrapper-header">
                     <h2 class="services-heading">
                         Сервисы
-                    </h2>
+                    </h2>  
                     <div class="services-nav-wrapper">
                         <button class="services-header-btn">Все</button>
                         <button class="services-header-btn">Для компьютеров</button>
                         <button class="services-header-btn">Для телевизоров</button>
                         <button class="services-header-btn">Для смартфонов/планшетов</button>
                         <button class="services-header-btn">Установка техники</button>
-                    </div>
+                    </div> 
                 </div>
                 <div class="swiper-services">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide swiper-slide-services">
-                            <div class="wrapper-card-services">
-                                <div class="services-card">
-                                    <div class="services-card-wrapper-img">
-                                        <div class="swiper-wrap-img">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                </div>
-                                            </div>
-                                            <div class="swiper-pagination"></div>
+                      <!-- Slides -->
+                      <div class="swiper-slide swiper-slide-services">
+                        <div class="wrapper-card-services">
+                        <div class="services-card">
+                            <div class="services-card-wrapper-img">
+                                <div class="swiper-wrap-img">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="./assets/img/tavar-services.png" alt="tavar-services">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./assets/img/tavar-services.png" alt="tavar-services">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./assets/img/tavar-services.png" alt="tavar-services">
                                         </div>
                                     </div>
-                                    <div class="services-card-wrapper-title">
-                                        <div class="services-card-wrapper__raiting">
-                                            <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
-                                            <span class="services-card-wrapper__raiting--span">5.0</span>
-                                        </div>
-                                        <div class="services-card-wrapper-title_description">
-                                            Настройка SMART TV
-                                        </div>
-                                        <div class="services-card-wrapper-title_price">
-                                            <span class="price-new">
-                                                1300 &#x20bd;
-                                            </span>
-                                          <div class="price-old">
-                                                3000 ₽
-                                            </div>
-                                        </div>
-                                        <button class="services-card-wrapper-title_btn">
-                                            В корзину
-                                        </button>
-                                        <div class="services-card-wrapper-contein-btn">
-                                            <button>
-                                                <img src="./assets/icons/like-btn-service.svg" alt="like">
-                                            </button>
-                                            <button>
-                                                <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
-                                            </button>
-                                            <button>
-                                                <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
-                                            </button>
-                                            <button>
-                                                <img src="./assets/icons/bell-btn-service.svg" alt="bell">
-                                            </button>
-                                        </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                            <div class="services-card-wrapper-title">
+                                <div class="services-card-wrapper__raiting">
+                                    <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
+                                    <span class="services-card-wrapper__raiting--span">5.0</span>
+                                </div>
+                                <div class="services-card-wrapper-title_description"> 
+                                    Настройка SMART TV
+                                </div>
+                                <div class="services-card-wrapper-title_price">
+                                    <span class="price-new">
+                                        1300 &#x20bd;
+                                    </span>
+                                    <div class="price-old">
+                                        3000 ₽  
                                     </div>
                                 </div>
-                                <div class="services-card">
-                                    <div class="services-card-wrapper-img">
-                                        <div class="swiper-wrap-img">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                </div>
-                                            </div>
-                                            <div class="swiper-pagination"></div>
-                                        </div>
-                                    </div>
-                                    <div class="services-card-wrapper-title">
-                                    <div class="services-card-wrapper__raiting">
-                                            <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
-                                            <span class="services-card-wrapper__raiting--span">5.0</span>
-                                        </div>
-                                        <div class="services-card-wrapper-title_description">
-                                            Настройка SMART TV
-                                        </div>
-                                        <div class="services-card-wrapper-title_price">
-                                            <span class="price-new">
-                                                1300 &#x20bd;
-                                            </span>
-                                            <div class="price-old">
-                                                3000 ₽
-                                            </div>
-                                        </div>
-                                        <button class="services-card-wrapper-title_btn">
-                                            В корзину
-                                        </button>
-                                        <div class="services-card-wrapper-contein-btn">
-                                            <button>
-                                                <img src="./assets/icons/like-btn-service.svg" alt="like">
-                                            </button>
-                                            <button>
-                                                <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
-                                            </button>
-                                            <button>
-                                                <img src="./assets/icons/bell-btn-service.svg" alt="bell">
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="services-card">
-                                    <div class="services-card-wrapper-img">
-                                        <div class="swiper-wrap-img">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                </div>
-                                            </div>
-                                            <div class="swiper-pagination"></div>
-                                        </div>
-                                    </div>
-                                    <div class="services-card-wrapper-title">
-                                        <div class="services-card-wrapper__raiting">
-                                            <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
-                                            <span class="services-card-wrapper__raiting--span">5.0</span>
-                                        </div>
-                                        <div class="services-card-wrapper-title_description">
-                                            Настройка SMART TV
-                                        </div>
-                                        <div class="services-card-wrapper-title_price">
-                                            <span class="price-new">
-                                                1300 &#x20bd;
-                                            </span>
-                                            <div class="price-old">
-                                                3000 ₽
-                                            </div>
-                                        </div>
-                                        <button class="services-card-wrapper-title_btn">
-                                            В корзину
-                                        </button>
-                                        <div class="services-card-wrapper-contein-btn">
-                                            <button>
-                                                <img src="./assets/icons/like-btn-service.svg" alt="like">
-                                            </button>
-                                              <button>
-                                                <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
-                                            </button>
-                                            <button>
-                                                <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
-                                            </button>
-                                            <button>
-                                                <img src="./assets/icons/bell-btn-service.svg" alt="bell">
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="services-card">
-                                    <div class="services-card-wrapper-img">
-                                        <div class="swiper-wrap-img">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                </div>
-                                            </div>
-                                            <div class="swiper-pagination"></div>
-                                        </div>
-                                    </div>
-                                    <div class="services-card-wrapper-title">
-                                        <div class="services-card-wrapper__raiting">
-                                            <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
-                                            <span class="services-card-wrapper__raiting--span">5.0</span>
-                                        </div>
-                                        <div class="services-card-wrapper-title_description">
-                                            Настройка SMART TV
-                                        </div>
-                                        <div class="services-card-wrapper-title_price">
-                                            <span class="price-new">
-                                                1300 &#x20bd;
-                                            </span>
-                                            <div class="price-old">
-                                                3000 ₽
-                                            </div>
-                                        </div>
-                                        <button class="services-card-wrapper-title_btn">
-                                            В корзину
-                                        </button>
-                                        <div class="services-card-wrapper-contein-btn">
-                                            <button>
-                                                <img src="./assets/icons/like-btn-service.svg" alt="like">
-                                            </button>
-        
-                                            <button>
-                                                <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
-                                            </button>
-        
-                                            <button>
-                                                <img src="./assets/icons/bell-btn-service.svg" alt="bell">
-                                            </button>
-                                        </div>
-                                    </div>
+                                <button class="services-card-wrapper-title_btn">
+                                    В корзину
+                                </button>
+                                <div class="services-card-wrapper-contein-btn">
+                                    <button>
+                                       <img src="./assets/icons/like-btn-service.svg" alt="like">
+                                    </button>
+                                    <button>
+                                        <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
+                                    </button>
+                                    <button>
+                                      <img src="./assets/icons/bell-btn-service.svg" alt="bell">
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide swiper-slide-services">
-                            <div class="wrapper-card-services">
-                                <div class="services-card">
-                                    <div class="services-card-wrapper-img">
-                                        <div class="swiper-wrap-img">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                </div>
-                                            </div>
-                                            <div class="swiper-pagination"></div>
+                        <div class="services-card">
+                            <div class="services-card-wrapper-img">
+                                <div class="swiper-wrap-img" >
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="./assets/img/tavar-services.png" alt="tavar-services">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./assets/img/tavar-services.png" alt="tavar-services">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./assets/img/tavar-services.png" alt="tavar-services">
                                         </div>
                                     </div>
-                                    <div class="services-card-wrapper-title">
-                                        <div class="services-card-wrapper__raiting">
-                                            <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
-                                            <span class="services-card-wrapper__raiting--span">5.0</span>
-                                        </div>
-                                        <div class="services-card-wrapper-title_description">
-                                            Настройка SMART TV
-                                        </div>
-                                        <div class="services-card-wrapper-title_price">
-                                            <span class="price-new">
-                                                1300 &#x20bd;
-                                            </span>
-                                            <div class="price-old">
-                                                3000 ₽
-                                            </div>
-                                        </div>
-                                        <button class="services-card-wrapper-title_btn">
-                                            В корзину
-                                        </button>
-                                        <div class="services-card-wrapper-contein-btn">
-                                            <button>
-                                                <img src="./assets/icons/like-btn-service.svg" alt="like">
-                                            </button>
-                                            <button>
-                                                <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
-                                            </button>
-                                            <button>
-                                                <img src="./assets/icons/bell-btn-service.svg" alt="bell">
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="services-card">
-                                    <div class="services-card-wrapper-img">
-                                        <div class="swiper-wrap-img">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                </div>
-                                            </div>
-                                            <div class="swiper-pagination"></div>
-                                        </div>
-                                    </div>
-                                    <div class="services-card-wrapper-title">
-                                        <div class="services-card-wrapper__raiting">
-                                            <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
-                                            <span class="services-card-wrapper__raiting--span">5.0</span>
-                                        </div>
-                                        <div class="services-card-wrapper-title_description">
-                                            Настройка SMART TV
-                                        </div>
-                                        <div class="services-card-wrapper-title_price">
-                                            <span class="price-new">
-                                                1300 &#x20bd;
-                                            </span>
-                                            <div class="price-old">
-                                                3000 ₽
-                                            </div>
-                                        </div>
-                                        <button class="services-card-wrapper-title_btn">
-                                            В корзину
-                                        </button>
-                                        <div class="services-card-wrapper-contein-btn">
-                                            <button>
-                                                <img src="./assets/icons/like-btn-service.svg" alt="like">
-                                            </button>
-                                            <button>
-                                                <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
-                                            </button>
-                                            <button>
-                                                <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
-                                            </button>
-                                            <button>
-                                                <img src="./assets/icons/bell-btn-service.svg" alt="bell">
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="services-card">
-                                    <div class="services-card-wrapper-img">
-                                        <div class="swiper-wrap-img">
-                                        <div class=" swiper-wrapper">
-                                        <div class="swiper-wrap-img">
-                                    <div class=" swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-pagination"></div>
-                                    </div>
-                                </div>
-                                <div class="services-card-wrapper-title">
-                                    <div class="services-card-wrapper__raiting">
-                                        <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
-                                        <span class="services-card-wrapper__raiting--span">5.0</span>
-                                    </div>
-                                    <div class="services-card-wrapper-title_description">
-                                        Настройка SMART TV
-                                    </div>
-                                    <div class="services-card-wrapper-title_price">
-                                        <span class="price-new">
-                                            1300 &#x20bd;
-                                        </span>
-                                        <div class="price-old">
-                                            3000 ₽
-                                        </div>
-                                    </div>
-                                    <button class="services-card-wrapper-title_btn">
-                                        В корзину
-                                    </button>
-                                    <div class="services-card-wrapper-contein-btn">
-                                        <button>
-                                            <img src="./assets/icons/like-btn-service.svg" alt="like">
-                                        </button>
-                                        <button>
-                                            <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
-                                        </button>
-                                        <button>
-                                            <img src="./assets/icons/bell-btn-service.svg" alt="bell">
-                                        </button>
-                                    </div>
+                                    <div class="swiper-pagination"></div>
                                 </div>
                             </div>
-                            <div class="services-card">
-                                <div class="services-card-wrapper-img">
-                                    <div class="swiper-wrap-img">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                            </div>
+                            <div class="services-card-wrapper-title">
+                                <div class="services-card-wrapper__raiting">
+                                    <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
+                                    <span class="services-card-wrapper__raiting--span">5.0</span>
+                                </div>
+                                <div class="services-card-wrapper-title_description"> 
+                                    Настройка SMART TV
+                                </div>
+                                <div class="services-card-wrapper-title_price">
+                                    <span class="price-new">
+                                        1300 &#x20bd;
+                                    </span>
+                                    <div class="price-old">
+                                        3000 ₽  
+                                        <div>
                                         </div>
-                                        <div class="swiper-pagination"></div>
                                     </div>
                                 </div>
-                                <div class="services-card-wrapper-title">
-                                   <div class="services-card-wrapper__raiting">
-                                        <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
-                                        <span class="services-card-wrapper__raiting--span">5.0</span>
-                                    </div>
-                                    <div class="services-card-wrapper-title_description">
-                                        Настройка SMART TV
-                                    </div>
-                                    <div class="services-card-wrapper-title_description">
-                                        Настройка SMART TV
-                                    </div>
-                                    <div class="services-card-wrapper-title_price">
-                                        <span class="price-new">
-                                            1300 &#x20bd;
-                                        </span>
-                                        <div class="price-old">
-                                            3000 ₽
-                                        </div>
-                                    </div>
-                                    <button class="services-card-wrapper-title_btn">
-                                        В корзину
+                                <button class="services-card-wrapper-title_btn">
+                                    В корзину
+                                </button>
+                                <div class="services-card-wrapper-contein-btn">
+                                    <button>
+                                       <img src="./assets/icons/like-btn-service.svg" alt="like">
                                     </button>
-                                    <div class="services-card-wrapper-contein-btn">
-                                        <button>
-                                            <img src="./assets/icons/like-btn-service.svg" alt="like">
-                                        </button>
-                                      <button>
-                                            <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
-                                        </button>
-                                      <button>
-                                            <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
-                                        </button>
-                                        <button>
-                                            <img src="./assets/icons/bell-btn-service.svg" alt="bell">
-                                        </button>
-                                    </div>
+                                    <button>
+                                        <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
+                                    </button>
+                                    <button>
+                                      <img src="./assets/icons/bell-btn-service.svg" alt="bell">
+                                    </button>
                                 </div>
                             </div>
-                                  </div>
-                    </div>
+                        </div>
+                        <div class="services-card">
+                            <div class="services-card-wrapper-img">
+                                <div class="swiper-wrap-img">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="./assets/img/tavar-services.png" alt="tavar-services">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./assets/img/tavar-services.png" alt="tavar-services">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./assets/img/tavar-services.png" alt="tavar-services">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                            <div class="services-card-wrapper-title">
+                                <div class="services-card-wrapper__raiting">
+                                    <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
+                                    <span class="services-card-wrapper__raiting--span">5.0</span>
+                                </div>
+                                <div class="services-card-wrapper-title_description"> 
+                                    Настройка SMART TV
+                                </div>
+                                <div class="services-card-wrapper-title_price">
+                                    <span class="price-new">
+                                        1300 &#x20bd;
+                                    </span>
+                                    <div class="price-old">
+                                        3000 ₽  
+                                        <div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="services-card-wrapper-title_btn">
+                                    В корзину
+                                </button>
+                                <div class="services-card-wrapper-contein-btn">
+                                    <button>
+                                       <img src="./assets/icons/like-btn-service.svg" alt="like">
+                                    </button>
+                                    <button>
+                                        <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
+                                    </button>
+                                    <button>
+                                      <img src="./assets/icons/bell-btn-service.svg" alt="bell">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services-card">
+                            <div class="services-card-wrapper-img">
+                                <div class="swiper-wrap-img">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="./assets/img/tavar-services.png" alt="tavar-services">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./assets/img/tavar-services.png" alt="tavar-services">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./assets/img/tavar-services.png" alt="tavar-services">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                            <div class="services-card-wrapper-title">
+                                <div class="services-card-wrapper__raiting">
+                                    <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
+                                    <span class="services-card-wrapper__raiting--span">5.0</span>
+                                </div>
+                                <div class="services-card-wrapper-title_description"> 
+                                    Настройка SMART TV
+                                </div>
+                                <div class="services-card-wrapper-title_price">
+                                    <span class="price-new">
+                                        1300 &#x20bd;
+                                    </span>
+                                    <div class="price-old">
+                                        3000 ₽  
+                                        <div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="services-card-wrapper-title_btn">
+                                    В корзину
+                                </button>
+                                <div class="services-card-wrapper-contein-btn">
+                                    <button>
+                                       <img src="./assets/icons/like-btn-service.svg" alt="like">
+                                    </button>
+                                    <button>
+                                        <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
+                                    </button>
+                                    <button>
+                                      <img src="./assets/icons/bell-btn-service.svg" alt="bell">
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="swiper-slide swiper-slide-services">
+                </div>
+                      <div class="swiper-slide swiper-slide-services">
                         <div class="wrapper-card-services">
                             <div class="services-card">
                                 <div class="services-card-wrapper-img">
@@ -2084,7 +1886,7 @@
                                         <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
                                         <span class="services-card-wrapper__raiting--span">5.0</span>
                                     </div>
-                                    <div class="services-card-wrapper-title_description">
+                                    <div class="services-card-wrapper-title_description"> 
                                         Настройка SMART TV
                                     </div>
                                     <div class="services-card-wrapper-title_price">
@@ -2092,153 +1894,81 @@
                                             1300 &#x20bd;
                                         </span>
                                         <div class="price-old">
-                                            3000 ₽
-                                        </div>
-                                    </div>
-        
-                                    <button class="services-card-wrapper-title_btn">
-                                        В корзину
-                                    </button>
-                                    <button class="services-card-wrapper-title_btn">
-                                        В корзину
-                                    </button>
-                                    <div class="services-card-wrapper-contein-btn">
-                                        <button>
-                                            <img src="./assets/icons/like-btn-service.svg" alt="like">
-                                        </button>
-        
-                                        <button>
-                                            <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
-                                        </button>
-        
-                                        <button>
-                                            <img src="./assets/icons/bell-btn-service.svg" alt="bell">
-                                        </button>
-                                    </div>
-        
-        
-                                </div>
-                            </div>
-                            <div class="services-card">
-                                <div class="services-card-wrapper-img">
-                                    <div class="swiper-wrap-img">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-pagination"></div>
-                                    </div>
-                                </div>
-                                <div class="services-card-wrapper-title">
-        
-                                    <div class="services-card-wrapper__raiting">
-                                        <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
-                                        <span class="services-card-wrapper__raiting--span">5.0</span>
-                                    </div>
-        
-                                    <div class="services-card-wrapper-title_description">
-                                        Настройка SMART TV
-                                    </div>
-                                    <div class="services-card-wrapper-title_price">
-                                        <span class="price-new">
-                                            1300 &#x20bd;
-                                        </span>
-                                        <div class="price-old">
-                                            3000 ₽
-                                        </div>
-                                    </div>
-        
-                                    <button class="services-card-wrapper-title_btn">
-                                        В корзину
-                                    </button>
-        
-                                    <div class="services-card-wrapper-contein-btn">
-                                        <button>
-                                            <img src="./assets/icons/like-btn-service.svg" alt="like">
-                                        </button>
-        
-                                        <button>
-                                            <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
-                                        </button>
-        
-                                        <button>
-                                            <img src="./assets/icons/bell-btn-service.svg" alt="bell">
-                                        </button>
-                                    </div>
-        
-                                </div>
-                            </div>
-                            <div class="services-card">
-        
-                                <div class="services-card-wrapper-img">
-                                    <div class="swiper-wrap-img">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-pagination"></div>
-                                    </div>
-                                </div>
-        
-                                <div class="services-card-wrapper-title">
-        
-                                    <div class="services-card-wrapper__raiting">
-                                        <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
-                                        <span class="services-card-wrapper__raiting--span">5.0</span>
-                                    </div>
-        
-                                    <div class="services-card-wrapper-title_description">
-                                        Настройка SMART TV
-                                    </div>
-        
-                                    <div class="services-card-wrapper-title_price">
-                                        <span class="price-new">
-                                            1300 &#x20bd;
-                                        </span>
-                                        <div class="price-old">
-                                            3000 ₽
+                                            3000 ₽  
                                             <div>
                                             </div>
                                         </div>
                                     </div>
-        
                                     <button class="services-card-wrapper-title_btn">
                                         В корзину
                                     </button>
-        
                                     <div class="services-card-wrapper-contein-btn">
                                         <button>
-                                            <img src="./assets/icons/like-btn-service.svg" alt="like">
+                                           <img src="./assets/icons/like-btn-service.svg" alt="like">
                                         </button>
-        
                                         <button>
                                             <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
                                         </button>
-        
                                         <button>
-                                            <img src="./assets/icons/bell-btn-service.svg" alt="bell">
+                                          <img src="./assets/icons/bell-btn-service.svg" alt="bell">
                                         </button>
                                     </div>
-        
                                 </div>
                             </div>
                             <div class="services-card">
                                 <div class="services-card-wrapper-img">
-                                    <div class="swiper-wrap-img">
+                                <div class="swiper-wrap-img">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="./assets/img/tavar-services.png" alt="tavar-services">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./assets/img/tavar-services.png" alt="tavar-services">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./assets/img/tavar-services.png" alt="tavar-services">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                                <div class="services-card-wrapper-title">
+                                    <div class="services-card-wrapper__raiting">
+                                        <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
+                                        <span class="services-card-wrapper__raiting--span">5.0</span>
+                                    </div>
+                                    <div class="services-card-wrapper-title_description"> 
+                                        Настройка SMART TV
+                                    </div>
+                                    <div class="services-card-wrapper-title_price">
+                                        <span class="price-new">
+                                            1300 &#x20bd;
+                                        </span>
+                                        <div class="price-old">
+                                            3000 ₽  
+                                            <div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="services-card-wrapper-title_btn">
+                                        В корзину
+                                    </button>
+                                    <div class="services-card-wrapper-contein-btn">
+                                        <button>
+                                           <img src="./assets/icons/like-btn-service.svg" alt="like">
+                                        </button>
+                                        <button>
+                                            <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
+                                        </button>
+                                        <button>
+                                          <img src="./assets/icons/bell-btn-service.svg" alt="bell">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services-card">
+                                <div class="services-card-wrapper-img">
+                                    <div class="swiper-wrap-img"">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
                                                 <img src="./assets/img/tavar-services.png" alt="tavar-services">
@@ -2254,70 +1984,307 @@
                                     </div>
                                 </div>
                                 <div class="services-card-wrapper-title">
-        
                                     <div class="services-card-wrapper__raiting">
                                         <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
                                         <span class="services-card-wrapper__raiting--span">5.0</span>
                                     </div>
-        
-                                    <div class="services-card-wrapper-title_description">
+                                    <div class="services-card-wrapper-title_description"> 
                                         Настройка SMART TV
                                     </div>
-        
                                     <div class="services-card-wrapper-title_price">
                                         <span class="price-new">
                                             1300 &#x20bd;
                                         </span>
                                         <div class="price-old">
-                                            3000 ₽
+                                            3000 ₽  
                                             <div>
                                             </div>
                                         </div>
                                     </div>
-        
-        
                                     <button class="services-card-wrapper-title_btn">
                                         В корзину
                                     </button>
-        
-        
                                     <div class="services-card-wrapper-contein-btn">
                                         <button>
-                                            <img src="./assets/icons/like-btn-service.svg" alt="like">
+                                           <img src="./assets/icons/like-btn-service.svg" alt="like">
                                         </button>
-        
                                         <button>
                                             <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
                                         </button>
-        
                                         <button>
-                                            <img src="./assets/icons/bell-btn-service.svg" alt="bell">
+                                          <img src="./assets/icons/bell-btn-service.svg" alt="bell">
                                         </button>
-        
                                     </div>
-        
-        
                                 </div>
                             </div>
-        
+                            <div class="services-card">
+                                <div class="services-card-wrapper-img">
+                                    <div class="swiper-wrap-img" >
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="./assets/img/tavar-services.png" alt="tavar-services">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/img/tavar-services.png" alt="tavar-services">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/img/tavar-services.png" alt="tavar-services">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="services-card-wrapper-title">
+                                    <div class="services-card-wrapper__raiting">
+                                        <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
+                                        <span class="services-card-wrapper__raiting--span">5.0</span>
+                                    </div>
+                                    <div class="services-card-wrapper-title_description"> 
+                                        Настройка SMART TV
+                                    </div>
+                                    <div class="services-card-wrapper-title_price">
+                                        <span class="price-new">
+                                            1300 &#x20bd;
+                                        </span>
+                                        <div class="price-old">
+                                            3000 ₽  
+                                            <div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="services-card-wrapper-title_btn">
+                                        В корзину
+                                    </button>
+                                    <div class="services-card-wrapper-contein-btn">
+                                        <button>
+                                           <img src="./assets/icons/like-btn-service.svg" alt="like">
+                                        </button>
+                                        <button>
+                                            <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
+                                        </button>
+                                        <button>
+                                          <img src="./assets/icons/bell-btn-service.svg" alt="bell">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                      </div>
+                      <div class="swiper-slide swiper-slide-services">
+                        <div class="wrapper-card-services">
+                            <div class="services-card">
+                                <div class="services-card-wrapper-img">
+                                    <div class="swiper-wrap-img" >
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="./assets/img/tavar-services.png" alt="tavar-services">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/img/tavar-services.png" alt="tavar-services">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/img/tavar-services.png" alt="tavar-services">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="services-card-wrapper-title">
+                                    <div class="services-card-wrapper__raiting">
+                                        <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
+                                        <span class="services-card-wrapper__raiting--span">5.0</span>
+                                    </div>
+                                    <div class="services-card-wrapper-title_description"> 
+                                        Настройка SMART TV
+                                    </div>
+                                    <div class="services-card-wrapper-title_price">
+                                        <span class="price-new">
+                                            1300 &#x20bd;
+                                        </span>
+                                        <div class="price-old">
+                                            3000 ₽  
+                                            <div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="services-card-wrapper-title_btn">
+                                        В корзину
+                                    </button>
+                                    <div class="services-card-wrapper-contein-btn">
+                                        <button>
+                                           <img src="./assets/icons/like-btn-service.svg" alt="like">
+                                        </button>
+                                        <button>
+                                            <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
+                                        </button>
+                                        <button>
+                                          <img src="./assets/icons/bell-btn-service.svg" alt="bell">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services-card">
+                                <div class="services-card-wrapper-img">
+                                    <div class="swiper-wrap-img">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="./assets/img/tavar-services.png" alt="tavar-services">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/img/tavar-services.png" alt="tavar-services">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/img/tavar-services.png" alt="tavar-services">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="services-card-wrapper-title">
+                                    <div class="services-card-wrapper__raiting">
+                                        <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
+                                        <span class="services-card-wrapper__raiting--span">5.0</span>
+                                    </div>
+                                    <div class="services-card-wrapper-title_description"> 
+                                        Настройка SMART TV
+                                    </div>
+                                    <div class="services-card-wrapper-title_price">
+                                        <span class="price-new">
+                                            1300 &#x20bd;
+                                        </span>
+                                        <div class="price-old">
+                                            3000 ₽  
+                                            <div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="services-card-wrapper-title_btn">
+                                        В корзину
+                                    </button>
+                                    <div class="services-card-wrapper-contein-btn">
+                                        <button>
+                                           <img src="./assets/icons/like-btn-service.svg" alt="like">
+                                        </button>
+                                        <button>
+                                            <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
+                                        </button>
+                                        <button>
+                                          <img src="./assets/icons/bell-btn-service.svg" alt="bell">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services-card">
+                                <div class="services-card-wrapper-img">
+                                    <div class="swiper-wrap-img">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="./assets/img/tavar-services.png" alt="tavar-services">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/img/tavar-services.png" alt="tavar-services">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/img/tavar-services.png" alt="tavar-services">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="services-card-wrapper-title">
+                                    <div class="services-card-wrapper__raiting">
+                                        <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
+                                        <span class="services-card-wrapper__raiting--span">5.0</span>
+                                    </div>
+                                    <div class="services-card-wrapper-title_description"> 
+                                        Настройка SMART TV
+                                    </div>
+                                    <div class="services-card-wrapper-title_price">
+                                        <span class="price-new">
+                                            1300 &#x20bd;
+                                        </span>
+                                        <div class="price-old">
+                                            3000 ₽  
+                                            <div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="services-card-wrapper-title_btn">
+                                        В корзину
+                                    </button>
+                                    <div class="services-card-wrapper-contein-btn">
+                                        <button>
+                                           <img src="./assets/icons/like-btn-service.svg" alt="like">
+                                        </button>
+                                        <button>
+                                            <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
+                                        </button>
+                                        <button>
+                                          <img src="./assets/icons/bell-btn-service.svg" alt="bell">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services-card">
+                                <div class="services-card-wrapper-img">
+                                    <div class="swiper-wrap-img" >
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="./assets/img/tavar-services.png" alt="tavar-services">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/img/tavar-services.png" alt="tavar-services">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/img/tavar-services.png" alt="tavar-services">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="services-card-wrapper-title">
+                                    <div class="services-card-wrapper__raiting">
+                                        <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
+                                        <span class="services-card-wrapper__raiting--span">5.0</span>
+                                    </div>
+                                    <div class="services-card-wrapper-title_description"> 
+                                        Настройка SMART TV
+                                    </div>
+                                    <div class="services-card-wrapper-title_price">
+                                        <span class="price-new">
+                                            1300 &#x20bd;
+                                        </span>
+                                        <div class="price-old">
+                                            3000 ₽  
+                                            <div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="services-card-wrapper-title_btn">
+                                        В корзину
+                                    </button>
+                                    <div class="services-card-wrapper-contein-btn">
+                                        <button>
+                                           <img src="./assets/icons/like-btn-service.svg" alt="like">
+                                        </button>
+                                        <button>
+                                            <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
+                                        </button>
+                                        <button>
+                                          <img src="./assets/icons/bell-btn-service.svg" alt="bell">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
                     </div>
-                </div>
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev--services">
-                  <img 
-                       src="./assets/icons/prev-swiper-services.svg" 
-                       alt="button-prev"
-                       />
-                  </div>
-                <div class="swiper-button-next--services">
-                  <img 
-                       src="./assets/icons/next-swiper-services.svg"
-                        alt="button-prev"
-                       />
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev--services"><img src="./assets/icons/prev-swiper-services.svg" alt="button-prev"></div>
+                    <div class="swiper-button-next--services"><img src="./assets/icons/next-swiper-services.svg" alt="button-prev"></div>
                   </div>
             </div>
-        </div>
+        
       </main>
     </div>
 </body>
