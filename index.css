@@ -267,8 +267,12 @@ header button {
   font-size: 14px;
   font-weight: 400;
   color: rgb(42, 31, 32);
+  display: none;
 }
 
+.header.open .accordion__sub-list-link {
+  display: block;
+}
 
 .sub-list-item-hide {
   display: none;
@@ -693,7 +697,7 @@ header button {
 .hits-swiper__button-prev {
   position: absolute;
   left: -5px;
-  top: calc(50%);
+  top: calc 50%;
   z-index: 10;
   cursor: pointer;
 }
@@ -701,7 +705,7 @@ header button {
 .hits-swiper__button-next {
   position: absolute;
   right: -5px;
-  top: calc(50%);
+  top: calc 50%;
   z-index: 10;
   cursor: pointer;
 }
@@ -916,7 +920,6 @@ background:rgb(210, 3, 44); ;
 .services-card {
     padding: 40px 21px 10px 21px;
     border-radius: 10px;
-
     box-shadow: 0px 0 8px  0 rgba(0, 0, 0, 0.15);
     background: rgb(255, 255, 255);
 }
@@ -1078,7 +1081,6 @@ background:rgb(210, 3, 44); ;
 
 .swiper-pagination {
     position: absolute !important;
-    bottom:-1px !important;
     left: 0 !important;
     width: 100% !important;
     text-align: left !important;
