@@ -259,7 +259,7 @@ header button {
   width: 800px;
 }
 
-.accordion__sub-list-item {
+.accordion__sub-list-item  {
   margin-top: 15px;
 }
 
@@ -290,6 +290,7 @@ header button {
   font-weight: 400;
   color: rgb(251, 15, 64);
   background-color: rgb(255, 255, 255);
+  margin-bottom: 15px;
 }
 
 /* ***********************************end accordion************************************************* */
