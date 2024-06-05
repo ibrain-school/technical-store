@@ -1,3 +1,14 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    list-style: none;
+    font-optical-sizing: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
 .yandex_map {
     display: flex;
     justify-content: center;
@@ -16,4 +27,41 @@
 /* Скрытие ссылки "Создать свою карту" */
 .ymaps-2-1-79-copyrights-pane {
     display: none !important;
+}
+
+.card-shop_wrapper-content {
+    display: flex;
+    gap: 35px;
+}
+
+.card-shop_nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.card-shop_nav--title {
+    display: flex;
+    align-items: center;
+
+    gap: 10px; 
+
+    margin-bottom: 10px;
+}
+
+.card-shop_nav-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card-shop_nav-contact span , .card-shop_nav-contact a {
+    color: rgb(42, 31, 32);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 174%;
+}
+
+.card-shop img{
+    max-height: 380px;
 }
