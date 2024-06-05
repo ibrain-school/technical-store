@@ -25,9 +25,16 @@ function init() {
             iconImageSize: [70, 70],
             iconImageOffset: [-50, -70]
         });
-
+       
         myMap.geoObjects.add(placemark);
         geoObjects.push(placemark);
+
+        placemark.events.add("click",()=>{
+            const cardShop = document.querySelector(".card-shop")
+            cardShop.innerHTML = "Привет" 
+            document.querySelector("body").append(cardShop) 
+
+        })
     });
 
     var bounds = myMap.geoObjects.getBounds();
