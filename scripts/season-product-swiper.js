@@ -1,7 +1,7 @@
  // Инициализация основного Swiper
- const swiperServices = new Swiper('.swiper-season-product', {
+
+ const swiperServices = new Swiper('.swiper', {
   loop: true,
-  direction: 'horizontal',
   
   // slidesPerView: 'auto',
 
