@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+.container-telephone {
+    padding: 40px 100px 0 66px;
+}
+.phone-nav__header li {
+    display: inline-block; 
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: rgb(140, 140, 140);
+}
+.phone-nav__header li:last-child {
+    color: black;
+}
+ul {
+    list-style: none;
+}
+.phone__title {
+    margin-top: 40px;
+    color: rgb(42, 31, 32);
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.phone-product {
+    display: flex;
+    flex-direction: row;
+    column-gap: 670px;
+    margin-top: 58px;
+}
+.phone-product-sale__percent {
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: left;
+    border: 2px ;
+    background-color: rgb(251, 15, 64);
+    padding: 3px 5px;
+    border-radius:3px ;
+}
+.phone-product-sale__text {
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: left;
+    border: 2px  ;
+    background-color: rgb(251, 15, 64);
+    padding: 3px 5px;
+    border-radius:3px ;
+    margin-left: 5px;
+    width: 135px;
+}
+.phone-rating__number {
+    color: rgb(255, 176, 0);
+    height: 17px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-left: 4px;
+}
+/* <!-- ОСНОВНАЯ ИНФОРМАЦИЯ ПРО ТЕЛЕФОН --> */
+.phone-inform {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,421px 400px 393px);
+}
+.phone-specification-text-about {
+    color: rgb(42, 31, 32);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.phone-specification-color {
+    margin-top: 27px;
+}
+.phone-specification__btn {
+    color: rgb(42, 31, 32);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+    border: 2px solid rgb(244, 244, 244);
+    background-color: rgb(244, 244, 244);
+    padding: 7px 12px;
+    border-radius: 3px;
+}
+.phone-specification__btn:focus {
+    border: 1px solid rgb(188, 188, 188);
+    background-color: white;
+}
+.btn2 {
+    margin-left: 10px;
+}
+.phone-specification-text {
+    margin-top: 30px;
+}
+.phone-specification-title {
+    color: rgb(42, 31, 32);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.phone-specification-parametr {
+    margin-top: 5px;
+    display: grid;
+}
+.phone-specification-parametr__function {
+    color: rgb(42, 31, 32);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 10px;
+}
+.phone-specification__url {
+   text-decoration: none ;
+    color: rgb(251, 15, 64);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 15px;
+}
+.phone-develory-presence {
+    display:  flex;
+    flex-direction: row;
+}
+.phone-develory-presence img {
+    align-self: center;
+}
+.phone-presence__text {
+    color: rgb(42, 31, 32);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 174%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-left: 10px;
+}
+.phone-develory-table {
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+    background: rgb(255, 255, 255);
+    margin-top: 15px;
+}
+.phone-develory-price {
+    padding: 20px 20px 21px 20px;
+}
+.phone-price__new {
+    color: rgb(251, 15, 64);
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.phone-price__old {
+    color: rgb(140, 140, 140);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-decoration: line-through;
+    margin-left: 3px;
+}
+.phone-develory-credit {
+    color: rgb(42, 31, 32);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 20px;
+}
+.phone-develory-basket {
+    margin-top: 20px;   
+}
+.phone-develory-basket__btn {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: center;
+    background-color: rgb(251, 15, 64);
+    border: none;
+    padding: 10px 106px;
+    border-radius: 10px;
+    box-shadow: 0 6px 14.4px 0 rgba(220, 9, 46, 0.15);
+}
+.phone-develory-pickup {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;  
+}
+.phone-develory-pickup__about {
+    align-self: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-left: 12px;
+}
+.phone-develory-pickup__about span {   
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: rgb(251, 15, 64);
+    }
+.phone-develory-icons {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+.swiper-telephone{
+    margin-top: 30px;
+    width: 400px;
+    position: absolute;
+    left: -470px;    
+    }
+.swiper-wrapper-telephone{
+    margin-left: 60px;   
+    }
+.slide-telephone img {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+    border: 1px solid  rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+    }
+.slide-telephone a {
+    text-decoration: none;
+    }
+.slide-telephone img:hover {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+    border: 1px solid  rgb(251, 15, 64);;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+    }
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    display: none;
+}
+.swiper-btn-tel-prev {   
+    margin-left: 10px;
+    cursor: pointer;
+  }
+.swiper-btn-tel-next {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+.phone-main-information {
+    color: rgb(42, 31, 32); 
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 174%;
+    letter-spacing: 0%;
+    text-align: left;}
+.phone-pages {
+    margin-top: 20px;
+}
+.phone-pages-nav li {
+    display: inline-block;
+  }
+.phone-pages-nav__text {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 174%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-left: 20px;
+    color: grey;
+  }
+.phone-pages-nav__text:focus {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 174%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-left: 20px;
+    color: black;
+ }
+.line::after {
+    content: " ";
+    position: absolute;
+    height: 2PX;
+    width: 100%;
+    background-color: rgb(232, 232, 232);
+    left: -1px;
+ }
+.phone-window {
+    margin-top: 10px;
+}
+.phone-window__text {
+    color: rgb(42, 31, 32);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 174%;
+    letter-spacing: 0%;
+    text-align: left;
+ }
+.phone-characteristic {
+    margin-top: 15px;
+ }
+.phone-characteristic__title {
+    color: rgb(42, 31, 32);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 174%;
+    letter-spacing: 0%;
+    text-align: left;
+ }
+.phone-characteristic__about {
+    color: rgb(42, 31, 32);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 174%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 15px;
+}
