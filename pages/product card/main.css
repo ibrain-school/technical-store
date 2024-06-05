@@ -1,7 +1,8 @@
 * {
+
     margin: 0;
     padding: 0;
-    box-sizing: border-box;}
+box-sizing: border-box;}
 
 .container-telephone {
     padding: 40px 100px 0 66px;
@@ -30,12 +31,17 @@ ul {
     letter-spacing: 0%;
     text-align: left;
 }
+
 .phone-product {
     display: flex;
     flex-direction: row;
     column-gap: 670px;
     margin-top: 58px;
 }
+
+
+
+
 .phone-product-sale__percent {
     color: rgb(255, 255, 255);
     font-size: 13px;
@@ -50,6 +56,7 @@ ul {
 }
 .phone-product-sale__text {
     color: rgb(255, 255, 255);
+
     font-size: 13px;
     font-weight: 500;
     line-height: 16px;
@@ -61,6 +68,13 @@ ul {
     border-radius:3px ;
     margin-left: 5px;
     width: 135px;
+
+
+}
+
+
+
+=======
 }
 .phone-rating__number {
     color: rgb(255, 176, 0);
@@ -101,6 +115,7 @@ ul {
     padding: 7px 12px;
     border-radius: 3px;
 }
+
 .phone-specification__btn:focus {
     border: 1px solid rgb(188, 188, 188);
     background-color: white;
@@ -108,6 +123,7 @@ ul {
 .btn2 {
     margin-left: 10px;
 }
+
 .phone-specification-text {
     margin-top: 30px;
 }
@@ -119,10 +135,12 @@ ul {
     letter-spacing: 0%;
     text-align: left;
 }
+
 .phone-specification-parametr {
     margin-top: 5px;
     display: grid;
 }
+
 .phone-specification-parametr__function {
     color: rgb(42, 31, 32);
     font-size: 14px;
@@ -142,15 +160,49 @@ ul {
     text-align: left;
     margin-top: 15px;
 }
+
 .phone-develory-presence {
     display:  flex;
     flex-direction: row;
 }
+
 .phone-develory-presence img {
     align-self: center;
 }
 .phone-presence__text {
     color: rgb(42, 31, 32);
+
+
+font-size: 14px;
+font-weight: 400;
+line-height: 174%;
+letter-spacing: 0%;
+text-align: left;
+margin-left: 10px;
+}
+.phone-develory-basket {
+    margin-top: 20px;
+    
+}
+
+.phone-develory-basket__btn {
+    color: rgb(255, 255, 255);
+
+font-size: 14px;
+font-weight: 600;
+line-height: 17px;
+letter-spacing: 0%;
+text-align: center;
+background-color: rgb(251, 15, 64);
+border: none;
+padding: 10px 106px;
+border-radius: 10px;
+box-shadow: 0px 6px 14.4px 0px rgba(220, 9, 46, 0.15);
+}
+
+.phone-develory-pickup__about span {
+    
+
     font-size: 14px;
     font-weight: 400;
     line-height: 174%;
@@ -194,22 +246,7 @@ ul {
     text-align: left;
     margin-top: 20px;
 }
-.phone-develory-basket {
-    margin-top: 20px;   
-}
-.phone-develory-basket__btn {
-    color: rgb(255, 255, 255);
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 17px;
-    letter-spacing: 0%;
-    text-align: center;
-    background-color: rgb(251, 15, 64);
-    border: none;
-    padding: 10px 106px;
-    border-radius: 10px;
-    box-shadow: 0 6px 14.4px 0 rgba(220, 9, 46, 0.15);
-}
+
 .phone-develory-pickup {
     margin-top: 20px;
     display: flex;
@@ -224,14 +261,7 @@ ul {
     text-align: left;
     margin-left: 12px;
 }
-.phone-develory-pickup__about span {   
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 17px;
-    letter-spacing: 0%;
-    text-align: left;
-    color: rgb(251, 15, 64);
-    }
+
 .phone-develory-icons {
     margin-top: 36px;
     display: flex;
@@ -278,11 +308,13 @@ ul {
   }
 .phone-main-information {
     color: rgb(42, 31, 32); 
+
     font-size: 16px;
     font-weight: 400;
     line-height: 174%;
     letter-spacing: 0%;
     text-align: left;}
+
 .phone-pages {
     margin-top: 20px;
 }
@@ -299,6 +331,7 @@ ul {
     margin-left: 20px;
     color: grey;
   }
+
 .phone-pages-nav__text:focus {
     text-decoration: none;
     font-size: 20px;
@@ -308,6 +341,9 @@ ul {
     text-align: left;
     margin-left: 20px;
     color: black;
+
+      }
+
  }
 .line::after {
     content: " ";
@@ -348,3 +384,4 @@ ul {
     text-align: left;
     margin-top: 15px;
 }
+
