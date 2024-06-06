@@ -25,6 +25,10 @@ header button {
     display: flex;
 }
 
+.header_top-location {
+  margin-right: 50px;
+}
+
 .header_top-nav {
     display: flex;
     gap: 20px;
@@ -62,7 +66,7 @@ header button {
 .header_top-tel a {
     color: rgb(42, 31, 32);
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 500px;
     line-height: 17px;
     text-align: left;
     margin-left: 10px;
@@ -177,18 +181,26 @@ header button {
   flex-direction: column;
 }
 
+.accordion__menu-title {
+color: rgb(42, 31, 32);
+font-size: 16px;
+font-weight: 600;
+line-height: 20px;
+display: none;
+}
+
 .accordion__menu-item {
   padding: 12px 20px;
   position: relative;
   width: 393px;
   height: 48px;
   border-radius: 0 10px 10px 0;
-  background-color: (244, 244, 244);
+  border: none;
+  background-color: rgb(244, 244, 244);
   font-weight: 600;
   font-size: 14px;
   color: rgb(42, 31, 32);
   cursor: pointer;
-  justify-content: space-between;
   transition: all .3s ease-in-out;
 }
 
@@ -198,7 +210,6 @@ header button {
   display: block;
   border: solid black;
   border-width: 0 3px 3px 0;
-  display: inline-block;
   padding: 4px;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
@@ -306,7 +317,7 @@ header button {
 .header_midl__search-input input {
     border-radius: 5px;
     background: rgb(244, 244, 244);
-    width: 642px;
+    width: 640px;
     height: 46px;
     padding: 14px 15px;
     color: rgb(101, 98, 98);

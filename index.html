@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./styles/media-queries-accordion.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="./scripts/service-swiper.js" defer> </script>
     <script src="./scripts/swiper-black-friday.js" defer></script>
@@ -45,11 +46,11 @@
                     </li>
                 </nav>
                 <div class="header_top-location">
-                    <img class="header_top-location--img" src="/assets/icons/Local.svg" alt="Moscow">
+                    <img class="header_top-location--img" src="./assets/icons/Local.svg" alt="Moscow">
                     <a href="#">Москва</a>
                 </div>
                 <div class="header_top-tel">
-                    <img src="/assets/icons/Tel.svg" alt="Tel">
+                    <img src="./assets/icons/Tel.svg" alt="Tel">
                     <a href="tel:+7 (812) 834-84-88">+7 (812) 834-84-88</a>
                 </div>
             </div>
@@ -64,19 +65,19 @@
                 </button>
                 <div class="header_midl__search-input">
                     <input placeholder="Поиск товара" type="text">
-                    <img src="/assets/icons/Search.svg" alt="Search">
+                    <img src="./assets/icons/Search.svg" alt="Search">
                 </div>
                 <div class="header_midl-wrapper--btn">
                     <a href="#">
-                        <img src="/assets/icons/Favorites.svg" alt="Favorites">
+                        <img src="./assets/icons/Favorites.svg" alt="Favorites">
                         <span>Избранное</span>
                     </a>
                     <a href="#">
-                        <img src="/assets/icons/Basket.svg" alt="Basket">
+                        <img src="./assets/icons/Basket.svg" alt="Basket">
                         <span>Корзина</span>
                     </a>
                     <button onclick="modalActiv(event)">
-                        <img src="/assets/icons/User.svg" alt="User">
+                        <img src="./assets/icons/User.svg" alt="User">
                         <span>Войти</span>
                     </button>
                 </div>
@@ -85,6 +86,7 @@
             <div class="accordion__wrapper">
                 <div class="accordion">
                     <div class="accordion__menu">
+                        <h3 class="accordion__menu-title">Каталог</h3>
                         <button data-btn="btn-1" class="accordion__menu-item">Смартфоны и гаджеты</button>
                         <div id="btn-1" class="accordion__sub-menu-wrapper">
                             <ul class="accordion__sub-menu-brands">
@@ -98,7 +100,7 @@
                                             alt="brand-icon"></a></li>
                             </ul>
                             <ul class="accordion__sub-menu">
-                                <li class="accordion__sub-menu-item"><a
+                                <li class="accordion__sub-menu-item accordion-sub-item"><a
                                         class="accordion__right-link accordion__sub-menu-link" href="#">Смартфоны,
                                         телефоны</a>
                                     <ul class="accordion__sub-list">
@@ -167,7 +169,7 @@
                                                 href="#">Наушники True wireless</a></li>
                                     </ul>
                                 </li>
-                                <li class="accordion__sub-menu-item"><a class="accordion__right-link"
+                                <li class="accordion__sub-menu-item accordion-sub-item"><a class="accordion__right-link"
                                         href="#">Аксессуары</a>
                                     <ul class="accordion__sub-list">
                                         <li class="accordion__sub-list-item sub-list-item1"><a
