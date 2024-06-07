@@ -204,7 +204,7 @@ display: none;
   transition: all .3s ease-in-out;
 }
 
-.accordion__menu-item:after {
+.accordion__menu-item::after {
   content: "";
   position: absolute;
   display: block;
@@ -218,7 +218,7 @@ display: none;
   transition: transform .5s ease-in-out;
 }
 
-.accordion__menu-item.active:after {
+.accordion__menu-item.active::after {
   -webkit-transform: rotate(135deg);
 }
 
@@ -250,6 +250,16 @@ display: none;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
   color: rgb(251, 15, 64);
   transition: all .3s ease-in-out;
+}
+
+.accordion__sub-menu-title {
+  display: none;
+  color: rgb(42, 31, 32);
+  font-size: clamp(10px, 3vw, 14px);
+  font-weight: 600;
+  line-height: 20px;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .accordion__sub-menu-brands {
@@ -680,7 +690,7 @@ display: none;
   margin-right: 10px;
 }
 
-.nav-btn:active {
+.nav-btn:focus {
     box-sizing: border-box;
     background:rgb(255, 255, 255) ;
     border: 1px solid rgb(188, 188, 188);
