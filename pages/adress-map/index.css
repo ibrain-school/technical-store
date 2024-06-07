@@ -9,24 +9,30 @@
     user-select: none;
 }
 
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 .yandex_map {
-    display: flex;
-    justify-content: center;
+    border-radius: 20px;
 }
 
 #map {
-    width: 100%;
-    max-width: 1250px; 
+    max-width: 100%; 
     height: 555px;
+
+    overflow: hidden;
+    border-radius: 20px;
 }
 
 .ymaps-2-1-79-logo {
-    display: none !important;
+    display: none ;
 }
 
 /* Скрытие ссылки "Создать свою карту" */
 .ymaps-2-1-79-copyrights-pane {
-    display: none !important;
+    display: none ;
 }
 
 .card-shop_wrapper-content {
@@ -38,6 +44,19 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between
+}
+
+.card-shop_descripton {
+    margin-bottom: 55px;
+    margin-top: 40px;
+
+    color: rgb(42, 31, 32);
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
 }
 
 .card-shop_nav--title {
@@ -62,6 +81,9 @@
     line-height: 174%;
 }
 
-.card-shop img{
+.img-korona{
     max-height: 380px;
+    width: 600px;
+
+    border-radius: 8px;
 }

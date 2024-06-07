@@ -31,7 +31,7 @@ function init() {
             div.innerHTML = `
             <h2 class="card-shop_descripton">Магазин в ТЦ «Корона-Сити», 1 этаж</h2>
             <div class="card-shop_wrapper-content">
-            <img src="/assets/img/korona-shopping-center.png" alt="shopping-center_img"> 
+            <img class="img-korona" src="/assets/img/korona-shopping-center.png" alt="shopping-center_img"> 
             <div class="card-shop_nav">
 
                 <div class="card-shop_nav--wrap">
