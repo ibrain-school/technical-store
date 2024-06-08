@@ -87,3 +87,66 @@
 
     border-radius: 8px;
 }
+
+.custom-hint {
+    padding: 25px 0 25px 25px;
+}
+
+.ymaps-2-1-79-hint, .ymaps-2-1-79-hint-content {
+    border-radius: 10px;
+
+    box-shadow: 0px 2px 7.8px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(255, 255, 255);
+
+    overflow: hidden;
+    padding: 25px;
+    min-width: 318px;
+}
+
+.custom-hint {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.wrapper-hidden-hint {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.wrapper-hidden-hint h3 {
+    color: rgb(42, 31, 32);
+font-size: 14px;
+font-weight: 600;
+}
+    
+.wrapper-hidden-hint span {
+    color: rgb(42, 31, 32);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.day-timy {
+    color: rgb(42, 31, 32);
+font-family: Montserrat;
+font-size: 13px;
+font-weight: 400;
+line-height: 174%;
+}
+
+.wrapper-custom-hint_tel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.wrapper-custom-hint_tel {
+    color: rgb(42, 31, 32);
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 174%;
+    letter-spacing: 0%;
+    text-align: left;
+}

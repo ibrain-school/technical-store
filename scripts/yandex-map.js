@@ -8,9 +8,24 @@ function init() {
 
     // Создаем массив с координатами точек
     var placemarks = [
-        { coords: [55.76084292405665, 37.23090637800431], hint: 'Место 1' },
-        { coords: [55.75784292405665, 37.24090637800431], hint: 'Место 2' },
-        { coords: [55.76384292405665, 37.22090637800431], hint: 'Место 3' }
+        { coords: [55.76084292405665, 37.23090637800431], 
+            hint: 'ТЦ «Корона-Сити», 1 этаж', 
+            content: 'ул. Денисовская, 8',
+            day: "пн-вс:",
+            time: "10:00-21:00",
+        },
+        { coords:  [55.75784292405665, 37.24090637800431], 
+            hint: 'ТЦ «Корона-Сити», 1 этаж', 
+            content: 'ул. Денисовская, 8',
+            day: "пн-вс:",
+            time: "10:00-21:00",
+        },
+        { coords: [55.76384292405665, 37.22090637800431], 
+            hint: 'ТЦ «Корона-Сити», 1 этаж', 
+            content: 'ул. Денисовская, 8',
+            day: "пн-вс:",
+            time: "10:00-21:00",
+        }
     ];
 
     var geoObjects = [];
@@ -18,7 +33,24 @@ function init() {
     // Добавляем точки на карту
     placemarks.forEach(function(item) {
         var placemark = new ymaps.Placemark(item.coords, {
-            hintContent: item.hint
+            hintContent: `
+            <div class="custom-hint"> 
+            <div class="wrapper-hidden-hint">
+            <h3> ${item.hint}</h3>  
+            <span>${item.content}</span> 
+            </div> 
+            <div class="wrapper-day-time">
+            <span class="day-timy"><b>${item.day}</b> ${item.time}<span>
+            </div>
+            <div class="wrapper-custom-hint_tel">
+            <h4>
+            Справочный центр:
+            </h4> 
+            <span>+375 29 8-057-998 МТС</span>
+            <span>+375 29 3-899-741 А1</span>
+            <span>+375 17 388 61 41</span>
+            </div>
+            </div>`,
         }, {
             iconLayout: 'default#image',
             iconImageHref: '/assets/icons/marker.png',
