@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
 })
 
 // accordion
-
 if (document.documentElement.clientWidth > 968) {
 const titles = document.querySelectorAll('.accordion__menu-item');
 const contents = document.querySelectorAll('.accordion__sub-menu-wrapper');
@@ -33,7 +32,6 @@ titles.forEach(item => item.addEventListener('click', () => {
     document.querySelector('#btn-1').classList.add('active');
     document.querySelector('#btn-1').style.maxHeight = document.querySelector('#btn-1').scrollHeight + 'px';
 }
-
 
 if (document.documentElement.clientWidth < 969) {
     
