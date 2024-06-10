@@ -1,35 +1,22 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./styles/media-queries-accordion.css">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-    <script src="./scripts/service-swiper.js" defer> </script>
-    <script src="./scripts/swiper-black-friday.js" defer></script>
-    <script defer src="./scripts/season-product-swiper.js"></script>
-    <!-- <script defer src="./scripts.js"></script> -->
-    <link rel="stylesheet" href="./index.css">
-    <script defer src="./scripts/popular-swiper.js"></script>
-    <script src="./scripts/modal.js" defer></script>
-    <script src="./scripts/swiper-hit-sales.js" defer></script>
-    <script src="./scripts/burger-menu.js" defer></script>
-    <script defer src="./scripts.js"></script>
-    <script src="./scripts/swiper-block.js" defer></script>
-    <title>Бренды</title>
+    <link rel="stylesheet" href="./about us.css">
+    <title>Document</title>
+    <script src="../../scripts/modal.js" defer></script>
+    <script src="../../scripts/burger-menu.js" defer></script>
 </head>
-
 <body>
     <div class="container">
         <header class="header" id="header">
             <div class="header_top">
                 <nav class="header_top-nav">
                     <li>
-                        <a href="./pages/about us/about us.html">О нас</a>
+                        <a href="#">О нас</a>
                     </li>
                     <li>
                         <a href="#">Магазины</a>
@@ -48,11 +35,11 @@
                     </li>
                 </nav>
                 <div class="header_top-location">
-                    <img class="header_top-location--img" src="./assets/icons/Local.svg" alt="Moscow">
+                    <img class="header_top-location--img" src="../../assets/icons/Local.svg" alt="Moscow">
                     <a href="#">Москва</a>
                 </div>
                 <div class="header_top-tel">
-                    <img src="./assets/icons/Tel.svg" alt="Tel">
+                    <img src="../../assets/icons/Tel.svg" alt="Tel">
                     <a href="tel:+7 (812) 834-84-88">+7 (812) 834-84-88</a>
                 </div>
             </div>
@@ -67,19 +54,19 @@
                 </button>
                 <div class="header_midl__search-input">
                     <input placeholder="Поиск товара" type="text">
-                    <img src="./assets/icons/Search.svg" alt="Search">
+                    <img src="../../assets/icons/Search.svg" alt="Search">
                 </div>
                 <div class="header_midl-wrapper--btn">
                     <a href="#">
-                        <img src="./assets/icons/Favorites.svg" alt="Favorites">
+                        <img src="../../assets/icons/Favorites.svg" alt="Favorites">
                         <span>Избранное</span>
                     </a>
                     <a href="#">
-                        <img src="./assets/icons/Basket.svg" alt="Basket">
+                        <img src="../../assets/icons/Basket.svg" alt="Basket">
                         <span>Корзина</span>
                     </a>
                     <button onclick="modalActiv(event)">
-                        <img src="./assets/icons/User.svg" alt="User">
+                        <img src="../../assets/icons/User.svg" alt="User">
                         <span>Войти</span>
                     </button>
                 </div>
@@ -88,21 +75,20 @@
             <div class="accordion__wrapper">
                 <div class="accordion">
                     <div class="accordion__menu">
-                        <h3 class="accordion__menu-title">Каталог</h3>
                         <button data-btn="btn-1" class="accordion__menu-item">Смартфоны и гаджеты</button>
                         <div id="btn-1" class="accordion__sub-menu-wrapper">
                             <ul class="accordion__sub-menu-brands">
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon1.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon1.svg"
                                             alt="brand-icon"></a></li>
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon2.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon2.svg"
                                             alt="brand-icon"></a></li>
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon3.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon3.svg"
                                             alt="brand-icon"></a></li>
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon4.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon4.svg"
                                             alt="brand-icon"></a></li>
                             </ul>
                             <ul class="accordion__sub-menu">
-                                <li class="accordion__sub-menu-item accordion-sub-item"><a
+                                <li class="accordion__sub-menu-item"><a
                                         class="accordion__right-link accordion__sub-menu-link" href="#">Смартфоны,
                                         телефоны</a>
                                     <ul class="accordion__sub-list">
@@ -171,7 +157,7 @@
                                                 href="#">Наушники True wireless</a></li>
                                     </ul>
                                 </li>
-                                <li class="accordion__sub-menu-item accordion-sub-item"><a class="accordion__right-link"
+                                <li class="accordion__sub-menu-item"><a class="accordion__right-link"
                                         href="#">Аксессуары</a>
                                     <ul class="accordion__sub-list">
                                         <li class="accordion__sub-list-item sub-list-item1"><a
@@ -302,13 +288,13 @@
                         <button data-btn="btn-2" class="accordion__menu-item">Телевизоры и видео</button>
                         <div id="btn-2" class="accordion__sub-menu-wrapper">
                             <ul class="accordion__sub-menu-brands">
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon2.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon2.svg"
                                             alt="brand-icon"></a></li>
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon1.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon1.svg"
                                             alt="brand-icon"></a></li>
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon3.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon3.svg"
                                             alt="brand-icon"></a></li>
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon4.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon4.svg"
                                             alt="brand-icon"></a></li>
                             </ul>
                             <ul class="accordion__sub-menu">
@@ -471,13 +457,13 @@
                         <button data-btn="btn-3" class="accordion__menu-item">Ноутбуки и компьютеры</button>
                         <div id="btn-3" class="accordion__sub-menu-wrapper">
                             <ul class="accordion__sub-menu-brands">
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon1.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon1.svg"
                                             alt="brand-icon"></a></li>
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon2.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon2.svg"
                                             alt="brand-icon"></a></li>
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon4.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon4.svg"
                                             alt="brand-icon"></a></li>
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon3.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon3.svg"
                                             alt="brand-icon"></a></li>
                             </ul>
                             <ul class="accordion__sub-menu">
@@ -618,13 +604,13 @@
                         <button data-btn="btn-4" class="accordion__menu-item">Техника для кухни</button>
                         <div id="btn-4" class="accordion__sub-menu-wrapper">
                             <ul class="accordion__sub-menu-brands">
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon2.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon2.svg"
                                             alt="brand-icon"></a></li>
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon3.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon3.svg"
                                             alt="brand-icon"></a></li>
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon1.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon1.svg"
                                             alt="brand-icon"></a></li>
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon4.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon4.svg"
                                             alt="brand-icon"></a></li>
                             </ul>
                             <ul class="accordion__sub-menu">
@@ -819,13 +805,13 @@
                         <button data-btn="btn-5" class="accordion__menu-item">Техника для дома</button>
                         <div id="btn-5" class="accordion__sub-menu-wrapper">
                             <ul class="accordion__sub-menu-brands">
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon2.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon2.svg"
                                             alt="brand-icon"></a></li>
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon1.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon1.svg"
                                             alt="brand-icon"></a></li>
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon4.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon4.svg"
                                             alt="brand-icon"></a></li>
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon3.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon3.svg"
                                             alt="brand-icon"></a></li>
                             </ul>
                             <ul class="accordion__sub-menu">
@@ -1020,13 +1006,13 @@
                         <button data-btn="btn-6" class="accordion__menu-item">Дом, дача, ремонт</button>
                         <div id="btn-6" class="accordion__sub-menu-wrapper">
                             <ul class="accordion__sub-menu-brands">
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon3.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon3.svg"
                                             alt="brand-icon"></a></li>
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon1.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon1.svg"
                                             alt="brand-icon"></a></li>
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon2.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon2.svg"
                                             alt="brand-icon"></a></li>
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon4.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon4.svg"
                                             alt="brand-icon"></a></li>
                             </ul>
                             <ul class="accordion__sub-menu">
@@ -1221,13 +1207,13 @@
                         <button data-btn="btn-7" class="accordion__menu-item">Аудио</button>
                         <div id="btn-7" class="accordion__sub-menu-wrapper">
                             <ul class="accordion__sub-menu-brands">
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon4.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon4.svg"
                                             alt="brand-icon"></a></li>
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon1.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon1.svg"
                                             alt="brand-icon"></a></li>
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon2.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon2.svg"
                                             alt="brand-icon"></a></li>
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon3.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon3.svg"
                                             alt="brand-icon"></a></li>
                             </ul>
                             <ul class="accordion__sub-menu">
@@ -1422,13 +1408,13 @@
                         <button data-btn="btn-8" class="accordion__menu-item">Красота и здоровье</button>
                         <div id="btn-8" class="accordion__sub-menu-wrapper">
                             <ul class="accordion__sub-menu-brands">
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon1.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon1.svg"
                                             alt="brand-icon"></a></li>
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon2.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon2.svg"
                                             alt="brand-icon"></a></li>
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon3.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon3.svg"
                                             alt="brand-icon"></a></li>
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon4.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon4.svg"
                                             alt="brand-icon"></a></li>
                             </ul>
                             <ul class="accordion__sub-menu">
@@ -1623,13 +1609,13 @@
                         <button data-btn="btn-9" class="accordion__menu-item">Игровая зона</button>
                         <div id="btn-9" class="accordion__sub-menu-wrapper">
                             <ul class="accordion__sub-menu-brands">
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon3.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon3.svg"
                                             alt="brand-icon"></a></li>
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon1.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon1.svg"
                                             alt="brand-icon"></a></li>
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon2.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon2.svg"
                                             alt="brand-icon"></a></li>
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon4.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon4.svg"
                                             alt="brand-icon"></a></li>
                             </ul>
                             <ul class="accordion__sub-menu">
@@ -1824,13 +1810,13 @@
                         <button data-btn="btn-10" class="accordion__menu-item">Спорт, развлечения, отдых</button>
                         <div id="btn-10" class="accordion__sub-menu-wrapper">
                             <ul class="accordion__sub-menu-brands">
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon2.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon2.svg"
                                             alt="brand-icon"></a></li>
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon1.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon1.svg"
                                             alt="brand-icon"></a></li>
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon3.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon3.svg"
                                             alt="brand-icon"></a></li>
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon4.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon4.svg"
                                             alt="brand-icon"></a></li>
                             </ul>
                             <ul class="accordion__sub-menu">
@@ -2025,13 +2011,13 @@
                         <button data-btn="btn-11" class="accordion__menu-item">Фото и видеокамеры</button>
                         <div id="btn-11" class="accordion__sub-menu-wrapper">
                             <ul class="accordion__sub-menu-brands">
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon1.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon1.svg"
                                             alt="brand-icon"></a></li>
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon2.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon2.svg"
                                             alt="brand-icon"></a></li>
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon3.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon3.svg"
                                             alt="brand-icon"></a></li>
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon4.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon4.svg"
                                             alt="brand-icon"></a></li>
                             </ul>
                             <ul class="accordion__sub-menu">
@@ -2226,13 +2212,13 @@
                         <button data-btn="btn-12" class="accordion__menu-item">Автотовары</button>
                         <div id="btn-12" class="accordion__sub-menu-wrapper">
                             <ul class="accordion__sub-menu-brands">
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon1.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon1.svg"
                                             alt="brand-icon"></a></li>
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon4.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon4.svg"
                                             alt="brand-icon"></a></li>
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon2.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon2.svg"
                                             alt="brand-icon"></a></li>
-                                <li class="sub-menu__brands-item"><a href="#"><img src="./assets/icons/brand-icon3.svg"
+                                <li class="sub-menu__brands-item"><a href="#"><img src="../../assets/icons/brand-icon3.svg"
                                             alt="brand-icon"></a></li>
                             </ul>
                             <ul class="accordion__sub-menu">
@@ -2455,2278 +2441,118 @@
                     </form>
 
                     <button onclick="modalActiv(event)" class="modal-cross">
-                        <img src="./assets/icons/modal-cross-icon.svg" alt="">
+                        <img src="../../assets/icons/modal-cross-icon.svg" alt="">
                     </button>
                 </div>
             </div>
             </div>
-        </header>
-        <div class="swiper swiper-black-friday">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide swiper-slide-black-friday">
-                    <img src="./assets/img/black-friday.png" alt="Скидка черная пятница">
+    <main>
+        <div class="bread-crumps-about-us">
+            <a href="../../index.html">Главная ––</a>
+             <span> О компании</span>
+        </div>
+        <h1 class="about-us__title"> О компании </h1>
+        <img src="../../assets/img/about us image.png" alt="about us image">
+        <span class="desc-company">Наша компания — ведущий поставщик бытовой техники для дома. Мы гордимся своей заслуженной репутацией надежного и инновационного бренда, обеспечивающего качественные товары и безупречный сервис для наших клиентов.</span>
+        <div class="target-company-wrapper">
+                <div class="target-company">
+                       <h2 class="target-company__title">Наша цель</h2> 
+                       <p class="desc-target">С момента основания компании наша цель была предлагать самые передовые решения для повседневного быта. Мы тщательно отбираем партнеров по всему миру, чтобы предложить широкий ассортимент техники, отвечающей самым высоким стандартам качества. Мы внимательно анализируем потребности и предпочтения наших клиентов и удовлетворяем самые взыскательные требования.</p>
                 </div>
-                <div class="swiper-slide swiper-slide-black-friday">
-                    <img src="./assets/img/black-friday.png" alt="Скидка черная пятница">
+                <div class="target-img-wrapper"><img src="../../assets/img/target-img.png" alt=""></div>
+        </div>
+        <div class="assortment-company-wrapper">
+                <div class="assortment-company">
+                        <h2 class="assortment-company__title">Ассортимент</h2>
+                        <p class="desc-assortment">Мы предлагаем широкий спектр бытовой техники, включая кухонную технику, стиральные и сушильные машины, холодильники, пылесосы, кондиционеры и многое другое. Наш ассортимент насчитывает сотни продуктов различных марок, позволяя нашим клиентам выбирать оптимальное соотношение цены и качества.</p>
                 </div>
-                <div class="swiper-slide swiper-slide-black-friday">
-                    <img src="./assets/img/black-friday.png" alt="Скидка черная пятница">
-                </div>
-                <div class="swiper-slide swiper-slide-black-friday">
-                    <img src="./assets/img/black-friday.png" alt="Скидка черная пятница">
-                </div>
-                <div class="swiper-slide swiper-slide-black-friday">
-                    <img src="./assets/img/black-friday.png" alt="Скидка черная пятница">
-                </div>
-                <div class="swiper-slide swiper-slide-black-friday">
-                    <img src="./assets/img/black-friday.png" alt="Скидка черная пятница">
+                <img src="../../assets/img/assortiment img.png" alt="холодильник ассортимент">
+         </div>
+         <div class="quality-company-wrapper">
+                 <div class="quality-company">
+                         <h2 class="quality-company__title">Качество</h2>
+                         <p class="desc-quality">Все наши товары отличаются высочайшим качеством производства и инновационными функциями. Мы работаем только с проверенными и надежными поставщиками, наша продукция отвечает международным стандартам безопасности и энергоэффективности. Мы сотрудничаем с ведущими марками в сфере бытовой техники и гарантируем, что наши клиенты получают только лучшее.</p>
+                        </div>
+                        <img src="../../assets/img/quality img.png" alt="quality img">
+         </div>
+    </main>
+    <footer id="footer-tecnical-store">
+        <div class="about-company">
+            <div class="footer-tecnical-store__inform">
+                <h2 class="title-inform-company">Компания</h2>
+                <ul class="inform-company-list">
+                    <li><a href="####">О нас</a></li>
+                    <li><a href="####">Магазины</a></li>
+                    <li><a href="####">Блог</a></li>
+                    <li><a href="####">Вакансии</a></li>
+                    <li><a href="####">Контакты</a></li>
+                    <li><a href="####">Партнерская программа</a></li>
+                </ul>
+                <div class="project-date">© Проект, 2024</div>
+            </div>
+        </div>
+        <div class="about-buyers">
+            <div class="footer-tecnical-store__inform">
+                <h2 class="title-inform-company">Покупателям</h2>
+                <ul class="inform-company-list">
+                    <li><a href="####">Как сделать заказ</a></li>
+                    <li><a href="####">Оплата и доставка</a></li>
+                    <li><a href="####">Статус заказа</a></li>
+                    <li><a href="####">Возврат</a></li>
+                    <li><a href="####">Юридическая информация</a></li>
+                    <li><a href="####">Политика персональных данных</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="client-connection">
+            <div class="footer-tecnical-store__inform">
+                <h2 class="title-inform-company">На связи 24/7</h2>
+                <ul class="inform-company-list">
+                    <li><a href="####"><img src="../../assets/icons/Tel.svg" alt="">+7 (812) 834-84-88</a></li>
+                    <li><a href="####"><img src="../../assets/icons/mail.svg" alt="">example@mail.ru</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="subscribe">
+            <h2 class="subscribe__title">Подписаться на новости и акции</h2>
+            <form class="subscribe__form" action="###" method="get">
+                <input class="subscribe__input" type="text" placeholder="E-mail">
+                <button class="subscribe__btn">Подписаться</button>
+            </form>
+            <div class="subscribe__inform">
+                <span class="subscribe__agreement"> Нажимая «Подписаться», я даю согласие на получение рекламной
+                    рассылки и обработку
+                    <a href="###">персональных данных</a>
+                </span>
+            </div>
+            <div class="subscribe__list">
+                <h3>Мы в социальных сетях</h3>
+                <ul>
+                    <li><a href="####"><img src="../../assets/icons/footer youtube icon.svg" alt="иконка youtube"></a>
+                    </li>
+                    <li><a href="####"><img src="../../assets/icons/footer instagram icon.svg" alt="иконка instagram"></a>
+                    </li>
+                    <li><a href="####"><img src="../../assets/icons/footer facebook icon.svg" alt="иконка facebook"></a>
+                    </li>
+                    <li><a href="####"><img src="../../assets/icons/footer VK icon.svg" alt="иконка VK"></a></li>
+                    <li><a href="####"><img src="../../assets/icons/footer telegram icon.svg" alt="иконка telegram"></a>
+                    </li>
+                    <li><a href="####"><img src="../../assets/icons/footer odnoklassniki icon.svg" alt="иконка однокласснки"></a></li>
+                </ul>
+                <div class="payment">
+                    <span class="payment__title">Мы принимаем к оплате</span>
+                    <div class="payment__list">
+                        <ul>
+                            <li><img src="../../assets/icons/visa.svg" alt=""></li>
+                            <li><img src="../../assets/icons/master card.svg" alt=""></li>
+                            <li><img src="../../assets/icons/mir.svg" alt=""></li>
+                            <li><img src="../../assets/icons/google pay.svg" alt=""></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="swiper-button-prev"><img src="./assets/icons/prev-swiper-services.svg" alt=""></div>
-            <div class="swiper-button-next"><img src="./assets/icons/next-swiper-services.svg" alt=""></div>
-            <div class="swiper-pagination-black-friday"></div>
         </div>
-        <main>
-            <section id="popular__categories">
-                <h2 class="popular__categories-title">Популярные категории</h2>
-                <div class="popular__categories-main">
-                    <div class="swiper popular__categories-wrapper">
-                        <div class="swiper-wrapper popular__categories-card">
-                            <div class="swiper-slide popular__categories-card-info card-one">
-                                <a class="popular__categories-img-link" href="#"><img class="popular__categories-image"
-                                        src="./assets/img/Iphon.png" alt="Iphon"></a>
-                                <a class="popular__categories-link link1" href="#">Смартфоны</a>
-                            </div>
-                            <div class="swiper-slide popular__categories-card-info card-two">
-                                <a class="popular__categories-img-link" href="#"><img class="popular__categories-image"
-                                        src="./assets/img/washing_machine.png" alt="Washing machine"></a>
-                                <a class="popular__categories-link" href="#">Стиральные <br>машины</a>
-                            </div>
-                            <div class="swiper-slide popular__categories-card-info card-three">
-                                <a class="popular__categories-img-link" href="#"><img class="popular__categories-image"
-                                        src="./assets/img/vacuum_cleaner.png" alt="Vacuum cleaner"></a>
-                                <a class="popular__categories-link link3" href="#">Пылесосы</a>
-                            </div>
-                            <div class="swiper-slide popular__categories-card-info card-four">
-                                <a class="popular__categories-img-link" href="#"><img class="popular__categories-image"
-                                        src="./assets/img/fridge.png" alt="Fridge"></a>
-                                <a class="popular__categories-link link4" href="#">Холодильники</a>
-                            </div>
-                            <div class="swiper-slide popular__categories-card-info card-five">
-                                <a class="popular__categories-img-link" href="#"><img class="popular__categories-image"
-                                        src="./assets/img/tv.png" alt="TV"></a>
-                                <a class="popular__categories-link link5" href="#">Телевизоры</a>
-                            </div>
-                            <div class="swiper-slide popular__categories-card-info card-six">
-                                <a class="popular__categories-img-link" href="#"><img class="popular__categories-image"
-                                        src="./assets/img/microwave.png" alt="Microwave"></a>
-                                <a class="popular__categories-link" href="#">Микроволновые <br>печи</a>
-                            </div>
-                            <div class="swiper-slide popular__categories-card-info card-six">
-                                <a class="popular__categories-img-link" href="#"><img class="popular__categories-image"
-                                        src="./assets/img/microwave.png" alt="Microwave"></a>
-                                <a class="popular__categories-link" href="#">Микроволновые <br>печи</a>
-                            </div>
-                        </div>
-                        <div class="swiper-button-prev"><img src="./assets/icons/prev.svg" alt="Prev"></div>
-                        <div class="swiper-button-next"><img src="./assets/icons/next.svg" alt="Next"></div>
-                    </div>
-                </div>
-            </section>
-            <!------------------------------- task-8 хиты продаж -------------------------------------------------->
-            <section id="hits-sales" class="hits-sales">
-                <div class="hits-sales__nav-wrapper">
-                    <div class="hits-sales__nav-title-wrapper">
-                        <h2 class="hits-sales__nav-title section-title">Хиты продаж</h2>
-                    </div>
-                    <div class="hits-sales__nav-btn-wrapper">
-                        <button class="hits-sales__nav-btn nav-btn">Все</button>
-                        <button class="hits-sales__nav-btn nav-btn">Смартфоны</button>
-                        <button class="hits-sales__nav-btn nav-btn">Стиральные машины</button>
-                        <button class="hits-sales__nav-btn nav-btn">Пылесосы</button>
-                        <button class="hits-sales__nav-btn nav-btn">Холодильники</button>
-                        <button class="hits-sales__nav-btn nav-btn">Телевизоры</button>
-                        <button class="hits-sales__nav-btn nav-btn">Микроволновые печи</button>
-                    </div>
-                </div>
-                <!-- Slider main container -->
-                <div class="swiper-card">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide swiper-slide-card">
-                            <div class="wrapper-card">
-                                <div class="hit-sales-card product-card">
-                                    <div class="product-card__top">
-                                        <div class="product__label-wrapper">
-                                            <div class="product__label-inner">
-                                                <span class="product__label label-text">-39%</span>
-                                            </div>
-                                            <div class="product__label-inner">
-                                                <span class="product__label-description label-text">Товар из
-                                                    рекламы</span>
-                                            </div>
-                                        </div>
-                                        <div class="wrapper-img-product">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <div class="product__img-wrapper">
-                                                        <a class="product__img-link" href="#">
-                                                            <img src="./assets/img/card-phone-img.png"
-                                                                alt="картинка телефона">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="product__img-wrapper">
-                                                        <a class="product__img-link" href="#">
-                                                            <img src="./assets/img/card-phone-img.png"
-                                                                alt="картинка телефона">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="product__img-wrapper">
-                                                        <a class="product__img-link" href="#">
-                                                            <img src="./assets/img/card-phone-img.png"
-                                                                alt="картинка телефона">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-pagination"></div>
-                                        </div>
-                                    </div>
-                                    <div class="product-card__bottom">
-                                        <div class="product-rating__wrapper">
-                                            <div class="rating__icon-wrapper">
-                                                <img src="./assets/icons/rating-star-img.svg" alt="rating-star">
-                                            </div>
-                                            <div class="rating__points-wrapper">
-                                                <span class="rating__points">4.8</span>
-                                            </div>
-                                        </div>
-                                        <a class="product__title" href="#">Смартфон TECNO Pova 4 LG7n 8GB/128GB
-                                            (серый)</a>
-                                        <div class="product__price-wrapper">
-                                            <span class="product__price-discount price-new">21 770 &#8381</span>
-                                            <span class="product__price price-old">50085 &#8381</span>
-                                        </div>
-                                        <button class="product__btn">В корзину</button>
-                                        <div class="about-product__wrapper">
-                                            <button class="add-favorites__btn about-product__btn"><img
-                                                    class="add-favorites__img" src="./assets/icons/like-icons.svg"
-                                                    alt="like-icon"></button>
-                                            <button class="compare__btn about-product__btn"><img class="compare__img"
-                                                    src="./assets/icons/rating-icon.svg" alt="compare-icon"></button>
-                                            <button class="report-availability__btn about-product__btn"><img
-                                                    class="report-availability__img" src="./assets/icons/bell-icon.svg"
-                                                    alt="bell-icon"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="hit-sales-card product-card">
-                                    <div class="product-card__top">
-                                        <div class="product__label-wrapper">
-                                            <div class="product__label-inner">
-                                                <span class="product__label label-text">-39%</span>
-                                            </div>
-                                            <div class="product__label-inner">
-                                                <span class="product__label-description label-text">Товар из
-                                                    рекламы</span>
-                                            </div>
-                                        </div>
-                                        <div class="wrapper-img-product">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <div class="product__img-wrapper">
-                                                        <a class="product__img-link" href="#">
-                                                            <img src="./assets/img/card-phone-img.png"
-                                                                alt="картинка телефона">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="product__img-wrapper">
-                                                        <a class="product__img-link" href="#">
-                                                            <img src="./assets/img/card-phone-img.png"
-                                                                alt="картинка телефона">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="product__img-wrapper">
-                                                        <a class="product__img-link" href="#">
-                                                            <img src="./assets/img/card-phone-img.png"
-                                                                alt="картинка телефона">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-pagination"></div>
-                                        </div>
-                                    </div>
-                                    <div class="product-card__bottom">
-                                        <div class="product-rating__wrapper">
-                                            <div class="rating__icon-wrapper">
-                                                <img src="./assets/icons/rating-star-img.svg" alt="rating-star">
-                                            </div>
-                                            <div class="rating__points-wrapper">
-                                                <span class="rating__points">4.8</span>
-                                            </div>
-                                        </div>
-                                        <a class="product__title" href="#">Смартфон TECNO Pova 4 LG7n 8GB/128GB
-                                            (серый)</a>
-                                        <div class="product__price-wrapper">
-                                            <span class="product__price-discount price-new">21 770 &#8381</span>
-                                            <span class="product__price price-old">50085 &#8381</span>
-                                        </div>
-                                        <button class="product__btn">В корзину</button>
-                                        <div class="about-product__wrapper">
-                                            <button class="add-favorites__btn about-product__btn"><img
-                                                    class="add-favorites__img" src="./assets/icons/like-icons.svg"
-                                                    alt="like-icon"></button>
-                                            <button class="compare__btn about-product__btn"><img class="compare__img"
-                                                    src="./assets/icons/rating-icon.svg" alt="compare-icon"></button>
-                                            <button class="report-availability__btn about-product__btn"><img
-                                                    class="report-availability__img" src="./assets/icons/bell-icon.svg"
-                                                    alt="bell-icon"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="hit-sales-card product-card">
-                                    <div class="product-card__top">
-                                        <div class="product__label-wrapper">
-                                            <div class="product__label-inner">
-                                                <span class="product__label label-text">-39%</span>
-                                            </div>
-                                            <div class="product__label-inner">
-                                                <span class="product__label-description label-text">Товар из
-                                                    рекламы</span>
-                                            </div>
-                                        </div>
-                                        <div class="wrapper-img-product">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <div class="product__img-wrapper">
-                                                        <a class="product__img-link" href="#">
-                                                            <img src="./assets/img/card-phone-img.png"
-                                                                alt="картинка телефона">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="product__img-wrapper">
-                                                        <a class="product__img-link" href="#">
-                                                            <img src="./assets/img/card-phone-img.png"
-                                                                alt="картинка телефона">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="product__img-wrapper">
-                                                        <a class="product__img-link" href="#">
-                                                            <img src="./assets/img/card-phone-img.png"
-                                                                alt="картинка телефона">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-pagination"></div>
-                                        </div>
-                                    </div>
-                                    <div class="product-card__bottom">
-                                        <div class="product-rating__wrapper">
-                                            <div class="rating__icon-wrapper">
-                                                <img src="./assets/icons/rating-star-img.svg" alt="rating-star">
-                                            </div>
-                                            <div class="rating__points-wrapper">
-                                                <span class="rating__points">4.8</span>
-                                            </div>
-                                        </div>
-                                        <a class="product__title" href="#">Смартфон TECNO Pova 4 LG7n 8GB/128GB
-                                            (серый)</a>
-                                        <div class="product__price-wrapper">
-                                            <span class="product__price-discount price-new">21 770 &#8381</span>
-                                            <span class="product__price price-old">50085 &#8381</span>
-                                        </div>
-                                        <button class="product__btn">В корзину</button>
-                                        <div class="about-product__wrapper">
-                                            <button class="add-favorites__btn about-product__btn"><img
-                                                    class="add-favorites__img" src="./assets/icons/like-icons.svg"
-                                                    alt="like-icon"></button>
-                                            <button class="compare__btn about-product__btn"><img class="compare__img"
-                                                    src="./assets/icons/rating-icon.svg" alt="compare-icon"></button>
-                                            <button class="report-availability__btn about-product__btn"><img
-                                                    class="report-availability__img" src="./assets/icons/bell-icon.svg"
-                                                    alt="bell-icon"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="hit-sales-card product-card">
-                                    <div class="product-card__top">
-                                        <div class="product__label-wrapper">
-                                            <div class="product__label-inner">
-                                                <span class="product__label label-text">-39%</span>
-                                            </div>
-                                            <div class="product__label-inner">
-                                                <span class="product__label-description label-text">Товар из
-                                                    рекламы</span>
-                                            </div>
-                                        </div>
-                                        <div class="wrapper-img-product">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <div class="product__img-wrapper">
-                                                        <a class="product__img-link" href="#">
-                                                            <img src="./assets/img/card-phone-img.png"
-                                                                alt="картинка телефона">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="product__img-wrapper">
-                                                        <a class="product__img-link" href="#">
-                                                            <img src="./assets/img/card-phone-img.png"
-                                                                alt="картинка телефона">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="product__img-wrapper">
-                                                        <a class="product__img-link" href="#">
-                                                            <img src="./assets/img/card-phone-img.png"
-                                                                alt="картинка телефона">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-pagination hits-swiper-pagination"></div>
-                                        </div>
-                                    </div>
-                                    <div class="product-card__bottom">
-                                        <div class="product-rating__wrapper">
-                                            <div class="rating__icon-wrapper">
-                                                <img src="./assets/icons/rating-star-img.svg" alt="rating-star">
-                                            </div>
-                                            <div class="rating__points-wrapper">
-                                                <span class="rating__points">4.8</span>
-                                            </div>
-                                        </div>
-                                        <a class="product__title" href="#">Смартфон TECNO Pova 4 LG7n 8GB/128GB
-                                            (серый)</a>
-                                        <div class="product__price-wrapper">
-                                            <span class="product__price-discount price-new">21 770 &#8381</span>
-                                            <span class="product__price price-old">50085 &#8381</span>
-                                        </div>
-                                        <button class="product__btn">В корзину</button>
-                                        <div class="about-product__wrapper">
-                                            <button class="add-favorites__btn about-product__btn"><img
-                                                    class="add-favorites__img" src="./assets/icons/like-icons.svg"
-                                                    alt="like-icon"></button>
-                                            <button class="compare__btn about-product__btn"><img class="compare__img"
-                                                    src="./assets/icons/rating-icon.svg" alt="compare-icon"></button>
-                                            <button class="report-availability__btn about-product__btn"><img
-                                                    class="report-availability__img" src="./assets/icons/bell-icon.svg"
-                                                    alt="bell-icon"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slide-card">
-                            <div class="wrapper-card">
-                                <div class="hit-sales-card product-card">
-                                    <div class="product-card__top">
-                                        <div class="product__label-wrapper">
-                                            <div class="product__label-inner">
-                                                <span class="product__label label-text">-39%</span>
-                                            </div>
-                                            <div class="product__label-inner">
-                                                <span class="product__label-description label-text">Товар из
-                                                    рекламы</span>
-                                            </div>
-                                        </div>
-                                        <div class="wrapper-img-product">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <div class="product__img-wrapper">
-                                                        <a class="product__img-link" href="#">
-                                                            <img src="./assets/img/card-phone-img.png"
-                                                                alt="картинка телефона">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="product__img-wrapper">
-                                                        <a class="product__img-link" href="#">
-                                                            <img src="./assets/img/card-phone-img.png"
-                                                                alt="картинка телефона">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="product__img-wrapper">
-                                                        <a class="product__img-link" href="#">
-                                                            <img src="./assets/img/card-phone-img.png"
-                                                                alt="картинка телефона">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-pagination hits-swiper-pagination"></div>
-                                        </div>
-                                    </div>
-                                    <div class="product-card__bottom">
-                                        <div class="product-rating__wrapper">
-                                            <div class="rating__icon-wrapper">
-                                                <img src="./assets/icons/rating-star-img.svg" alt="rating-star">
-                                            </div>
-                                            <div class="rating__points-wrapper">
-                                                <span class="rating__points">4.8</span>
-                                            </div>
-                                        </div>
-                                        <a class="product__title" href="#">Смартфон TECNO Pova 4 LG7n 8GB/128GB
-                                            (серый)</a>
-                                        <div class="product__price-wrapper">
-                                            <span class="product__price-discount price-new">21 770 &#8381</span>
-                                            <span class="product__price price-old">50085 &#8381</span>
-                                        </div>
-                                        <button class="product__btn">В корзину</button>
-                                        <div class="about-product__wrapper">
-                                            <button class="add-favorites__btn about-product__btn"><img
-                                                    class="add-favorites__img" src="./assets/icons/like-icons.svg"
-                                                    alt="like-icon"></button>
-                                            <button class="compare__btn about-product__btn"><img class="compare__img"
-                                                    src="./assets/icons/rating-icon.svg" alt="compare-icon"></button>
-                                            <button class="report-availability__btn about-product__btn"><img
-                                                    class="report-availability__img" src="./assets/icons/bell-icon.svg"
-                                                    alt="bell-icon"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="hit-sales-card product-card">
-                                    <div class="product-card__top">
-                                        <div class="product__label-wrapper">
-                                            <div class="product__label-inner">
-                                                <span class="product__label label-text">-39%</span>
-                                            </div>
-                                            <div class="product__label-inner">
-                                                <span class="product__label-description label-text">Товар из
-                                                    рекламы</span>
-                                            </div>
-                                        </div>
-                                        <div class="wrapper-img-product">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <div class="product__img-wrapper">
-                                                        <a class="product__img-link" href="#">
-                                                            <img src="./assets/img/card-phone-img.png"
-                                                                alt="картинка телефона">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="product__img-wrapper">
-                                                        <a class="product__img-link" href="#">
-                                                            <img src="./assets/img/card-phone-img.png"
-                                                                alt="картинка телефона">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="product__img-wrapper">
-                                                        <a class="product__img-link" href="#">
-                                                            <img src="./assets/img/card-phone-img.png"
-                                                                alt="картинка телефона">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-pagination"></div>
-                                        </div>
-                                    </div>
-                                    <div class="product-card__bottom">
-                                        <div class="product-rating__wrapper">
-                                            <div class="rating__icon-wrapper">
-                                                <img src="./assets/icons/rating-star-img.svg" alt="rating-star">
-                                            </div>
-                                            <div class="rating__points-wrapper">
-                                                <span class="rating__points">4.8</span>
-                                            </div>
-                                        </div>
-                                        <a class="product__title" href="#">Смартфон TECNO Pova 4 LG7n 8GB/128GB
-                                            (серый)</a>
-                                        <div class="product__price-wrapper">
-                                            <span class="product__price-discount price-new">21 770 &#8381</span>
-                                            <span class="product__price price-old">50085 &#8381</span>
-                                        </div>
-                                        <button class="product__btn">В корзину</button>
-                                        <div class="about-product__wrapper">
-                                            <button class="add-favorites__btn about-product__btn"><img
-                                                    class="add-favorites__img" src="./assets/icons/like-icons.svg"
-                                                    alt="like-icon"></button>
-                                            <button class="compare__btn about-product__btn"><img class="compare__img"
-                                                    src="./assets/icons/rating-icon.svg" alt="compare-icon"></button>
-                                            <button class="report-availability__btn about-product__btn"><img
-                                                    class="report-availability__img" src="./assets/icons/bell-icon.svg"
-                                                    alt="bell-icon"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="hit-sales-card product-card">
-                                    <div class="product-card__top">
-                                        <div class="product__label-wrapper">
-                                            <div class="product__label-inner">
-                                                <span class="product__label label-text">-39%</span>
-                                            </div>
-                                            <div class="product__label-inner">
-                                                <span class="product__label-description label-text">Товар из
-                                                    рекламы</span>
-                                            </div>
-                                        </div>
-                                        <div class="wrapper-img-product">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <div class="product__img-wrapper">
-                                                        <a class="product__img-link" href="#">
-                                                            <img src="./assets/img/card-phone-img.png"
-                                                                alt="картинка телефона">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="product__img-wrapper">
-                                                        <a class="product__img-link" href="#">
-                                                            <img src="./assets/img/card-phone-img.png"
-                                                                alt="картинка телефона">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="product__img-wrapper">
-                                                        <a class="product__img-link" href="#">
-                                                            <img src="./assets/img/card-phone-img.png"
-                                                                alt="картинка телефона">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-pagination hits-swiper-pagination"></div>
-                                        </div>
-                                    </div>
-                                    <div class="product-card__bottom">
-                                        <div class="product-rating__wrapper">
-                                            <div class="rating__icon-wrapper">
-                                                <img src="./assets/icons/rating-star-img.svg" alt="rating-star">
-                                            </div>
-                                            <div class="rating__points-wrapper">
-                                                <span class="rating__points">4.8</span>
-                                            </div>
-                                        </div>
-                                        <a class="product__title" href="#">Смартфон TECNO Pova 4 LG7n 8GB/128GB
-                                            (серый)</a>
-                                        <div class="product__price-wrapper">
-                                            <span class="product__price-discount price-new">21 770 &#8381</span>
-                                            <span class="product__price price-old">50085 &#8381</span>
-                                        </div>
-                                        <button class="product__btn">В корзину</button>
-                                        <div class="about-product__wrapper">
-                                            <button class="add-favorites__btn about-product__btn"><img
-                                                    class="add-favorites__img" src="./assets/icons/like-icons.svg"
-                                                    alt="like-icon"></button>
-                                            <button class="compare__btn about-product__btn"><img class="compare__img"
-                                                    src="./assets/icons/rating-icon.svg" alt="compare-icon"></button>
-                                            <button class="report-availability__btn about-product__btn"><img
-                                                    class="report-availability__img" src="./assets/icons/bell-icon.svg"
-                                                    alt="bell-icon"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="hit-sales-card product-card">
-                                    <div class="product-card__top">
-                                        <div class="product__label-wrapper">
-                                            <div class="product__label-inner">
-                                                <span class="product__label label-text">-39%</span>
-                                            </div>
-                                            <div class="product__label-inner">
-                                                <span class="product__label-description label-text">Товар из
-                                                    рекламы</span>
-                                            </div>
-                                        </div>
-                                        <div class="wrapper-img-product">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <div class="product__img-wrapper">
-                                                        <a class="product__img-link" href="#">
-                                                            <img src="./assets/img/card-phone-img.png"
-                                                                alt="картинка телефона">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="product__img-wrapper">
-                                                        <a class="product__img-link" href="#">
-                                                            <img src="./assets/img/card-phone-img.png"
-                                                                alt="картинка телефона">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="product__img-wrapper">
-                                                        <a class="product__img-link" href="#">
-                                                            <img src="./assets/img/card-phone-img.png"
-                                                                alt="картинка телефона">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-pagination hits-swiper-pagination"></div>
-                                        </div>
-                                    </div>
-                                    <div class="product-card__bottom">
-                                        <div class="product-rating__wrapper">
-                                            <div class="rating__icon-wrapper">
-                                                <img src="./assets/icons/rating-star-img.svg" alt="rating-star">
-                                            </div>
-                                            <div class="rating__points-wrapper">
-                                                <span class="rating__points">4.8</span>
-                                            </div>
-                                        </div>
-                                        <a class="product__title" href="#">Смартфон TECNO Pova 4 LG7n 8GB/128GB
-                                            (серый)</a>
-                                        <div class="product__price-wrapper">
-                                            <span class="product__price-discount price-new">21 770 &#8381</span>
-                                            <span class="product__price price-old">50085 &#8381</span>
-                                        </div>
-                                        <button class="product__btn">В корзину</button>
-                                        <div class="about-product__wrapper">
-                                            <button class="add-favorites__btn about-product__btn"><img
-                                                    class="add-favorites__img" src="./assets/icons/like-icons.svg"
-                                                    alt="like-icon"></button>
-                                            <button class="compare__btn about-product__btn"><img class="compare__img"
-                                                    src="./assets/icons/rating-icon.svg" alt="compare-icon"></button>
-                                            <button class="report-availability__btn about-product__btn"><img
-                                                    class="report-availability__img" src="./assets/icons/bell-icon.svg"
-                                                    alt="bell-icon"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slide-card">
-                            <div class="wrapper-card">
-                                <div class="hit-sales-card product-card">
-                                    <div class="product-card__top">
-                                        <div class="product__label-wrapper">
-                                            <div class="product__label-inner">
-                                                <span class="product__label label-text">-39%</span>
-                                            </div>
-                                            <div class="product__label-inner">
-                                                <span class="product__label-description label-text">Товар из
-                                                    рекламы</span>
-                                            </div>
-                                        </div>
-                                        <div class="wrapper-img-product">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <div class="product__img-wrapper">
-                                                        <a class="product__img-link" href="#">
-                                                            <img src="./assets/img/card-phone-img.png"
-                                                                alt="картинка телефона">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="product__img-wrapper">
-                                                        <a class="product__img-link" href="#">
-                                                            <img src="./assets/img/card-phone-img.png"
-                                                                alt="картинка телефона">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="product__img-wrapper">
-                                                        <a class="product__img-link" href="#">
-                                                            <img src="./assets/img/card-phone-img.png"
-                                                                alt="картинка телефона">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-pagination hits-swiper-pagination"></div>
-                                        </div>
-                                    </div>
-                                    <div class="product-card__bottom">
-                                        <div class="product-rating__wrapper">
-                                            <div class="rating__icon-wrapper">
-                                                <img src="./assets/icons/rating-star-img.svg" alt="rating-star">
-                                            </div>
-                                            <div class="rating__points-wrapper">
-                                                <span class="rating__points">4.8</span>
-                                            </div>
-                                        </div>
-                                        <a class="product__title" href="#">Смартфон TECNO Pova 4 LG7n 8GB/128GB
-                                            (серый)</a>
-                                        <div class="product__price-wrapper">
-                                            <span class="product__price-discount">21 770 &#8381</span>
-                                            <span class="product__price-full">50085 &#8381</span>
-                                        </div>
-                                        <button class="product__btn">В корзину</button>
-                                        <div class="about-product__wrapper">
-                                            <button class="add-favorites__btn about-product__btn"><img
-                                                    class="add-favorites__img" src="./assets/icons/like-icons.svg"
-                                                    alt="like-icon"></button>
-                                            <button class="compare__btn about-product__btn"><img class="compare__img"
-                                                    src="./assets/icons/rating-icon.svg" alt="compare-icon"></button>
-                                            <button class="report-availability__btn about-product__btn"><img
-                                                    class="report-availability__img" src="./assets/icons/bell-icon.svg"
-                                                    alt="bell-icon"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="hit-sales-card product-card">
-                                    <div class="product-card__top">
-                                        <div class="product__label-wrapper">
-                                            <div class="product__label-inner">
-                                                <span class="product__label label-text">-39%</span>
-                                            </div>
-                                            <div class="product__label-inner">
-                                                <span class="product__label-description label-text">Товар из
-                                                    рекламы</span>
-                                            </div>
-                                        </div>
-                                        <div class="wrapper-img-product">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <div class="product__img-wrapper">
-                                                        <a class="product__img-link" href="#">
-                                                            <img src="./assets/img/card-phone-img.png"
-                                                                alt="картинка телефона">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="product__img-wrapper">
-                                                        <a class="product__img-link" href="#">
-                                                            <img src="./assets/img/card-phone-img.png"
-                                                                alt="картинка телефона">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="product__img-wrapper">
-                                                        <a class="product__img-link" href="#">
-                                                            <img src="./assets/img/card-phone-img.png"
-                                                                alt="картинка телефона">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-pagination"></div>
-                                        </div>
-                                    </div>
-                                    <div class="product-card__bottom">
-                                        <div class="product-rating__wrapper">
-                                            <div class="rating__icon-wrapper">
-                                                <img src="./assets/icons/rating-star-img.svg" alt="rating-star">
-                                            </div>
-                                            <div class="rating__points-wrapper">
-                                                <span class="rating__points">4.8</span>
-                                            </div>
-                                        </div>
-                                        <a class="product__title" href="#">Смартфон TECNO Pova 4 LG7n 8GB/128GB
-                                            (серый)</a>
-                                        <div class="product__price-wrapper">
-                                            <span class="product__price-discount price-new">21 770 &#8381</span>
-                                            <span class="product__price price-old">50085 &#8381</span>
-                                        </div>
-                                        <button class="product__btn">В корзину</button>
-                                        <div class="about-product__wrapper">
-                                            <button class="add-favorites__btn about-product__btn"><img
-                                                    class="add-favorites__img" src="./assets/icons/like-icons.svg"
-                                                    alt="like-icon"></button>
-                                            <button class="compare__btn about-product__btn"><img class="compare__img"
-                                                    src="./assets/icons/rating-icon.svg" alt="compare-icon"></button>
-                                            <button class="report-availability__btn about-product__btn"><img
-                                                    class="report-availability__img" src="./assets/icons/bell-icon.svg"
-                                                    alt="bell-icon"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="hit-sales-card product-card">
-                                    <div class="product-card__top">
-                                        <div class="product__label-wrapper">
-                                            <div class="product__label-inner">
-                                                <span class="product__label label-text">-39%</span>
-                                            </div>
-                                            <div class="product__label-inner">
-                                                <span class="product__label-description label-text">Товар из
-                                                    рекламы</span>
-                                            </div>
-                                        </div>
-                                        <div class="wrapper-img-product">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <div class="product__img-wrapper">
-                                                        <a class="product__img-link" href="#">
-                                                            <img src="./assets/img/card-phone-img.png"
-                                                                alt="картинка телефона">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="product__img-wrapper">
-                                                        <a class="product__img-link" href="#">
-                                                            <img src="./assets/img/card-phone-img.png"
-                                                                alt="картинка телефона">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="product__img-wrapper">
-                                                        <a class="product__img-link" href="#">
-                                                            <img src="./assets/img/card-phone-img.png"
-                                                                alt="картинка телефона">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-pagination hits-swiper-pagination"></div>
-                                        </div>
-                                    </div>
-                                    <div class="product-card__bottom">
-                                        <div class="product-rating__wrapper">
-                                            <div class="rating__icon-wrapper">
-                                                <img src="./assets/icons/rating-star-img.svg" alt="rating-star">
-                                            </div>
-                                            <div class="rating__points-wrapper">
-                                                <span class="rating__points">4.8</span>
-                                            </div>
-                                        </div>
-                                        <a class="product__title" href="#">Смартфон TECNO Pova 4 LG7n 8GB/128GB
-                                            (серый)</a>
-                                        <div class="product__price-wrapper">
-                                            <span class="product__price-discount price-new">21 770 &#8381</span>
-                                            <span class="product__price price-old">50085 &#8381</span>
-                                        </div>
-                                        <button class="product__btn">В корзину</button>
-                                        <div class="about-product__wrapper">
-                                            <button class="add-favorites__btn about-product__btn"><img
-                                                    class="add-favorites__img" src="./assets/icons/like-icons.svg"
-                                                    alt="like-icon"></button>
-                                            <button class="compare__btn about-product__btn"><img class="compare__img"
-                                                    src="./assets/icons/rating-icon.svg" alt="compare-icon"></button>
-                                            <button class="report-availability__btn about-product__btn"><img
-                                                    class="report-availability__img" src="./assets/icons/bell-icon.svg"
-                                                    alt="bell-icon"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="hit-sales-card product-card">
-                                    <div class="product-card__top">
-                                        <div class="product__label-wrapper">
-                                            <div class="product__label-inner">
-                                                <span class="product__label label-text">-39%</span>
-                                            </div>
-                                            <div class="product__label-inner">
-                                                <span class="product__label-description label-text">Товар из
-                                                    рекламы</span>
-                                            </div>
-                                        </div>
-                                        <div class="wrapper-img-product">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <div class="product__img-wrapper">
-                                                        <a class="product__img-link" href="#">
-                                                            <img src="./assets/img/card-phone-img.png"
-                                                                alt="картинка телефона">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="product__img-wrapper">
-                                                        <a class="product__img-link" href="#">
-                                                            <img src="./assets/img/card-phone-img.png"
-                                                                alt="картинка телефона">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="product__img-wrapper">
-                                                        <a class="product__img-link" href="#">
-                                                            <img src="./assets/img/card-phone-img.png"
-                                                                alt="картинка телефона">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-pagination hits-swiper-pagination"></div>
-                                        </div>
-                                    </div>
-                                    <div class="product-card__bottom">
-                                        <div class="product-rating__wrapper">
-                                            <div class="rating__icon-wrapper">
-                                                <img src="./assets/icons/rating-star-img.svg" alt="rating-star">
-                                            </div>
-                                            <div class="rating__points-wrapper">
-                                                <span class="rating__points">4.8</span>
-                                            </div>
-                                        </div>
-                                        <a class="product__title" href="#">Смартфон TECNO Pova 4 LG7n 8GB/128GB
-                                            (серый)</a>
-                                        <div class="product__price-wrapper">
-                                            <span class="product__price-discount price-new">21 770 &#8381</span>
-                                            <span class="product__price price-old">50085 &#8381</span>
-                                        </div>
-                                        <button class="product__btn">В корзину</button>
-                                        <div class="about-product__wrapper">
-                                            <button class="add-favorites__btn about-product__btn"><img
-                                                    class="add-favorites__img" src="./assets/icons/like-icons.svg"
-                                                    alt="like-icon"></button>
-                                            <button class="compare__btn about-product__btn"><img class="compare__img"
-                                                    src="./assets/icons/rating-icon.svg" alt="compare-icon"></button>
-                                            <button class="report-availability__btn about-product__btn"><img
-                                                    class="report-availability__img" src="./assets/icons/bell-icon.svg"
-                                                    alt="bell-icon"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev hits-swiper__button-prev"><img
-                            src=".//assets/icons/стрелка влево.svg" alt="button pref">
-                    </div>
-                    <div class="swiper-button-next hits-swiper__button-next"><img
-                            src=".//assets/icons/стрелка вправо.svg" alt="button next">
-                    </div>
-                </div>
-            </section>
-            <!------------------------------------- end task8 хиты продаж------------------------------------------------->
-
-<!-- task 9 start -->
-<!-- Cезонные товары мышь  -->
-<section class="container-season__product ">
-    <div class="season-product__head">
-        <h3 class="season-product__head-title">Сезонные товары</h3>
-        <div>
-    <button class="season-product__head-button" type="submit">Все</button>
-    <button class="season-product__head-button" type="submit">Культиваторы</button>
-    <button class="season-product__head-button" type="submit">Инструменты садовые</button>
-    <button class="season-product__head-button" type="submit">Кусторезы, садовые ножницы</button>
-    <button class="season-product__head-button" type="submit">Стеклоочистители</button>
-    <button class="season-product__head-button" type="submit">Мойки</button>
-</div>
-</div>
-<!-- Карточки -->
-    <!-- Slider main container -->
-    <div class="swiper swiper-season-product ">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper ">
-        <div class="season-card swiper-slide">
-            <div class="season-card__block ">
-                <span class="season-card__badge">Финальная цена</span>
-                <div class="swiper  swiper-season-product">  
-            <div class="season-card__img swiper-wrapper ">
-                <div class="swiper-slide">
-        <img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-    </div>
-    <div class="swiper-slide">
-        <img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-    </div>
-    <div class="swiper-slide">
-        <img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-    </div>
-    </div>
-    <div class="swiper-pagination"></div>
-    </div>
-    <div class="season-card__inform">
-        <img class="season-card__inform-img" src="./assets/icons/star.png" alt="star">
-        <span class="season-card__inform-number">5.0</span>
-        <p class="season-card__inform-text">Робот для мытья окон Даджет dBot W120</p>
-    </div>
-    <div class="season-card__price">
-        <span class="season-card__price-new">6 291 ₽</span>
-        <span class="season-card__price-old">12037 ₽</span>  
-    </div>
-    <div class="season-card__basket">
-        <button class=" season-card__basket-button"> В корзину</button>
-    </div>
-    <div class="season-card__notification">
-    <img  src="./assets/icons/like.png" alt="like">
-    <img src="./assets/icons/static.png" alt="static">
-    <img src="./assets/icons/colocol.png" alt="colocol">
-    </div>
-    </div>
-    <!-- 2 КАРТОЧКА -->
-    <div class="season-card__block ">
-        <span class="season-card__badge">Финальная цена</span>
-        <div class="swiper  swiper-season-product">  
-    <div class="season-card__img swiper-wrapper ">
-        <div class="swiper-slide">
-<img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-<div class="swiper-slide">
-<img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-<div class="swiper-slide">
-<img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-</div>
-<div class="swiper-pagination"></div>
-</div>
-<div class="season-card__inform">
-<img class="season-card__inform-img" src="./assets/icons/star.png" alt="star">
-<span class="season-card__inform-number">5.0</span>
-<p class="season-card__inform-text">Робот для мытья окон Даджет dBot W120</p>
-</div>
-<div class="season-card__price">
-<span class="season-card__price-new">6 291 ₽</span>
-<span class="season-card__price-old">12037 ₽</span>
-</div>
-<div class="season-card__basket">
-<button class=" season-card__basket-button"> В корзину</button>
-</div>
-<div class="season-card__notification">
-<img  src="./assets/icons/like.png" alt="like">
-<img src="./assets/icons/static.png" alt="static">
-<img src="./assets/icons/colocol.png" alt="colocol">
-</div>
-</div>
-    <!-- 
-    3 КАРТОЧКА -->
-    <div class="season-card__block">
-        <span class="season-card__badge">Финальная цена</span>
-        <div class="swiper  swiper-season-product">     
-    <div class="season-card__img swiper-wrapper ">
-        <div class="swiper-slide">
-<img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-<div class="swiper-slide">
-<img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-<div class="swiper-slide">
-<img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-</div>
-<div class="swiper-pagination"></div>
-</div>
-<div class="season-card__inform">
-<img class="season-card__inform-img" src="./assets/icons/star.png" alt="star">
-<span class="season-card__inform-number">5.0</span>
-<p class="season-card__inform-text">Робот для мытья окон Даджет dBot W120</p>
-</div>
-<div class="season-card__price">
-<span class="season-card__price-new">6 291 ₽</span>
-<span class="season-card__price-old">12037 ₽</span>
-</div>
-<div class="season-card__basket">
-<button class=" season-card__basket-button"> В корзину</button>
-</div>
-<div class="season-card__notification">
-<img  src="./assets/icons/like.png" alt="like">
-<img src="./assets/icons/static.png" alt="static">
-<img src="./assets/icons/colocol.png" alt="colocol">
-</div>
-</div>
-    <!-- 4КАРТОЧКА -->
-    <div class="season-card__block ">
-        <span class="season-card__badge">Финальная цена</span>
-        <div class="swiper  swiper-season-product">     
-    <div class="season-card__img swiper-wrapper ">
-        <div class="swiper-slide">
-<img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-<div class="swiper-slide">
-<img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-<div class="swiper-slide">
-<img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-</div>
-<div class="swiper-pagination"></div>
-</div>
-<div class="season-card__inform">
-<img class="season-card__inform-img" src="./assets/icons/star.png" alt="star">
-<span class="season-card__inform-number">5.0</span>
-<p class="season-card__inform-text">Робот для мытья окон Даджет dBot W120</p>
-</div>
-<div class="season-card__price">
-<span class="season-card__price-new">6 291 ₽</span>
-<span class="season-card__price-old">12037 ₽</span>
-</div>
-<div class="season-card__basket">
-<button class=" season-card__basket-button"> В корзину</button>
-</div>
-<div class="season-card__notification">
-<img  src="./assets/icons/like.png" alt="like">
-<img src="./assets/icons/static.png" alt="static">
-<img src="./assets/icons/colocol.png" alt="colocol">
-</div>
-</div>
-    </div>
-    <!-- Свайпер 1 -->
-    <div class="season-card swiper-slide">
-        <div class="season-card__block">
-            <span class="season-card__badge">Финальная цена</span>
-            <div class="swiper  swiper-season-product"> 
-        <div class="season-card__img swiper-wrapper ">
-            <div class="swiper-slide">
-    <img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-<div class="swiper-slide">
-    <img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-<div class="swiper-slide">
-    <img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-</div>
-<div class="swiper-pagination"></div>
-</div>
-<div class="season-card__inform">
-    <img class="season-card__inform-img" src="./assets/icons/star.png" alt="star">
-    <span class="season-card__inform-number">5.0</span>
-    <p class="season-card__inform-text">Робот для мытья окон Даджет dBot W120</p>
-</div>
-<div class="season-card__price">
-    <span class="season-card__price-new">6 291 ₽</span>
-    <span class="season-card__price-old">12037 ₽</span> 
-</div>
-<div class="season-card__basket">
-    <button class=" season-card__basket-button"> В корзину</button>
-</div>
-<div class="season-card__notification">
-<img  src="./assets/icons/like.png" alt="like">
-<img src="./assets/icons/static.png" alt="static">
-<img src="./assets/icons/colocol.png" alt="colocol">
-</div>
-</div>
-    <!-- 2 КАРТОЧКА -->
-    <div class="season-card__block">
-        <span class="season-card__badge">Финальная цена</span>
-        <div class="swiper  swiper-season-product">
-    <div class="season-card__img swiper-wrapper ">
-        <div class="swiper-slide">
-<img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-<div class="swiper-slide">
-<img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-<div class="swiper-slide">
-<img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-</div>
-<div class="swiper-pagination"></div>
-</div>
-<div class="season-card__inform">
-<img class="season-card__inform-img" src="./assets/icons/star.png" alt="mouse">
-<span class="season-card__inform-number">5.0</span>
-<p class="season-card__inform-text">Робот для мытья окон Даджет dBot W120</p>
-</div>
-<div class="season-card__price">
-<span class="season-card__price-new">6 291 ₽</span>
-<span class="season-card__price-old">12037 ₽</span>
-</div>
-<div class="season-card__basket">
-<button class=" season-card__basket-button"> В корзину</button>
-</div>
-<div class="season-card__notification">
-<img  src="./assets/icons/like.png" alt="like">
-<img src="./assets/icons/static.png" alt="static">
-<img src="./assets/icons/colocol.png" alt="colocol">
-</div>
-</div>
-    <!-- 
-    3 КАРТОЧКА -->
-    <div class="season-card__block">
-        <span class="season-card__badge">Финальная цена</span>
-        <div class="swiper  swiper-season-product"> 
-    <div class="season-card__img swiper-wrapper ">
-        <div class="swiper-slide">
-<img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-<div class="swiper-slide">
-<img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-<div class="swiper-slide">
-<img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-</div>
-<div class="swiper-pagination"></div>
-</div>
-<div class="season-card__inform">
-<img class="season-card__inform-img" src="./assets/icons/star.png" alt="star">
-<span class="season-card__inform-number">5.0</span>
-<p class="season-card__inform-text">Робот для мытья окон Даджет dBot W120</p>
-</div>
-<div class="season-card__price">
-<span class="season-card__price-new">6 291 ₽</span>
-<span class="season-card__price-old">12037 ₽</span>
-</div>
-<div class="season-card__basket">
-<button class=" season-card__basket-button"> В корзину</button>
-</div>
-<div class="season-card__notification">
-<img  src="./assets/icons/like.png" alt="like">
-<img src="./assets/icons/static.png" alt=" static">
-<img src="./assets/icons/colocol.png" alt="colocol">
-</div>
-</div>
-    <!-- 4КАРТОЧКА -->
-    <div class="season-card__block ">
-        <span class="season-card__badge">Финальная цена</span>
-        <div class="swiper  swiper-season-product">    
-    <div class="season-card__img swiper-wrapper ">
-        <div class="swiper-slide">
-<img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-<div class="swiper-slide">
-<img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-<div class="swiper-slide">
-<img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-</div>
-<div class="swiper-pagination"></div>
-</div>
-<div class="season-card__inform">
-<img class="season-card__inform-img" src="./assets/icons/star.png" alt="star">
-<span class="season-card__inform-number">5.0</span>
-<p class="season-card__inform-text">Робот для мытья окон Даджет dBot W120</p>
-</div>
-<div class="season-card__price">
-<span class="season-card__price-new">6 291 ₽</span>
-<span class="season-card__price-old">12037 ₽</span>
-</div>
-<div class="season-card__basket">
-<button class=" season-card__basket-button"> В корзину</button>
-</div>
-<div class="season-card__notification">
-<img  src="./assets/icons/like.png" alt="like">
-<img src="./assets/icons/static.png" alt="static">
-<img src="./assets/icons/colocol.png" alt="colocol">
-</div>
-</div> 
-    </div>
-    <!-- свайпер 2 -->
-    <div class="season-card swiper-slide">
-        <div class="season-card__block ">
-            <span class="season-card__badge">Финальная цена</span>
-            <div class="swiper  swiper-season-product">   
-        <div class="season-card__img swiper-wrapper ">
-            <div class="swiper-slide">
-    <img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-<div class="swiper-slide">
-    <img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-<div class="swiper-slide">
-    <img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-</div>
-<div class="swiper-pagination"></div>
-</div>
-<div class="season-card__inform">
-    <img class="season-card__inform-img" src="./assets/icons/star.png" alt="star">
-    <span class="season-card__inform-number">5.0</span>
-    <p class="season-card__inform-text">Робот для мытья окон Даджет dBot W120</p>
-</div>
-<div class="season-card__price">
-    <span class="season-card__price-new">6 291 ₽</span>
-    <span class="season-card__price-old">12037 ₽</span>
-</div>
-<div class="season-card__basket">
-    <button class=" season-card__basket-button"> В корзину</button>
-</div>
-<div class="season-card__notification">
-<img  src="./assets/icons/like.png" alt="like">
-<img src="./assets/icons/static.png" alt="static">
-<img src="./assets/icons/colocol.png" alt="colocol">
-</div>
-</div>
-    <!-- 2 КАРТОЧКА -->
-    <div class="season-card__block ">
-        <span class="season-card__badge">Финальная цена</span>
-        <div class="swiper  swiper-season-product">   
-    <div class="season-card__img swiper-wrapper ">
-        <div class="swiper-slide">
-<img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-<div class="swiper-slide">
-<img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-<div class="swiper-slide">
-<img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-</div>
-<div class="swiper-pagination"></div>
-</div>
-<div class="season-card__inform">
-<img class="season-card__inform-img" src="./assets/icons/star.png" alt="star">
-<span class="season-card__inform-number">5.0</span>
-<p class="season-card__inform-text">Робот для мытья окон Даджет dBot W120</p>
-</div>
-<div class="season-card__price">
-<span class="season-card__price-new">6 291 ₽</span>
-<span class="season-card__price-old">12037 ₽</span>
-</div>
-<div class="season-card__basket">
-<button class=" season-card__basket-button"> В корзину</button>
-</div>
-<div class="season-card__notification">
-<img  src="./assets/icons/like.png" alt="like">
-<img src="./assets/icons/static.png" alt="static">
-<img src="./assets/icons/colocol.png" alt="colocol">
-</div>
-</div>
-    <!-- 
-    3 КАРТОЧКА -->
-    <div class="season-card__block">
-        <span class="season-card__badge">Финальная цена</span>
-        <div class="swiper  swiper-season-product">      
-    <div class="season-card__img swiper-wrapper ">
-        <div class="swiper-slide">
-<img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-<div class="swiper-slide">
-<img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-<div class="swiper-slide">
-<img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-</div>
-<div class="swiper-pagination"></div>
-</div>
-<div class="season-card__inform">
-<img class="season-card__inform-img" src="./assets/icons/star.png" alt="star">
-<span class="season-card__inform-number">5.0</span>
-<p class="season-card__inform-text">Робот для мытья окон Даджет dBot W120</p>
-</div>
-<div class="season-card__price">
-<span class="season-card__price-new">6 291 ₽</span>
-<span class="season-card__price-old">12037 ₽</span>
-</div>
-<div class="season-card__basket">
-<button class=" season-card__basket-button"> В корзину</button>
-</div>
-<div class="season-card__notification">
-<img  src="./assets/icons/like.png" alt="like">
-<img src="./assets/icons/static.png" alt="static">
-<img src="./assets/icons/colocol.png" alt="colocol">
-</div>
-</div>
-    <!-- 4КАРТОЧКА -->
-    <div class="season-card__block ">
-        <span class="season-card__badge">Финальная цена</span>
-        <div class="swiper  swiper-season-product">      
-    <div class="season-card__img swiper-wrapper ">
-        <div class="swiper-slide">
-<img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-<div class="swiper-slide">
-<img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-<div class="swiper-slide">
-<img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-</div>
-<div class="swiper-pagination"></div>
-</div>
-<div class="season-card__inform">
-<img class="season-card__inform-img" src="./assets/icons/star.png" alt="star">
-<span class="season-card__inform-number">5.0</span>
-<p class="season-card__inform-text">Робот для мытья окон Даджет dBot W120</p>
-</div>
-<div class="season-card__price">
-<span class="season-card__price-new">6 291 ₽</span>
-<span class="season-card__price-old">12037 ₽</span>
-</div>
-<div class="season-card__basket">
-<button class=" season-card__basket-button"> В корзину</button>
-</div>
-<div class="season-card__notification">
-<img  src="./assets/icons/like.png" alt="like">
-<img src="./assets/icons/static.png" alt="static">
-<img src="./assets/icons/colocol.png" alt="colocol">
-</div>
-</div>
-    </div>
-    <div class="season-card swiper-slide">
-        <div class="season-card__block ">
-            <span class="season-card__badge">Финальная цена</span>
-            <div class="swiper  swiper-season-product">   
-        <div class="season-card__img swiper-wrapper ">
-            <div class="swiper-slide">
-    <img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-<div class="swiper-slide"> 
-    <img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-<div class="swiper-slide"> 
-    <img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-</div>
-<div class="swiper-pagination"></div>
-</div>
-<div class="season-card__inform">
-    <img class="season-card__inform-img" src="./assets/icons/star.png" alt="star">
-    <span class="season-card__inform-number">5.0</span>
-    <p class="season-card__inform-text">Робот для мытья окон Даджет dBot W120</p>
-</div>
-<div class="season-card__price">
-    <span class="season-card__price-new">6 291 ₽</span>
-    <span class="season-card__price-old">12037 ₽</span>
-</div>
-<div class="season-card__basket">
-    <button class=" season-card__basket-button"> В корзину</button>
-</div>
-<div class="season-card__notification">
-<img  src="./assets/icons/like.png" alt="like">
-<img src="./assets/icons/static.png" alt="static">
-<img src="./assets/icons/colocol.png" alt="colocol">
-</div>
-</div>
-    <!-- 2 КАРТОЧКА -->
-    <div class="season-card__block">
-        <span class="season-card__badge">Финальная цена</span>
-        <div class="swiper  swiper-season-product">   
-    <div class="season-card__img swiper-wrapper ">
-        <div class="swiper-slide">
-<img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-<div class="swiper-slide">
-<img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-<div class="swiper-slide">
-<img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-</div>
-<div class="swiper-pagination"></div>
-</div>
-<div class="season-card__inform">
-<img class="season-card__inform-img" src="./assets/icons/star.png" alt="star">
-<span class="season-card__inform-number">5.0</span>
-<p class="season-card__inform-text">Робот для мытья окон Даджет dBot W120</p>
-</div>
-<div class="season-card__price">
-<span class="season-card__price-new">6 291 ₽</span>
-<span class="season-card__price-old">12037 ₽</span>
-</div>
-<div class="season-card__basket">
-<button class=" season-card__basket-button"> В корзину</button>
-</div>
-<div class="season-card__notification">
-<img  src="./assets/icons/like.png" alt="like">
-<img src="./assets/icons/static.png" alt="static">
-<img src="./assets/icons/colocol.png" alt="colocol">
-</div>
-</div>
-    <!-- 
-    3 КАРТОЧКА -->
-    <div class="season-card__block">
-        <span class="season-card__badge">Финальная цена</span>
-        <div class="swiper  swiper-season-product">      
-    <div class="season-card__img swiper-wrapper ">
-        <div class="swiper-slide">
-<img class="season-card__img-mouse" src="./assets/img/mouse.png" alt="mouse">
-</div>
-<div class="swiper-slide">
-<img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-<div class="swiper-slide">
-<img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-</div>
-<div class="swiper-pagination"></div>
-</div>
-<div class="season-card__inform">
-<img class="season-card__inform-img" src="./assets/icons/star.png" alt="star">
-<span class="season-card__inform-number">5.0</span>
-<p class="season-card__inform-text">Робот для мытья окон Даджет dBot W120</p>
-</div>
-<div class="season-card__price">
-<span class="season-card__price-new">6 291 ₽</span>
-<span class="season-card__price-old">12037 ₽</span>
-</div>
-<div class="season-card__basket">
-<button class=" season-card__basket-button"> В корзину</button>
-</div>
-<div class="season-card__notification">
-<img  src="./assets/icons/like.png" alt="like">
-<img src="./assets/icons/static.png" alt="static">
-<img src="./assets/icons/colocol.png" alt="colocol">
-</div>
-</div>
-    <!-- 4КАРТОЧКА -->
-    <div class="season-card__block ">
-        <span class="season-card__badge">Финальная цена</span>
-        <div class="swiper  swiper-season-product">    
-    <div class="season-card__img swiper-wrapper ">
-        <div class="swiper-slide">
-<img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-<div class="swiper-slide">
-<img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-<div class="swiper-slide">
-<img class="season-card__img-mouse " src="./assets/img/mouse.png" alt="mouse">
-</div>
-</div>
-<div class="swiper-pagination"></div>
-</div>
-<div class="season-card__inform">
-<img class="season-card__inform-img" src="./assets/icons/star.png" alt="star">
-<span class="season-card__inform-number">5.0</span>
-<p class="season-card__inform-text">Робот для мытья окон Даджет dBot W120</p>
-</div>
-<div class="season-card__price">
-<span class="season-card__price-new">6 291 ₽</span>
-<span class="season-card__price-old">12037 ₽</span>
-</div>
-<div class="season-card__basket">
-<button class=" season-card__basket-button"> В корзину</button>
-</div>
-<div class="season-card__notification">
-<img  src="./assets/icons/like.png" alt="like">
-<img src="./assets/icons/static.png" alt="static">
-<img src="./assets/icons/colocol.png" alt="colocol">
-</div>
-</div>
-    </div>
-    </div>
-           <!-- If we need navigation buttons -->
-           <div class="swiper-button-prev"> <img class="swiper-button__img-prev" src="./assets/icons/arrow.png" alt="button-prev"></div>
-           <div class="swiper-button-next"><img class="swiper-button__img-next" src="./assets/icons/arrow reverse.png" alt="button-next"></div>
-    </div>
-        </section>
-<!-- task 9 end -->
-            <div class="services">
-                <div class="services-wrapper-header">
-                    <h2 class="services-heading">
-                        Сервисы
-                    </h2>
-                    <div class="services-nav-wrapper">
-                        <button class="services-header-btn">Все</button>
-                        <button class="services-header-btn">Для компьютеров</button>
-                        <button class="services-header-btn">Для телевизоров</button>
-                        <button class="services-header-btn">Для смартфонов/планшетов</button>
-                        <button class="services-header-btn">Установка техники</button>
-                    </div>
-                </div>
-                <div class="swiper-services">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide swiper-slide-services">
-                            <div class="wrapper-card-services">
-                                <div class="services-card">
-                                    <div class="services-card-wrapper-img">
-                                        <div class="swiper-wrap-img">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                </div>
-                                            </div>
-                                            <div class="swiper-pagination"></div>
-                                        </div>
-                                    </div>
-                                    <div class="services-card-wrapper-title">
-                                        <div class="services-card-wrapper__raiting">
-                                            <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
-                                            <span class="services-card-wrapper__raiting--span">5.0</span>
-                                        </div>
-                                        <div class="services-card-wrapper-title_description">
-                                            Настройка SMART TV
-                                        </div>
-                                        <div class="services-card-wrapper-title_price">
-                                            <span class="price-new">
-                                                1300 &#x20bd;
-                                            </span>
-                                            <div class="price-old">
-                                                3000 ₽
-                                            </div>
-                                        </div>
-                                        <button class="services-card-wrapper-title_btn">
-                                            В корзину
-                                        </button>
-                                        <div class="services-card-wrapper-contein-btn">
-                                            <button>
-                                                <img src="./assets/icons/like-btn-service.svg" alt="like">
-                                            </button>
-                                            <button>
-                                                <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
-                                            </button>
-                                            <button>
-                                                <img src="./assets/icons/bell-btn-service.svg" alt="bell">
-                                            </button>
-                                        </div>
-                                        </div>
-                                        </div>
-                                        <div class="services-card">
-                                            <div class="services-card-wrapper-img">
-                                                <div class="swiper-wrap-img">
-                                                    <div class="swiper-wrapper">
-                                                        <div class="swiper-slide">
-                                                            <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                        </div>
-                                                        <div class="swiper-slide">
-                                                            <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                        </div>
-                                                        <div class="swiper-slide">
-                                                            <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                        </div>
-                                                    </div>
-                                                    <div class="swiper-pagination"></div>
-                                                </div>
-                                            </div>
-                                            <div class="services-card-wrapper-title">
-                                                <div class="services-card-wrapper__raiting">
-                                                    <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
-                                                    <span class="services-card-wrapper__raiting--span">5.0</span>
-                                                </div>
-                                                <div class="services-card-wrapper-title_description">
-                                                    Настройка SMART TV
-                                                </div>
-                                                <div class="services-card-wrapper-title_price">
-                                                    <span class="price-new">
-                                                        1300 &#x20bd;
-                                                    </span>
-                                                    <div class="price-old">
-                                                        3000 ₽
-                                                        <div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <button class="services-card-wrapper-title_btn">
-                                                    В корзину
-                                                </button>
-                                                <div class="services-card-wrapper-contein-btn">
-                                                    <button>
-                                                        <img src="./assets/icons/like-btn-service.svg" alt="like">
-                                                    </button>
-                                                    <button>
-                                                        <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
-                                                    </button>
-                                                    <button>
-                                                        <img src="./assets/icons/bell-btn-service.svg" alt="bell">
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="services-card">
-                                            <div class="services-card-wrapper-img">
-                                                <div class="swiper-wrap-img">
-                                                    <div class="swiper-wrapper">
-                                                        <div class="swiper-slide">
-                                                            <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                        </div>
-                                                        <div class="swiper-slide">
-                                                            <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                        </div>
-                                                        <div class="swiper-slide">
-                                                            <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                        </div>
-                                                    </div>
-                                                    <div class="swiper-pagination"></div>
-                                                </div>
-                                            </div>
-                                            <div class="services-card-wrapper-title">
-                                                <div class="services-card-wrapper__raiting">
-                                                    <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
-                                                    <span class="services-card-wrapper__raiting--span">5.0</span>
-                                                </div>
-                                                <div class="services-card-wrapper-title_description">
-                                                    Настройка SMART TV
-                                                </div>
-                                                <div class="services-card-wrapper-title_price">
-                                                    <span class="price-new">
-                                                        1300 &#x20bd;
-                                                    </span>
-                                                    <div class="price-old">
-                                                        3000 ₽
-                                                        <div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <button class="services-card-wrapper-title_btn">
-                                                    В корзину
-                                                </button>
-                                                <div class="services-card-wrapper-contein-btn">
-                                                    <button>
-                                                        <img src="./assets/icons/like-btn-service.svg" alt="like">
-                                                    </button>
-                                                    <button>
-                                                        <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
-                                                    </button>
-                                                    <button>
-                                                        <img src="./assets/icons/bell-btn-service.svg" alt="bell">
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="services-card">
-                                            <div class="services-card-wrapper-img">
-                                                <div class="swiper-wrap-img">
-                                                    <div class="swiper-wrapper">
-                                                        <div class="swiper-slide">
-                                                            <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                        </div>
-                                                        <div class="swiper-slide">
-                                                            <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                        </div>
-                                                        <div class="swiper-slide">
-                                                            <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                        </div>
-                                                    </div>
-                                                    <div class="swiper-pagination"></div>
-                                                </div>
-                                            </div>
-                                            <div class="services-card-wrapper-title">
-                                                <div class="services-card-wrapper__raiting">
-                                                    <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
-                                                    <span class="services-card-wrapper__raiting--span">5.0</span>
-                                                </div>
-                                                <div class="services-card-wrapper-title_description">
-                                                    Настройка SMART TV
-                                                </div>
-                                                <div class="services-card-wrapper-title_price">
-                                                    <span class="price-new">
-                                                        1300 &#x20bd;
-                                                    </span>
-                                                    <div class="price-old">
-                                                        3000 ₽
-                                                        <div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <button class="services-card-wrapper-title_btn">
-                                                    В корзину
-                                                </button>
-                                                <div class="services-card-wrapper-contein-btn">
-                                                    <button>
-                                                        <img src="./assets/icons/like-btn-service.svg" alt="like">
-                                                    </button>
-                                                    <button>
-                                                        <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
-                                                    </button>
-                                                    <button>
-                                                        <img src="./assets/icons/bell-btn-service.svg" alt="bell">
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        </div>
-                                        </div>
-                                        <div class="swiper-slide swiper-slide-services">
-                                            <div class="wrapper-card-services">
-                                                <div class="services-card">
-                                                    <div class="services-card-wrapper-img">
-                                                        <div class="swiper-wrap-img">
-                                                            <div class="swiper-wrapper">
-                                                                <div class="swiper-slide">
-                                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                                </div>
-                                                                <div class="swiper-slide">
-                                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                                </div>
-                                                                <div class="swiper-slide">
-                                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                                </div>
-                                                            </div>
-                                                            <div class="swiper-pagination"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="services-card-wrapper-title">
-                                                        <div class="services-card-wrapper__raiting">
-                                                            <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
-                                                            <span class="services-card-wrapper__raiting--span">5.0</span>
-                                                        </div>
-                                                        <div class="services-card-wrapper-title_description">
-                                                            Настройка SMART TV
-                                                        </div>
-                                                        <div class="services-card-wrapper-title_price">
-                                                            <span class="price-new">
-                                                                1300 &#x20bd;
-                                                            </span>
-                                                            <div class="price-old">
-                                                                3000 ₽
-                                                                <div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <button class="services-card-wrapper-title_btn">
-                                                            В корзину
-                                                        </button>
-                                                        <div class="services-card-wrapper-contein-btn">
-                                                            <button>
-                                                                <img src="./assets/icons/like-btn-service.svg" alt="like">
-                                                            </button>
-                                                            <button>
-                                                                <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
-                                                            </button>
-                                                            <button>
-                                                                <img src="./assets/icons/bell-btn-service.svg" alt="bell">
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="services-card">
-                                                    <div class="services-card-wrapper-img">
-                                                        <div class="swiper-wrap-img">
-                                                            <div class="swiper-wrapper">
-                                                                <div class="swiper-slide">
-                                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                                </div>
-                                                                <div class="swiper-slide">
-                                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                                </div>
-                                                                <div class="swiper-slide">
-                                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                                </div>
-                                                            </div>
-                                                            <div class="swiper-pagination"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="services-card-wrapper-title">
-                                                        <div class="services-card-wrapper__raiting">
-                                                            <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
-                                                            <span class="services-card-wrapper__raiting--span">5.0</span>
-                                                        </div>
-                                                        <div class="services-card-wrapper-title_description">
-                                                            Настройка SMART TV
-                                                        </div>
-                                                        <div class="services-card-wrapper-title_price">
-                                                            <span class="price-new">
-                                                                1300 &#x20bd;
-                                                            </span>
-                                                            <div class="price-old">
-                                                                3000 ₽
-                                                                <div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <button class="services-card-wrapper-title_btn">
-                                                            В корзину
-                                                        </button>
-                                                        <div class="services-card-wrapper-contein-btn">
-                                                            <button>
-                                                                <img src="./assets/icons/like-btn-service.svg" alt="like">
-                                                            </button>
-                                                            <button>
-                                                                <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
-                                                            </button>
-                                                            <button>
-                                                                <img src="./assets/icons/bell-btn-service.svg" alt="bell">
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="services-card">
-                                                    <div class="services-card-wrapper-img">
-                                                        <div class="swiper-wrap-img"">
-                                                                                <div class=" swiper-wrapper">
-                                                            <div class="swiper-slide">
-                                                                <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                            </div>
-                                                            <div class="swiper-slide">
-                                                                <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                            </div>
-                                                            <div class="swiper-slide">
-                                                                <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-pagination"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="services-card-wrapper-title">
-                                                    <div class="services-card-wrapper__raiting">
-                                                        <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
-                                                        <span class="services-card-wrapper__raiting--span">5.0</span>
-                                                    </div>
-                                                    <div class="services-card-wrapper-title_description">
-                                                        Настройка SMART TV
-                                                    </div>
-                                                    <div class="services-card-wrapper-title_price">
-                                                        <span class="price-new">
-                                                            1300 &#x20bd;
-                                                        </span>
-                                                        <div class="price-old">
-                                                            3000 ₽
-                                                            <div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <button class="services-card-wrapper-title_btn">
-                                                        В корзину
-                                                    </button>
-                                                    <div class="services-card-wrapper-contein-btn">
-                                                        <button>
-                                                            <img src="./assets/icons/like-btn-service.svg" alt="like">
-                                                        </button>
-                                                        <button>
-                                                            <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
-                                                        </button>
-                                                        <button>
-                                                            <img src="./assets/icons/bell-btn-service.svg" alt="bell">
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="services-card">
-                                                <div class="services-card-wrapper-img">
-                                                    <div class="swiper-wrap-img">
-                                                        <div class="swiper-wrapper">
-                                                            <div class="swiper-slide">
-                                                                <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                            </div>
-                                                            <div class="swiper-slide">
-                                                                <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                            </div>
-                                                            <div class="swiper-slide">
-                                                                <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-pagination"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="services-card-wrapper-title">
-                                                    <div class="services-card-wrapper__raiting">
-                                                        <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
-                                                        <span class="services-card-wrapper__raiting--span">5.0</span>
-                                                    </div>
-                                                    <div class="services-card-wrapper-title_description">
-                                                        Настройка SMART TV
-                                                    </div>
-                                                    <div class="services-card-wrapper-title_price">
-                                                        <span class="price-new">
-                                                            1300 &#x20bd;
-                                                        </span>
-                                                        <div class="price-old">
-                                                            3000 ₽
-                                                            <div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <button class="services-card-wrapper-title_btn">
-                                                        В корзину
-                                                    </button>
-                                                    <div class="services-card-wrapper-contein-btn">
-                                                        <button>
-                                                            <img src="./assets/icons/like-btn-service.svg" alt="like">
-                                                        </button>
-                                                        <button>
-                                                            <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
-                                                        </button>
-                                                        <button>
-                                                            <img src="./assets/icons/bell-btn-service.svg" alt="bell">
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        </div>
-                                        <div class="swiper-slide swiper-slide-services">
-                                            <div class="wrapper-card-services">
-                                                <div class="services-card">
-                                                    <div class="services-card-wrapper-img">
-                                                        <div class="swiper-wrap-img">
-                                                            <div class="swiper-wrapper">
-                                                                <div class="swiper-slide">
-                                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                                </div>
-                                                                <div class="swiper-slide">
-                                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                                </div>
-                                                                <div class="swiper-slide">
-                                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                                </div>
-                                                            </div>
-                                                            <div class="swiper-pagination"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="services-card-wrapper-title">
-                                                        <div class="services-card-wrapper__raiting">
-                                                            <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
-                                                            <span class="services-card-wrapper__raiting--span">5.0</span>
-                                                        </div>
-                                                        <div class="services-card-wrapper-title_description">
-                                                            Настройка SMART TV
-                                                        </div>
-                                                        <div class="services-card-wrapper-title_price">
-                                                            <span class="price-new">
-                                                                1300 &#x20bd;
-                                                            </span>
-                                                            <div class="price-old">
-                                                                3000 ₽
-                                                                <div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <button class="services-card-wrapper-title_btn">
-                                                            В корзину
-                                                        </button>
-                                                        <div class="services-card-wrapper-contein-btn">
-                                                            <button>
-                                                                <img src="./assets/icons/like-btn-service.svg" alt="like">
-                                                            </button>
-                                                            <button>
-                                                                <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
-                                                            </button>
-                                                            <button>
-                                                                <img src="./assets/icons/bell-btn-service.svg" alt="bell">
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="services-card">
-                                                    <div class="services-card-wrapper-img">
-                                                        <div class="swiper-wrap-img">
-                                                            <div class="swiper-wrapper">
-                                                                <div class="swiper-slide">
-                                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                                </div>
-                                                                <div class="swiper-slide">
-                                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                                </div>
-                                                                <div class="swiper-slide">
-                                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                                </div>
-                                                            </div>
-                                                            <div class="swiper-pagination"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="services-card-wrapper-title">
-                                                        <div class="services-card-wrapper__raiting">
-                                                            <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
-                                                            <span class="services-card-wrapper__raiting--span">5.0</span>
-                                                        </div>
-                                                        <div class="services-card-wrapper-title_description">
-                                                            Настройка SMART TV
-                                                        </div>
-                                                        <div class="services-card-wrapper-title_price">
-                                                            <span class="price-new">
-                                                                1300 &#x20bd;
-                                                            </span>
-                                                            <div class="price-old">
-                                                                3000 ₽
-                                                                <div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <button class="services-card-wrapper-title_btn">
-                                                            В корзину
-                                                        </button>
-                                                        <div class="services-card-wrapper-contein-btn">
-                                                            <button>
-                                                                <img src="./assets/icons/like-btn-service.svg" alt="like">
-                                                            </button>
-                                                            <button>
-                                                                <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
-                                                            </button>
-                                                            <button>
-                                                                <img src="./assets/icons/bell-btn-service.svg" alt="bell">
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="services-card">
-                                                    <div class="services-card-wrapper-img">
-                                                        <div class="swiper-wrap-img">
-                                                            <div class="swiper-wrapper">
-                                                                <div class="swiper-slide">
-                                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                                </div>
-                                                                <div class="swiper-slide">
-                                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                                </div>
-                                                                <div class="swiper-slide">
-                                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                                </div>
-                                                            </div>
-                                                            <div class="swiper-pagination"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="services-card-wrapper-title">
-                                                        <div class="services-card-wrapper__raiting">
-                                                            <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
-                                                            <span class="services-card-wrapper__raiting--span">5.0</span>
-                                                        </div>
-                                                        <div class="services-card-wrapper-title_description">
-                                                            Настройка SMART TV
-                                                        </div>
-                                                        <div class="services-card-wrapper-title_price">
-                                                            <span class="price-new">
-                                                                1300 &#x20bd;
-                                                            </span>
-                                                            <div class="price-old">
-                                                                3000 ₽
-                                                                <div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <button class="services-card-wrapper-title_btn">
-                                                            В корзину
-                                                        </button>
-                                                        <div class="services-card-wrapper-contein-btn">
-                                                            <button>
-                                                                <img src="./assets/icons/like-btn-service.svg" alt="like">
-                                                            </button>
-                                                            <button>
-                                                                <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
-                                                            </button>
-                                                            <button>
-                                                                <img src="./assets/icons/bell-btn-service.svg" alt="bell">
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="services-card">
-                                                    <div class="services-card-wrapper-img">
-                                                        <div class="swiper-wrap-img">
-                                                            <div class="swiper-wrapper">
-                                                                <div class="swiper-slide">
-                                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                                </div>
-                                                                <div class="swiper-slide">
-                                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                                </div>
-                                                                <div class="swiper-slide">
-                                                                    <img src="./assets/img/tavar-services.png" alt="tavar-services">
-                                                                </div>
-                                                            </div>
-                                                            <div class="swiper-pagination"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="services-card-wrapper-title">
-                                                        <div class="services-card-wrapper__raiting">
-                                                            <img src="./assets/icons/raiting-icons.svg" alt="raiting-icons">
-                                                            <span class="services-card-wrapper__raiting--span">5.0</span>
-                                                        </div>
-                                                        <div class="services-card-wrapper-title_description">
-                                                            Настройка SMART TV
-                                                        </div>
-                                                        <div class="services-card-wrapper-title_price">
-                                                            <span class="price-new">
-                                                                1300 &#x20bd;
-                                                            </span>
-                                                            <div class="price-old">
-                                                                3000 ₽
-                                                                <div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <button class="services-card-wrapper-title_btn">
-                                                            В корзину
-                                                        </button>
-                                                        <div class="services-card-wrapper-contein-btn">
-                                                            <button>
-                                                                <img src="./assets/icons/like-btn-service.svg" alt="like">
-                                                            </button>
-                                                            <button>
-                                                                <img src="./assets/icons/dinamica-btn-service.svg" alt="dinamica">
-                                                            </button>
-                                                            <button>
-                                                                <img src="./assets/icons/bell-btn-service.svg" alt="bell">
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        </div>
-                                        <!-- If we need navigation buttons -->
-                                        <div class="swiper-button-prev--services"><img src="./assets/icons/prev-swiper-services.svg" alt="button-prev"></div>
-                                        <div class="swiper-button-next--services"><img src="./assets/icons/next-swiper-services.svg" alt="button-prev"></div>
-                                        </div>
-                                        </div>
-                                        </main>
-                                        
-                                        </div>
-                                        <footer id="footer-tecnical-store">
-                                                <div class="about-company">
-                                                    <div class="footer-tecnical-store__inform">
-                                                        <h2 class="title-inform-company">Компания</h2>
-                                                        <ul class="inform-company-list">
-                                                            <li><a href="####">О нас</a></li>
-                                                            <li><a href="####">Магазины</a></li>
-                                                            <li><a href="####">Блог</a></li>
-                                                            <li><a href="####">Вакансии</a></li>
-                                                            <li><a href="####">Контакты</a></li>
-                                                            <li><a href="####">Партнерская программа</a></li>
-                                                        </ul>
-                                                        <div class="project-date">© Проект, 2024</div>
-                                                    </div>
-                                                </div>
-                                                <div class="about-buyers">
-                                                    <div class="footer-tecnical-store__inform">
-                                                        <h2 class="title-inform-company">Покупателям</h2>
-                                                        <ul class="inform-company-list">
-                                                            <li><a href="####">Как сделать заказ</a></li>
-                                                            <li><a href="####">Оплата и доставка</a></li>
-                                                            <li><a href="####">Статус заказа</a></li>
-                                                            <li><a href="####">Возврат</a></li>
-                                                            <li><a href="####">Юридическая информация</a></li>
-                                                            <li><a href="####">Политика персональных данных</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="client-connection">
-                                                    <div class="footer-tecnical-store__inform">
-                                                        <h2 class="title-inform-company">На связи 24/7</h2>
-                                                        <ul class="inform-company-list">
-                                                            <li><a href="####"><img src="./assets/icons/Tel.svg" alt="">+7 (812) 834-84-88</a></li>
-                                                            <li><a href="####"><img src="./assets/icons/mail.svg" alt="">example@mail.ru</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="subscribe">
-                                                    <h2 class="subscribe__title">Подписаться на новости и акции</h2>
-                                                    <form class="subscribe__form" action="###" method="get">
-                                                        <input class="subscribe__input" type="text" placeholder="E-mail">
-                                                        <button class="subscribe__btn">Подписаться</button>
-                                                    </form>
-                                                    <div class="subscribe__inform">
-                                                        <span class="subscribe__agreement"> Нажимая «Подписаться», я даю согласие на получение рекламной
-                                                            рассылки и обработку
-                                                            <a href="###">персональных данных</a>
-                                                        </span>
-                                                    </div>
-                                                    <div class="subscribe__list">
-                                                        <h3>Мы в социальных сетях</h3>
-                                                        <ul>
-                                                            <li><a href="####"><img src="./assets/icons/footer youtube icon.svg" alt="иконка youtube"></a>
-                                                            </li>
-                                                            <li><a href="####"><img src="./assets/icons/footer instagram icon.svg" alt="иконка instagram"></a>
-                                                            </li>
-                                                            <li><a href="####"><img src="./assets/icons/footer facebook icon.svg" alt="иконка facebook"></a>
-                                                            </li>
-                                                            <li><a href="####"><img src="./assets/icons/footer VK icon.svg" alt="иконка VK"></a></li>
-                                                            <li><a href="####"><img src="./assets/icons/footer telegram icon.svg" alt="иконка telegram"></a>
-                                                            </li>
-                                                            <li><a href="####"><img src="./assets/icons/footer odnoklassniki icon.svg" alt="иконка однокласснки"></a></li>
-                                                        </ul>
-                                                        <div class="payment">
-                                                            <span class="payment__title">Мы принимаем к оплате</span>
-                                                            <div class="payment__list">
-                                                                <ul>
-                                                                    <li><img src="./assets/icons/visa.svg" alt=""></li>
-                                                                    <li><img src="./assets/icons/master card.svg" alt=""></li>
-                                                                    <li><img src="./assets/icons/mir.svg" alt=""></li>
-                                                                    <li><img src="./assets/icons/google pay.svg" alt=""></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                        </footer>
-                                        </body>
-                                        
-                                        </html>
+</footer>
+    
+</body>
+</html>
