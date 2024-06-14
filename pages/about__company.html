@@ -8,8 +8,10 @@
         <link rel="stylesheet" href="../index.css">
         <link rel="stylesheet" href="../styles/media-queries-accordion.css">
         <link rel="stylesheet" href="../styles/about__company.css">
+        <link rel="stylesheet" href="../styles/media-queries-about-company.css">
         <script src="../scripts/modal.js" defer></script>
         <script src="../scripts/burger-menu.js" defer></script>
+        <script src="../scripts/about-us.js" defer></script>
 </head>
 
 <body>
@@ -4898,16 +4900,16 @@
                 </header>
 
                 <section id="about-us" class="about-us">
-                         <nav class="bread-crumb">
+                        <nav class="bread-crumb">
                                 <ul class="bread-crumb__menu">
-                                        <li class="bread-crumb__item"><a class="bread-crumb__link"  href="../index.html">Главная</a></li>
-                                        <li class="bread-crumb__item"><span class="bread-crumb__page">О компании</span></li>
+                                        <li class="bread-crumb__item"><a class="bread-crumb__link"
+                                                        href="../index.html">Главная</a></li>
+                                        <li class="bread-crumb__item"><span class="bread-crumb__page">О компании</span>
+                                        </li>
                                 </ul>
-                         </nav>
-                
+                        </nav>
                         <h2 class="about-us__title">О компании</h2>
                         <div class="about-us__img-wrapper">
-                                <!-- <img class="about-us__img" src="../assets/img/about__us-img.png" alt="about-us_img"> -->
                         </div>
                         <p class="about-us__desc">Наша компания — ведущий поставщик бытовой техники для дома. Мы
                                 гордимся своей
@@ -4945,7 +4947,6 @@
                                                 ассортимент насчитывает сотни продуктов различных марок, позволяя нашим
                                                 клиентам выбирать оптимальное соотношение цены и качества.</p>
                                 </div>
-
                         </div>
                         <div class="quality__content-wrapper">
                                 <div class="quality__content-inner">
@@ -4966,79 +4967,92 @@
 
                 <footer id="footer-tecnical-store">
                         <div class="about-company">
-                            <div class="footer-tecnical-store__inform">
-                                <h2 class="title-inform-company">Компания</h2>
-                                <ul class="inform-company-list">
-                                    <li><a href="####">О нас</a></li>
-                                    <li><a href="####">Магазины</a></li>
-                                    <li><a href="####">Блог</a></li>
-                                    <li><a href="####">Вакансии</a></li>
-                                    <li><a href="####">Контакты</a></li>
-                                    <li><a href="####">Партнерская программа</a></li>
-                                </ul>
-                                <div class="project-date">© Проект, 2024</div>
-                            </div>
+                                <div class="footer-tecnical-store__inform">
+                                        <ul class="inform-company-list about-company__list">
+                                                <li class="title-inform-company about-company__title"><a href="####"
+                                                                onclick="togglemenu()">Компания</a></li>
+                                                <li><a href="####">О нас</a></li>
+                                                <li><a href="####">Магазины</a></li>
+                                                <li><a href="####">Блог</a></li>
+                                                <li><a href="####">Вакансии</a></li>
+                                                <li><a href="####">Контакты</a></li>
+                                                <li><a href="####">Партнерская программа</a></li>
+                                        </ul>
+                                        <div class="project-date">© Проект, 2024</div>
+                                </div>
                         </div>
                         <div class="about-buyers">
-                            <div class="footer-tecnical-store__inform">
-                                <h2 class="title-inform-company">Покупателям</h2>
-                                <ul class="inform-company-list">
-                                    <li><a href="####">Как сделать заказ</a></li>
-                                    <li><a href="####">Оплата и доставка</a></li>
-                                    <li><a href="####">Статус заказа</a></li>
-                                    <li><a href="####">Возврат</a></li>
-                                    <li><a href="####">Юридическая информация</a></li>
-                                    <li><a href="####">Политика персональных данных</a></li>
-                                </ul>
-                            </div>
+                                <div class="footer-tecnical-store__inform">
+                                        <ul class="inform-company-list about-buyers__list">
+                                                <li class="title-inform-company about-buyers__title"><a href="####"
+                                                                onclick="togglemenu1()">Покупателям</a></li>
+                                                <li><a href="####">Как сделать заказ</a></li>
+                                                <li><a href="####">Оплата и доставка</a></li>
+                                                <li><a href="####">Статус заказа</a></li>
+                                                <li><a href="####">Возврат</a></li>
+                                                <li><a href="####">Юридическая информация</a></li>
+                                                <li><a href="####">Политика персональных данных</a></li>
+                                        </ul>
+                                </div>
                         </div>
                         <div class="client-connection">
-                            <div class="footer-tecnical-store__inform">
-                                <h2 class="title-inform-company">На связи 24/7</h2>
-                                <ul class="inform-company-list">
-                                    <li><a href="####"><img src="../assets/icons/Tel.svg" alt="">+7 (812) 834-84-88</a></li>
-                                    <li><a href="####"><img src="../assets/icons/mail.svg" alt="">example@mail.ru</a></li>
-                                </ul>
-                            </div>
+                                <div class="footer-tecnical-store__inform">
+                                        <h2 class="title-inform-company">На связи 24/7</h2>
+                                        <ul class="inform-company-list">
+                                                <li><a href="####"><img src="../assets/icons/Tel.svg" alt="">+7 (812)
+                                                                834-84-88</a></li>
+                                                <li><a href="####"><img src="../assets/icons/mail.svg"
+                                                                        alt="">example@mail.ru</a></li>
+                                        </ul>
+                                </div>
                         </div>
                         <div class="subscribe">
-                            <h2 class="subscribe__title">Подписаться на новости и акции</h2>
-                            <form class="subscribe__form" action="###" method="get">
-                                <input class="subscribe__input" type="text" placeholder="E-mail">
-                                <button class="subscribe__btn">Подписаться</button>
-                            </form>
-                            <div class="subscribe__inform">
-                                <span class="subscribe__agreement"> Нажимая «Подписаться», я даю согласие на получение рекламной
-                                    рассылки и обработку
-                                    <a href="###">персональных данных</a>
-                                </span>
-                            </div>
-                            <div class="subscribe__list">
-                                <h3>Мы в социальных сетях</h3>
-                                <ul>
-                                    <li><a href="####"><img src="../assets/icons/footer youtube icon.svg" alt="иконка youtube"></a>
-                                    </li>
-                                    <li><a href="####"><img src="../assets/icons/footer instagram icon.svg" alt="иконка instagram"></a>
-                                    </li>
-                                    <li><a href="####"><img src="../assets/icons/footer facebook icon.svg" alt="иконка facebook"></a>
-                                    </li>
-                                    <li><a href="####"><img src="../assets/icons/footer VK icon.svg" alt="иконка VK"></a></li>
-                                    <li><a href="####"><img src="../assets/icons/footer telegram icon.svg" alt="иконка telegram"></a>
-                                    </li>
-                                    <li><a href="####"><img src="../assets/icons/footer odnoklassniki icon.svg" alt="иконка однокласснки"></a></li>
-                                </ul>
-                                <div class="payment">
-                                    <span class="payment__title">Мы принимаем к оплате</span>
-                                    <div class="payment__list">
-                                        <ul>
-                                            <li><img src="../assets/icons/visa.svg" alt=""></li>
-                                            <li><img src="../assets/icons/master card.svg" alt=""></li>
-                                            <li><img src="../assets/icons/mir.svg" alt=""></li>
-                                            <li><img src="../assets/icons/google pay.svg" alt=""></li>
-                                        </ul>
-                                    </div>
+                                <h2 class="subscribe__title">Подписаться на новости и акции</h2>
+                                <form class="subscribe__form" action="###" method="get">
+                                        <input class="subscribe__input" type="text" placeholder="E-mail">
+                                        <button class="subscribe__btn">Подписаться</button>
+                                </form>
+                                <div class="subscribe__inform">
+                                        <span class="subscribe__agreement"> Нажимая «Подписаться», я даю согласие на
+                                                получение рекламной
+                                                рассылки и обработку
+                                                <a href="###">персональных данных</a>
+                                        </span>
                                 </div>
-                            </div>
+                                <div class="subscribe__list">
+                                        <h3>Мы в социальных сетях</h3>
+                                        <ul>
+                                                <li><a href="####"><img src="../assets/icons/footer youtube icon.svg"
+                                                                        alt="иконка youtube"></a>
+                                                </li>
+                                                <li><a href="####"><img src="../assets/icons/footer instagram icon.svg"
+                                                                        alt="иконка instagram"></a>
+                                                </li>
+                                                <li><a href="####"><img src="../assets/icons/footer facebook icon.svg"
+                                                                        alt="иконка facebook"></a>
+                                                </li>
+                                                <li><a href="####"><img src="../assets/icons/footer VK icon.svg"
+                                                                        alt="иконка VK"></a></li>
+                                                <li><a href="####"><img src="../assets/icons/footer telegram icon.svg"
+                                                                        alt="иконка telegram"></a>
+                                                </li>
+                                                <li><a href="####"><img src="../assets/icons/footer odnoklassniki icon.svg"
+                                                                        alt="иконка однокласснки"></a></li>
+                                        </ul>
+                                        <div class="payment">
+                                                <span class="payment__title">Мы принимаем к оплате</span>
+                                                <div class="payment__list">
+                                                        <ul>
+                                                                <li><img src="../assets/icons/visa.svg" alt=""></li>
+                                                                <li><img src="../assets/icons/master card.svg" alt="">
+                                                                </li>
+                                                                <li><img src="../assets/icons/mir.svg" alt=""></li>
+                                                                <li><img src="../assets/icons/google pay.svg" alt="">
+                                                                </li>
+                                                        </ul>
+                                                </div>
+                                        </div>
+                                </div>
                         </div>
                 </footer>
         </div>
