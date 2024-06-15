@@ -1,0 +1,515 @@
+ @media (max-width: 1200px) {
+     .bread-crumb__link {
+         font-size: clamp(10px, 3vw, 14px);
+     }
+
+     .bread-crumb__page {
+         font-size: clamp(10px, 3vw, 14px);
+     }
+
+     .about-us__title {
+         font-size: clamp(20px, 5vw, 25px);
+     }
+
+     .about-us__desc {
+         font-size: clamp(12px, 3vw, 16px);
+     }
+
+     .about-us__sub-title {
+         font-size: clamp(14px, 4vw, 18px);
+     }
+
+     .about-us__text {
+         font-size: clamp(12px, 3vw, 16px);
+     }
+ }
+
+ @media (max-width: 968px) {
+     .header {
+         padding: 25px 50px 0 50px;
+     }
+
+     .about-us {
+         padding: 40px 50px 0 50px;
+     }
+
+     .bread-crumb__link {
+         font-size: clamp(10px, 3vw, 14px);
+     }
+
+     .bread-crumb__page {
+         font-size: clamp(10px, 3vw, 14px);
+     }
+
+     .about-us__title {
+         font-size: clamp(20px, 5vw, 25px);
+     }
+
+     .about-us__desc {
+         font-size: clamp(12px, 3vw, 16px);
+     }
+
+     .about-us__sub-title {
+         font-size: clamp(14px, 4vw, 18px);
+     }
+
+     .about-us__text {
+         font-size: clamp(12px, 3vw, 16px);
+     }
+
+     #footer-tecnical-store {
+         margin-top: 50px;
+     }
+ }
+
+ @media (max-width: 762px) {
+
+     .header {
+         padding: 25px 30px 0 30px;
+     }
+
+     .about-us {
+         padding: 30px 30px 0 30px;
+     }
+
+     .bread-crumb__link {
+         font-size: clamp(10px, 3vw, 14px);
+     }
+
+     .bread-crumb__page {
+         font-size: clamp(10px, 3vw, 14px);
+     }
+
+     .about-us__title {
+         font-size: clamp(18px, 5vw, 22px);
+     }
+
+     .about-us__desc {
+         font-size: clamp(10px, 3vw, 14px);
+     }
+
+     .about-us__sub-title {
+         font-size: clamp(12px, 4vw, 16px);
+     }
+
+     .about-us__text {
+         font-size: clamp(10px, 3vw, 14px);
+         display: block;
+         width: 100%;
+         margin-bottom: 30px;
+     }
+
+     .our-mission__content-wrapper {
+         display: flex;
+         flex-direction: column;
+         padding: 30px 0;
+     }
+
+     .our-mission__content-inner {
+         width: 100%;
+     }
+
+     .our-mission__img-wrapper {
+         width: 100%;
+     }
+
+     .product-range__content-wrapper {
+         display: flex;
+         flex-direction: column-reverse;
+     }
+
+     .product-range__img-wrapper {
+         width: 100%;
+     }
+
+     .quality__content-wrapper {
+         display: flex;
+         flex-direction: column;
+         padding-top: 30px;
+     }
+
+     .quality__img-wrapper {
+         width: 100%;
+     }
+
+     #footer-tecnical-store {
+         margin-top: 50px;
+         flex-direction: column;
+         padding: 40px 30px;
+     }
+
+     #footer-tecnical-store>.subscribe {
+         order: -1;
+         margin-bottom: 30px;
+     }
+
+     #footer-tecnical-store>.client-connection {
+         order: 1;
+     }
+
+     #footer-tecnical-store>.about-company {
+         order: 3;
+     }
+
+     #footer-tecnical-store>.about-buyers {
+         order: 2;
+     }
+
+     .inform-company-list {
+         margin-bottom: 30px;
+     }
+
+     .about-company__list li:first-child {
+         display: inline-block;
+         font-weight: 600;
+         padding-bottom: 10px;
+     }
+
+     .about-company__list {
+         position: relative;
+     }
+
+     .about-company__list li:first-child ::before {
+         content: "";
+         position: absolute;
+         display: block;
+         border: solid black;
+         border-width: 0 3px 3px 0;
+         padding: 4px;
+         transform: rotate(90deg);
+         -webkit-transform: rotate(45deg);
+         top: 0;
+         right: -70px;
+         transition: transform .5s ease-in-out;
+     }
+
+     .about-company__list li {
+         display: none;
+
+     }
+
+     .open li {
+         display: block;
+     }
+
+     .open li:first-child ::before {
+         content: "";
+         transform: rotate(225deg);
+         -webkit-transform: rotate(225deg);
+         transition: transform .5s ease-in-out;
+     }
+
+     .about-buyers__list {
+         position: relative;
+     }
+
+     .about-buyers__list li:first-child {
+         display: inline-block;
+         font-size: 15px;
+         font-weight: 600;
+         padding-bottom: 10px;
+     }
+
+     .about-buyers__list li:first-child ::before {
+         content: "";
+         position: absolute;
+         display: block;
+         border: solid black;
+         border-width: 0 3px 3px 0;
+         padding: 4px;
+         transform: rotate(90deg);
+         -webkit-transform: rotate(45deg);
+         top: 0;
+         right: -50px;
+         transition: transform .5s ease-in-out;
+     }
+
+     .open1 li:first-child ::before {
+         content: "";
+         transform: rotate(225deg);
+         -webkit-transform: rotate(225deg);
+         transition: transform .5s ease-in-out;
+     }
+
+     .about-buyers__list li {
+         display: none;
+     }
+
+     .about-buyers__list a {
+         display: block;
+     }
+
+     .open1 li {
+         display: block;
+     }
+
+     .subscribe__title {
+         font-size: clamp(12px, 3vw, 15px);
+     }
+
+     .subscribe__input {
+         width: 60%;
+     }
+
+     .subscribe__btn {
+         width: 38%;
+     }
+
+     .subscribe__agreement {
+         font-size: clamp(10px, 3vw, 13px);
+     }
+
+     .subscribe__list h3 {
+         font-size: clamp(10px, 3vw, 14px);
+     }
+
+     .payment__title {
+         font-size: clamp(10px, 3vw, 14px);
+     }
+
+     .title-inform-company {
+         font-size: clamp(12px, 3vw, 15px);
+     }
+
+     .inform-company-list a {
+         font-size: clamp(12px, 3vw, 15px);
+     }
+
+     .inform-company-list a {
+         font-size: clamp(12px, 3vw, 15px);
+     }
+ }
+
+ @media (max-width: 540px) {
+
+     .header {
+         padding: 25px 15px 0 15px;
+     }
+
+     .about-us {
+         padding: 20px 15px 0 15px;
+     }
+
+     .bread-crumb__link {
+         font-size: clamp(10px, 3vw, 14px);
+     }
+
+     .bread-crumb__page {
+         font-size: clamp(10px, 3vw, 14px);
+     }
+
+     .about-us__title {
+         font-size: clamp(16px, 5vw, 20px);
+     }
+
+     .about-us__desc {
+         font-size: clamp(10px, 3vw, 14px);
+     }
+
+     .about-us__sub-title {
+         font-size: clamp(10px, 4vw, 16px);
+     }
+
+     .about-us__text {
+         font-size: clamp(10px, 3vw, 14px);
+         margin-bottom: 30px;
+     }
+
+     .our-mission__content-wrapper {
+         padding: 20px 0;
+     }
+
+     .quality__content-wrapper {
+         padding-top: 20px;
+     }
+
+     #footer-tecnical-store {
+         margin-top: 50px;
+         padding: 30px 15px;
+     }
+
+     .inform-company-list {
+         margin-bottom: 20px;
+     }
+
+     .about-company__list li:first-child {
+         padding-bottom: 10px;
+     }
+
+      .about-company__list li:first-child ::before {
+         border-width: 0 2px 2px 0;
+         padding: 3px;
+         top: 0;
+         right: -70px;
+     } 
+
+     .about-buyers__list li:first-child {
+         padding-bottom: 10px;
+     }
+
+      .about-buyers__list li:first-child ::before {
+         border-width: 0 2px 2px 0;
+         padding: 3px;
+         top: 0;
+         right: -50px;
+     } 
+
+     .subscribe__title {
+         font-size: clamp(12px, 3vw, 15px);
+     }
+
+     .subscribe__input {
+         width: 60%;
+     }
+
+     .subscribe__btn {
+         width: 38%;
+     }
+
+     .subscribe__agreement {
+         font-size: clamp(10px, 3vw, 13px);
+     }
+
+     .subscribe__list h3 {
+         font-size: clamp(10px, 3vw, 14px);
+     }
+
+     .payment__title {
+         font-size: clamp(10px, 3vw, 14px);
+     }
+
+     .title-inform-company {
+         font-size: clamp(10px, 3vw, 14px);
+     }
+
+     .inform-company-list a {
+         font-size: clamp(10px, 3vw, 14px);
+     }
+
+     .inform-company-list a {
+         font-size: clamp(12px, 3vw, 14px);
+     }
+
+     .project-date {
+         font-size: clamp(10px, 3vw, 14px);
+     }
+ }
+
+ @media (max-width: 320px) {
+     .header {
+         padding: 25px 15px 0 15px;
+     }
+
+     .about-us {
+         padding: 20px 15px 0 15px;
+     }
+
+     .bread-crumb__link {
+         font-size: clamp(10px, 3vw, 14px);
+     }
+
+     .bread-crumb__page {
+         font-size: clamp(10px, 3vw, 14px);
+     }
+
+     .about-us__title {
+         font-size: clamp(16px, 5vw, 20px);
+     }
+
+     .about-us__desc {
+         font-size: clamp(10px, 3vw, 14px);
+     }
+
+     .about-us__sub-title {
+         font-size: clamp(10px, 4vw, 16px);
+     }
+
+     .about-us__text {
+         font-size: clamp(10px, 3vw, 14px);
+         margin-bottom: 30px;
+     }
+
+     .our-mission__content-wrapper {
+         padding: 20px 0;
+     }
+
+     .our-mission__img-wrapper {
+         width: 100%;
+     }
+
+     .quality__content-wrapper {
+         padding-top: 20px;
+     }
+
+     #footer-tecnical-store {
+         margin-top: 50px;
+         padding: 30px 15px;
+     }
+
+     .inform-company-list {
+         margin-bottom: 20px;
+     }
+
+     .about-company__list li:first-child {
+         padding-bottom: 10px;
+     }
+
+      .about-company__list li:first-child ::before {
+         top: 0;
+         right: 30px;
+     }
+
+     .about-buyers__list li:first-child {
+         padding-bottom: 10px;
+     }
+
+      .about-buyers__list li:first-child ::before {
+         top: 0;
+         right: 50px;
+     } 
+
+     .subscribe__title {
+         font-size: clamp(12px, 3vw, 15px);
+     }
+
+     .subscribe__input {
+         width: 43%;
+     }
+
+     .subscribe__btn {
+         padding: 10px;
+         width: 30%;
+     }
+
+     .subscribe__agreement {
+         font-size: clamp(10px, 3vw, 13px);
+     }
+
+     .subscribe__list h3 {
+         font-size: clamp(10px, 3vw, 14px);
+     }
+
+     .payment__title {
+         font-size: clamp(10px, 3vw, 14px);
+     }
+
+     .title-inform-company {
+         font-size: clamp(10px, 3vw, 14px);
+     }
+
+     .inform-company-list a {
+         font-size: clamp(10px, 3vw, 14px);
+     }
+
+     .inform-company-list a {
+         font-size: clamp(12px, 3vw, 14px);
+     }
+
+     .project-date {
+         font-size: clamp(10px, 3vw, 14px);
+     }
+
+     .subscribe__inform {
+         width: 75%;
+     }
+ }
