@@ -32,7 +32,7 @@ ul {
 }
 .phone-product {
     display: flex;
-    flex-direction: row;
+   
     column-gap: 670px;
     margin-top: 58px;
 }
@@ -239,10 +239,10 @@ ul {
     justify-content: space-between;
     }
 .swiper-telephone{
-    margin-top: 30px;
+    margin-top: 450px;
     width: 400px;
     position: absolute;
-    left: -470px;    
+    right: 1230px;   
     }
 .swiper-wrapper-telephone{
     margin-left: 60px;   
@@ -347,4 +347,9 @@ ul {
     letter-spacing: 0%;
     text-align: left;
     margin-top: 15px;
+}
+
+.test-list {
+    display: none;
+    padding: 10px 247px 10px 15px;
 }
