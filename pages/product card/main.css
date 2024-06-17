@@ -34,14 +34,10 @@ ul {
 
 .phone-product {
     display: flex;
-    flex-direction: row;
+   
     column-gap: 670px;
     margin-top: 58px;
 }
-
-
-
-
 .phone-product-sale__percent {
     color: rgb(255, 255, 255);
     font-size: 13px;
@@ -71,10 +67,6 @@ ul {
 
 
 }
-
-
-
-=======
 }
 .phone-rating__number {
     color: rgb(255, 176, 0);
@@ -171,8 +163,6 @@ ul {
 }
 .phone-presence__text {
     color: rgb(42, 31, 32);
-
-
 font-size: 14px;
 font-weight: 400;
 line-height: 174%;
@@ -202,7 +192,6 @@ box-shadow: 0px 6px 14.4px 0px rgba(220, 9, 46, 0.15);
 
 .phone-develory-pickup__about span {
     
-
     font-size: 14px;
     font-weight: 400;
     line-height: 174%;
@@ -269,10 +258,10 @@ box-shadow: 0px 6px 14.4px 0px rgba(220, 9, 46, 0.15);
     justify-content: space-between;
     }
 .swiper-telephone{
-    margin-top: 30px;
+    margin-top: 450px;
     width: 400px;
     position: absolute;
-    left: -470px;    
+    right: 1230px;   
     }
 .swiper-wrapper-telephone{
     margin-left: 60px;   
@@ -385,3 +374,7 @@ box-shadow: 0px 6px 14.4px 0px rgba(220, 9, 46, 0.15);
     margin-top: 15px;
 }
 
+.test-list {
+    display: none;
+    padding: 10px 247px 10px 15px;
+}
