@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script defer src="/scripts/shopping-cart.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header_top">
+            <nav class="header_top-nav">
+                <li>
+                    <a href="#">О нас</a>
+                </li>
+                <li>
+                    <a href="#">Магазины</a>
+                </li>
+                <li>
+                    <a href="#">Оплата и доставка</a>
+                </li>
+                <li>
+                    <a href="#">Статус заказа</a>
+                </li>
+                <li>
+                    <a href="#">Возврат</a>
+                </li>
+                <li>
+                    <a href="#">Контакты</a>
+                </li>
+            </nav>
+            <div class="header_top-location">
+                <img class="header_top-location--img" src="/assets/icons/Local.svg" alt="Moscow">
+                <a href="#">Москва</a>
+            </div>
+            <div class="header_top-tel">
+                <img  src="/assets/icons/Tel.svg" alt="Tel">
+                <a href="tel:+7 (812) 834-84-88">+7 (812) 834-84-88</a>
+            </div>
+        </div>  
+        <div class="header_midl">
+            <button class="header_midl-btn">
+              <img src="/assets/icons/burger.svg" alt="burger"> 
+              Каталог
+          </button>
+            <div class="header_midl__search-input">
+                <input  placeholder="Поиск товара" type="text">
+                <img src="/assets/icons/Search.svg" alt="Search">
+            </div>
+            <div class="header_midl-wrapper--btn">
+                <a href="#">
+                    <img src="/assets/icons/Favorites.svg" alt="Favorites">
+                    <span>Избранное</span>
+                </a>
+                <a id="cart-button" href="#">
+                    <img src="/assets/icons/Basket.svg" alt="Basket">
+                    <span>Корзина</span>
+                </a>
+                <button onclick="modalActiv(event)">
+                    <img src="/assets/icons/User.svg" alt="User">
+                    <span>Войти</span>
+                </button>
+            </div>
+        </div>
+        <div class="header_bottom">
+            <button type="button" class="header_bottom-btn">Смартфоны</button>
+            <button type="button" class="header_bottom-btn">Стиральные машины</button>
+            <button type="button" class="header_bottom-btn">Пылесосы</button>
+            <button type="button" class="header_bottom-btn">Холодильники</button>
+            <button type="button" class="header_bottom-btn">Телевизоры </button>
+            <button type="button" class="header_bottom-btn">Микроволновые печи</button>
+            <button type="button" class="header_bottom-btn">Наушники</button>
+            <button type="button" class="header_bottom-btn">Электрочайники</button>
+            <button type="button" class="header_bottom-btn">Вытяжки</button>
+        </div> 
+        <div class="modal-wrap none" onclick="modalActiv(event)">
+            <div class="modal-header" onclick="event.stopPropagation()">
+                <div class="modal-title">
+                  Вход или регистрация
+                </div>
+        
+                <span class="modal-discription">
+                  Введите номер телефона. Мы отправим вам код в СМС.
+                </span> 
+                <form class="modal-form"> 
+                  <input class="modal-input" type="text" placeholder="Номер телефона" maxlength="18" name="input-modal"> 
+        
+                  <button class="modal-input-btn">регистрация</button> 
+                </form>
+                
+                <button onclick="modalActiv(event)" class="modal-cross">
+                  <img src="./assets/icons/modal-cross-icon.svg" alt="">
+                </button>
+            </div>
+          </div>
+    </header>
+
+    <section id="shopping__cart-empty" class="shopping__cart-empty">
+        <span class="shopping__cart-info-main">Главная  — </span>
+        <span class="shopping__cart-info-cart">Корзина</span>
+        <h3 class="shopping__cart-title">Корзина</h3>
+        <div class="shopping__cart-inside">
+            <span class="shopping__cart-empty">Ваша корзина пуста.</span>
+            <button class="shopping__cart-btn">Перейти в каталог</button>
+        </div>
+    </section>
+
+    <section id="shopping__cart-full" class="shopping__cart-full">
+        <span class="shopping__cart-info-main">Главная  — </span>
+        <span class="shopping__cart-info-cart">Корзина</span>
+        <h3 class="shopping__cart-title">Корзина</h3>
+        <div class="shopping__cart-full-card">
+            <img src="/assets/img/shopping-cart-img.svg" alt="smartphone">
+            <span class="shopping__cart-full_text-about-phone">Смартфон TECNO Pova 4 LG7n 8GB/128GB (серый)</span>
+            <p class="shopping__cart-full_price">21 770 ₽</p>
+            <div class="quantity__container">
+                <button class="quantity__button shopping__prev_btn" id="decrease1">-</button>
+                <input class="quantity__input" type="number" id="quantity1" value="1" min="1">
+                <button class="quantity__button shopping__next_btn" id="increase1">+</button>
+            </div>
+            <p class="shopping__cart-full_price">21 770 ₽ <span class="shopping__cart-full_old-price">50085 ₽</span> </p>
+        </div>
+        <div class="separation"></div>
+        <div class="shopping__cart-full-card">
+            <img src="/assets/img/shopping-cart-img.svg" alt="smartphone">
+            <span class="shopping__cart-full_text-about-phone">Смартфон TECNO Pova 4 LG7n 8GB/128GB (серый)</span>
+            <p class="shopping__cart-full_price">21 770 ₽</p>
+            <div class="quantity__container">
+                <button class="quantity__button shopping__prev_btn" id="decrease2">-</button>
+                <input class="quantity__input" type="number" id="quantity2" value="1" min="1">
+                <button class="quantity__button shopping__next_btn" id="increase2">+</button>
+            </div>
+            <p class="shopping__cart-full_price">21 770 ₽ <span class="shopping__cart-full_old-price">50085 ₽</span> </p>
+        </div>
+        <div class="separation"></div>
+        <div class="shopping__cart-full-about-order">
+            <span class="shopping__cart-full-total">Итого</span>
+            <p class="shopping__cart-full_price">43 540 ₽ <span class="shopping__cart-full_old-price">50085 ₽</span> </p>
+        </div>
+        <div class="shopping__cart-full-button-order">
+            <button class="shopping__cart-btn">Перейти к оформлению заказа</button>
+        </div>
+    </section>
+</body>
+</html>

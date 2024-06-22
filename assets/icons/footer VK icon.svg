@@ -1,0 +1,21 @@
+<svg width="37.000000" height="37.000000" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip223_3839">
+			<rect id="VK_Compact_Logo_(2021-present) 1" width="23.000000" height="23.000000" transform="translate(7.000000 7.000000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<clipPath id="clip223_3838">
+			<rect id="Frame 1911" rx="10.000000" width="37.000000" height="37.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="Frame 1911" rx="10.000000" width="37.000000" height="37.000000" fill="#FFFFFF" fill-opacity="1.000000"/>
+	<g clip-path="url(#clip223_3838)">
+		<rect id="VK_Compact_Logo_(2021-present) 1" width="23.000000" height="23.000000" transform="translate(7.000000 7.000000)" fill="#FFFFFF" fill-opacity="0"/>
+		<g clip-path="url(#clip223_3839)">
+			<path id="Vector" d="M7 18.04C7 12.83 7 10.23 8.61 8.61C10.23 7 12.83 7 18.04 7L18.95 7C24.16 7 26.76 7 28.38 8.61C30 10.23 30 12.83 30 18.04L30 18.95C30 24.16 30 26.76 28.38 28.38C26.76 30 24.16 30 18.95 30L18.04 30C12.83 30 10.23 30 8.61 28.38C7 26.76 7 24.16 7 18.95L7 18.04Z" fill="#0077FF" fill-opacity="1.000000" fill-rule="nonzero"/>
+			<path id="Vector" d="M19.23 23.56C13.99 23.56 11 19.97 10.88 13.99L13.5 13.99C13.59 18.38 15.52 20.24 17.06 20.62L17.06 13.99L19.53 13.99L19.53 17.78C21.04 17.61 22.63 15.89 23.17 13.99L25.64 13.99C25.23 16.33 23.51 18.05 22.28 18.76C23.51 19.34 25.47 20.84 26.22 23.56L23.5 23.56C22.91 21.74 21.46 20.34 19.53 20.14L19.53 23.56L19.23 23.56Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		</g>
+	</g>
+</svg>
