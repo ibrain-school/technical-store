@@ -9,7 +9,7 @@ const key = "KEY Бренды"
 
 function modalActiv (event) {
     event.preventDefault()
-    modalWrap.classList.toggle("none");
+    modalWrap.classList.toggle("show");
 }
 
 MODALINPUT.addEventListener("input",(event)=>{

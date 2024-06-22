@@ -403,11 +403,16 @@ display: none;
   
   
   background:rgba(42, 31, 32, 0.4);
-  z-index: 11;
+  z-index: 11; 
+
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s ease;
 }
 
-.none {
-  display: none;
+.modal-wrap.show {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal-header { 
